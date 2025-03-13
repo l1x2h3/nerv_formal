@@ -1,0 +1,16 @@
+SBY  1:06:01 [formal] Removing directory '/home/lixh/myproject/riscv-formal/cores/nerv/formal'.
+SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/top_formal.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/top_formal.sv'.
+SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/nerv_wrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/nerv_wrapper.sv'.
+SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/nerv.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/nerv.sv'.
+SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/wrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/wrapper.sv'.
+SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/CheckerWrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/CheckerWrapper.sv'.
+SBY  1:06:01 [formal] engine_0: smtbmc yices
+SBY  1:06:01 [formal] base: starting process "cd formal/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  1:06:03 [formal] base: CheckerWrapper.sv:10592: ERROR: Can't resolve task name `\$fwrite'.
+SBY  1:06:03 [formal] base: finished (returncode=1)
+SBY  1:06:03 [formal] base: task failed. ERROR.
+SBY  1:06:03 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  1:06:03 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  1:06:03 [formal] summary: engine_0 (smtbmc yices) did not return a status
+SBY  1:06:03 [formal] summary: engine_0 did not produce any traces
+SBY  1:06:03 [formal] DONE (ERROR, rc=16)

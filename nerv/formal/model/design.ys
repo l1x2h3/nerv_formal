@@ -1,0 +1,12 @@
+# running in formal/src/
+read_verilog -formal top_formal.sv
+read_verilog nerv_wrapper.sv
+read_verilog nerv.sv
+read_verilog wrapper.sv
+read_verilog CheckerWrapper.sv
+prep -top top_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il
