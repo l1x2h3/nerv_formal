@@ -60,9 +60,8 @@ git push
 有两种处理思路：一个是要求DUT提供一个参数信息进行编译
 另一个是直接实现完备的参数信号差，对于未知或用不上的信号用 ` _ , bx, .* `进行传递
 
-verilator -Wall --cc top.sv --exe top_tb.cpp -Wno-lint
 
-其实挺晕的，到最后还是用sby来做形式化验证，那这样就容易处理多了
+用sby来做形式化验证，那这样就容易处理多了
 看一参考TOP的整理处理框架
 ```verilog
 module top (
