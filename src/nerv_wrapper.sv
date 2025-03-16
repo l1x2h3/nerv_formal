@@ -1,5 +1,3 @@
-`include "wrapper.sv"
-
 module nerv_extended_wrapper (
     input         clock,
     input         reset,
@@ -52,9 +50,10 @@ module nerv_extended_wrapper (
     output [63:0] io_event_cause,
     output [63:0] io_event_exceptionPC,
     output [63:0] io_event_exceptionInst,
-
-    // RVFI 输出（保留用于调试）
-    `RVFI_OUTPUTS
+    output        rvfi_valid,
+    output [31:0] rvfi_insn,
+    // 在 nerv 模块中定义 CSR 值信号
+    //output reg [31:0] csr_mcounteren_value
 );
 
     // 实例化原始 nerv 模块
@@ -81,7 +80,23 @@ module nerv_extended_wrapper (
         .dmem_wdata     (dmem_wdata),
         .dmem_rdata     (io_mem_read_data), // 内存读取数据
         .irq            (irq),
-        `RVFI_CONN
+        .rvfi_valid     (rvfi_valid),  // 确保 rvfi_valid 被正确连接
+        .rvfi_insn      (rvfi_insn),   // 确保 rvfi_insn 被正确连接
+        //.mem_rd_reg     (mem_rd_reg),  // 连接 mem_rd_reg
+        // .csr_mstatus_value   (csr_mstatus_value),
+        // .csr_misa_value      (csr_misa_value),
+        // .csr_mvendorid_value (csr_mvendorid_value),
+        // .csr_marchid_value   (csr_marchid_value),
+        // .csr_mimpid_value    (csr_mimpid_value),
+        // .csr_mhartid_value   (csr_mhartid_value),
+        // .csr_mtvec_value     (csr_mtvec_value),
+        // .csr_mscratch_value  (csr_mscratch_value),
+        // .csr_mepc_value      (csr_mepc_value),
+        // .csr_mcause_value    (csr_mcause_value),
+        // .csr_mtval_value     (csr_mtval_value),
+        // .csr_mip_value       (csr_mip_value),
+        // .csr_mie_value       (csr_mie_value),
+        //.csr_mcounteren_value (csr_mcounteren_value)
     );
 
     // 寄存器文件状态追踪
@@ -96,8 +111,9 @@ module nerv_extended_wrapper (
         if (reset) begin
             for (i = 0; i < 32; i = i + 1)
                 regfile[i] <= 32'b0;
-        end else if (!stall && rvfi_valid && rvfi_rd_addr != 5'b0) begin
-            regfile[rvfi_rd_addr] <= rvfi_rd_wdata;
+        end else if (!stall && dmem_valid && dmem_wstrb == 4'b0) begin
+            // 假设在内存读取时更新寄存器文件
+            regfile[nerv_inst.mem_rd_reg] <= io_mem_read_data;
         end
     end
 
@@ -139,23 +155,47 @@ module nerv_extended_wrapper (
             csr_mip       <= 32'b0;
             csr_mie       <= 32'b0;
             csr_mcounteren <= 32'b0;
-        end else if (!stall && rvfi_valid) begin
-            if (rvfi_csr_mstatus_wmask)  csr_mstatus  <= rvfi_csr_mstatus_wdata;
-            if (rvfi_csr_misa_wmask)     csr_misa     <= rvfi_csr_misa_wdata;
-            if (rvfi_csr_mvendorid_wmask) csr_mvendorid <= rvfi_csr_mvendorid_wdata;
-            if (rvfi_csr_marchid_wmask)  csr_marchid  <= rvfi_csr_marchid_wdata;
-            if (rvfi_csr_mimpid_wmask)   csr_mimpid   <= rvfi_csr_mimpid_wdata;
-            if (rvfi_csr_mhartid_wmask)  csr_mhartid  <= rvfi_csr_mhartid_wdata;
-            if (rvfi_csr_mtvec_wmask)    csr_mtvec    <= rvfi_csr_mtvec_wdata;
-            if (rvfi_csr_mscratch_wmask) csr_mscratch <= rvfi_csr_mscratch_wdata;
-            if (rvfi_csr_mepc_wmask)     csr_mepc     <= rvfi_csr_mepc_wdata;
-            if (rvfi_csr_mcause_wmask)   csr_mcause   <= rvfi_csr_mcause_wdata;
-            if (rvfi_csr_mtval_wmask)    csr_mtval    <= rvfi_csr_mtval_wdata;
-            if (rvfi_csr_mip_wmask)      csr_mip      <= rvfi_csr_mip_wdata;
-            if (rvfi_csr_mie_wmask)      csr_mie      <= rvfi_csr_mie_wdata;
-            if (rvfi_csr_mcounteren_wmask) csr_mcounteren <= rvfi_csr_mcounteren_wdata;
+        end else if (!stall && dmem_valid) begin
+            // 假设在内存操作时更新 CSR
+            csr_mstatus   <= nerv_inst.csr_mstatus_value;
+            csr_misa      <= nerv_inst.csr_misa_value;
+            csr_mvendorid <= nerv_inst.csr_mvendorid_value;
+            csr_marchid   <= nerv_inst.csr_marchid_value;
+            csr_mimpid    <= nerv_inst.csr_mimpid_value;
+            csr_mhartid   <= nerv_inst.csr_mhartid_value;
+            csr_mtvec     <= nerv_inst.csr_mtvec_value;
+            csr_mscratch  <= nerv_inst.csr_mscratch_value;
+            csr_mepc      <= nerv_inst.csr_mepc_value;
+            csr_mcause    <= nerv_inst.csr_mcause_value;
+            csr_mtval     <= nerv_inst.csr_mtval_value;
+            csr_mip       <= nerv_inst.csr_mip_value;
+            csr_mie       <= nerv_inst.csr_mie_value;
+            //csr_mcounteren <= nerv_inst.csr_mcounteren_value;
         end
     end
+
+    // // 在 CSR 操作时赋值
+    // always @(posedge clock) begin
+    //     if (csr_write_enable) begin
+    //         case (csr_addr)
+    //             CSR_MSTATUS:   csr_mstatus_value   <= csr_wdata;
+    //             CSR_MISA:      csr_misa_value      <= csr_wdata;
+    //             CSR_MVENDORID: csr_mvendorid_value <= csr_wdata;
+    //             CSR_MARCHID:   csr_marchid_value   <= csr_wdata;
+    //             CSR_MIMPID:    csr_mimpid_value    <= csr_wdata;
+    //             CSR_MHARTID:   csr_mhartid_value   <= csr_wdata;
+    //             CSR_MTVEC:     csr_mtvec_value     <= csr_wdata;
+    //             CSR_MSCRATCH:  csr_mscratch_value  <= csr_wdata;
+    //             CSR_MEPC:      csr_mepc_value      <= csr_wdata;
+    //             CSR_MCAUSE:    csr_mcause_value    <= csr_wdata;
+    //             CSR_MTVAL:     csr_mtval_value     <= csr_wdata;
+    //             CSR_MIP:       csr_mip_value       <= csr_wdata;
+    //             CSR_MIE:       csr_mie_value       <= csr_wdata;
+    //             CSR_MCOUNTEREN: csr_mcounteren_value <= csr_wdata;
+    //         endcase
+    //     end
+    // end
+
 
     // 内存信号转换
     assign io_mem_read_valid  = dmem_valid & (dmem_wstrb == 4'b0);

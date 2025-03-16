@@ -1,16 +1,76 @@
-SBY  1:06:01 [formal] Removing directory '/home/lixh/myproject/riscv-formal/cores/nerv/formal'.
-SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/top_formal.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/top_formal.sv'.
-SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/nerv_wrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/nerv_wrapper.sv'.
-SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/nerv.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/nerv.sv'.
-SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/wrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/wrapper.sv'.
-SBY  1:06:01 [formal] Copy '/home/lixh/myproject/riscv-formal/cores/nerv/CheckerWrapper.sv' to '/home/lixh/myproject/riscv-formal/cores/nerv/formal/src/CheckerWrapper.sv'.
-SBY  1:06:01 [formal] engine_0: smtbmc yices
-SBY  1:06:01 [formal] base: starting process "cd formal/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY  1:06:03 [formal] base: CheckerWrapper.sv:10592: ERROR: Can't resolve task name `\$fwrite'.
-SBY  1:06:03 [formal] base: finished (returncode=1)
-SBY  1:06:03 [formal] base: task failed. ERROR.
-SBY  1:06:03 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
-SBY  1:06:03 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
-SBY  1:06:03 [formal] summary: engine_0 (smtbmc yices) did not return a status
-SBY  1:06:03 [formal] summary: engine_0 did not produce any traces
-SBY  1:06:03 [formal] DONE (ERROR, rc=16)
+SBY 23:19:27 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
+SBY 23:19:27 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
+SBY 23:19:27 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
+SBY 23:19:27 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
+SBY 23:19:27 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
+SBY 23:19:27 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
+SBY 23:19:27 [formal] engine_0: smtbmc yices
+SBY 23:19:27 [formal] base: starting process "cd formal/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:116: Warning: Identifier `\nerv_inst.mem_rd_reg' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:160: Warning: Identifier `\nerv_inst.csr_mstatus_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:161: Warning: Identifier `\nerv_inst.csr_misa_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:162: Warning: Identifier `\nerv_inst.csr_mvendorid_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:163: Warning: Identifier `\nerv_inst.csr_marchid_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:164: Warning: Identifier `\nerv_inst.csr_mimpid_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:165: Warning: Identifier `\nerv_inst.csr_mhartid_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:166: Warning: Identifier `\nerv_inst.csr_mtvec_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:167: Warning: Identifier `\nerv_inst.csr_mscratch_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:168: Warning: Identifier `\nerv_inst.csr_mepc_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:169: Warning: Identifier `\nerv_inst.csr_mcause_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:170: Warning: Identifier `\nerv_inst.csr_mtval_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:171: Warning: Identifier `\nerv_inst.csr_mip_value' is implicitly declared.
+SBY 23:19:27 [formal] base: nerv_wrapper.sv:172: Warning: Identifier `\nerv_inst.csr_mie_value' is implicitly declared.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.mem_rd_reg is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mstatus_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_misa_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mvendorid_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_marchid_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mimpid_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mhartid_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtvec_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mscratch_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mepc_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mcause_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtval_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mip_value is used but has no driver.
+SBY 23:19:34 [formal] base: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mie_value is used but has no driver.
+SBY 23:19:43 [formal] base: finished (returncode=0)
+SBY 23:19:43 [formal] prep: starting process "cd formal/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.mem_rd_reg is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mstatus_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_misa_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mvendorid_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_marchid_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mimpid_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mhartid_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtvec_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mscratch_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mepc_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mcause_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtval_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mip_value is used but has no driver.
+SBY 23:19:48 [formal] prep: Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mie_value is used but has no driver.
+SBY 23:19:51 [formal] prep: finished (returncode=0)
+SBY 23:19:51 [formal] smt2: starting process "cd formal/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:19:53 [formal] smt2: finished (returncode=0)
+SBY 23:19:53 [formal] engine_0: starting process "cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:19:53 [formal] engine_0: ##   0:00:00  Solver: yices
+SBY 23:19:54 [formal] engine_0: ##   0:00:01  Checking assumptions in step 0..
+SBY 23:19:54 [formal] engine_0: ##   0:00:01  Checking assertions in step 0..
+SBY 23:19:55 [formal] engine_0: ##   0:00:01  Checking assumptions in step 1..
+SBY 23:19:55 [formal] engine_0: ##   0:00:01  Checking assertions in step 1..
+SBY 23:19:55 [formal] engine_0: ##   0:00:02  BMC failed!
+SBY 23:19:55 [formal] engine_0: ##   0:00:02  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:11577.7-11577.21 (_witness_.check_assert_CheckerWrapper_sv_11577_12727)
+SBY 23:19:55 [formal] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace.vcd
+SBY 23:19:58 [formal] engine_0: ##   0:00:04  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 23:19:58 [formal] engine_0: ##   0:00:04  Writing trace to constraints file: engine_0/trace.smtc
+SBY 23:19:58 [formal] engine_0: ##   0:00:05  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 23:19:58 [formal] engine_0: ##   0:00:05  Status: failed
+SBY 23:19:59 [formal] engine_0: finished (returncode=1)
+SBY 23:19:59 [formal] engine_0: Status returned by engine: FAIL
+SBY 23:19:59 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:31 (31)
+SBY 23:19:59 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:32 (32)
+SBY 23:19:59 [formal] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 23:19:59 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
+SBY 23:19:59 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_11577_12727 at CheckerWrapper.sv:11577.7-11577.21 in step 1
+SBY 23:19:59 [formal] DONE (FAIL, rc=2)

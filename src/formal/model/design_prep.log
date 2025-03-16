@@ -1,0 +1,167 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module top_formal.
+Found 0 SCCs in module nerv_extended_wrapper.
+Found 0 SCCs in module RiscvTrans.
+Found 0 SCCs in module RiscvCore.
+Found 0 SCCs in module Queue_3.
+Found 0 SCCs in module QueueModuleTLB.
+Found 0 SCCs in module QueueModule.
+Found 0 SCCs in module Queue.
+Found 0 SCCs in module CheckerWrapper.
+Found 0 SCCs in module CheckerWithResult.
+Found 0 SCCs in module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_formal..
+Finding unused cells or wires in module \nerv_extended_wrapper..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \QueueModuleTLB..
+Finding unused cells or wires in module \QueueModule..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv..
+Removed 180 unused cells and 180 unused wires.
+<suppressed ~181 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv..
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \QueueModule..
+Finding unused cells or wires in module \QueueModuleTLB..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv_extended_wrapper..
+Finding unused cells or wires in module \top_formal..
+Removed 10 unused cells and 10 unused wires.
+<suppressed ~20 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv...
+Checking module CheckerWithResult...
+Checking module CheckerWrapper...
+Checking module Queue...
+Checking module QueueModule...
+Checking module QueueModuleTLB...
+Checking module Queue_3...
+Checking module RiscvCore...
+Checking module RiscvTrans...
+Checking module nerv_extended_wrapper...
+Warning: Wire nerv_extended_wrapper.\nerv_inst.mem_rd_reg is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mstatus_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_misa_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mvendorid_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_marchid_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mimpid_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mhartid_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtvec_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mscratch_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mepc_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mcause_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mtval_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mip_value is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\nerv_inst.csr_mie_value is used but has no driver.
+Checking module top_formal...
+Found and reported 14 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv.
+<suppressed ~4 debug messages>
+Optimizing module CheckerWithResult.
+Optimizing module CheckerWrapper.
+Optimizing module Queue.
+Optimizing module QueueModule.
+Optimizing module QueueModuleTLB.
+Optimizing module Queue_3.
+Optimizing module RiscvCore.
+Optimizing module RiscvTrans.
+Optimizing module nerv_extended_wrapper.
+Optimizing module top_formal.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv'.
+Finding identical cells in module `\CheckerWithResult'.
+<suppressed ~159 debug messages>
+Finding identical cells in module `\CheckerWrapper'.
+Finding identical cells in module `\Queue'.
+Finding identical cells in module `\QueueModule'.
+Finding identical cells in module `\QueueModuleTLB'.
+Finding identical cells in module `\Queue_3'.
+Finding identical cells in module `\RiscvCore'.
+Finding identical cells in module `\RiscvTrans'.
+Finding identical cells in module `\nerv_extended_wrapper'.
+Finding identical cells in module `\top_formal'.
+Removed a total of 53 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv..
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \QueueModule..
+Finding unused cells or wires in module \QueueModuleTLB..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv_extended_wrapper..
+Finding unused cells or wires in module \top_formal..
+Removed 6 unused cells and 75 unused wires.
+<suppressed ~10 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$f21793228a2d3836bc6c202e3c71abff68ffd6d9\nerv..
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \QueueModule..
+Finding unused cells or wires in module \QueueModuleTLB..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv_extended_wrapper..
+Finding unused cells or wires in module \top_formal..
+Removed 0 unused cells and 31 unused wires.
+<suppressed ~4 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+Warnings: 14 unique messages, 14 total
+End of script. Logfile hash: 63fbc3150c, CPU: user 7.64s system 0.32s, MEM: 386.59 MB peak
+Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 52% 4x opt_clean (4 sec), 15% 1x check (1 sec), ...

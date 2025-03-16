@@ -18,7 +18,6 @@
  */
 
 `define NERV_CSR
-`include "wrapper.sv"
 `ifdef NERV_CSR
 	/**********************
 	 *  CSR DECLARATIONS  *
@@ -303,6 +302,7 @@ module nerv #(
 	input reset,
 	input stall,
 	output trap,
+
 
 `ifdef NERV_RVFI
 	output reg        rvfi_valid,

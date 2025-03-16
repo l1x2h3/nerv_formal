@@ -1,21 +1,21 @@
 [options]
 mode bmc
-depth 20
+depth 10
 
 [engines]
 smtbmc yices
 
 [script]
+read_verilog -D SYNTHESIS -D NERV_RVFI -D NERV_CSR define.sv
 read_verilog -formal top_formal.sv
 read_verilog nerv_wrapper.sv
 read_verilog nerv.sv
-read_verilog wrapper.sv
-read_verilog CheckerWrapper.sv
+read_verilog -formal CheckerWrapper.sv
 prep -top top_formal
 
-[files]
+[files] 
+define.sv
 top_formal.sv
 nerv_wrapper.sv
 nerv.sv
-wrapper.sv
 CheckerWrapper.sv

@@ -88,30 +88,32 @@ endmodule
 
 #### 以及SBY脚本
 
-```sby
+```shell
 [options]
-mode bmc  # 使用有界模型检查
-depth 10  # 设置验证深度为 10 个时钟周期
+mode bmc
+depth 20
 
 [engines]
-smtbmc    # 使用 SMT-based 模型检查引擎
+smtbmc yices
 
 [script]
-read_verilog -sv dut.sv           # 读取 DUT
-read_verilog -sv reference_model.sv  # 读取参考模型
-read_verilog -sv checker.sv       # 读取 Checker
-read_verilog -sv top.sv           # 读取顶层模块
-prep -top top                     # 设置顶层模块为 top
+read_verilog -formal top_formal.sv
+read_verilog nerv_wrapper.sv
+read_verilog nerv.sv
+read_verilog wrapper.sv
+read_verilog CheckerWrapper.sv
+prep -top top_formal
 
 [files]
-dut.sv
-reference_model.sv
-checker.sv
-top.sv
+top_formal.sv
+nerv_wrapper.sv
+nerv.sv
+wrapper.sv
+CheckerWrapper.sv
 ```
 
 最后执行命令
-`sby -f checker.sby`
+`sby -f formal.sby`
 
 目前已完成的过程：
 checker
@@ -121,6 +123,29 @@ checker
 sbt "runMain rvspeccore.checker.Main --assert"
 ```
 Failed
+
+
+source /mnt/sda/oss-cad-suite/environment
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=http://127.0.0.1:7890
+```sby -f formal.sby```
+
+挺神奇：
+script.ys脚本实现对sv文件的形式化检查，保证不会出现乱的语法错误
+yosys script.ys
+```shell
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module nerv...
+Found and reported 0 problems.
+
+End of script. Logfile hash: f983167f47, CPU: user 1.14s system 0.03s, MEM: 44.63 MB peak
+Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 28% 5x opt_clean (0 sec), 18% 2x check (0 sec), ...
+```
+
+头文件是不需要定义的，否则就会被显示重定义
+
+
+gtkwave formal/engine_0/trace.vcd
 
 Running the simulation testbench
 --------------------------------

@@ -1,0 +1,2 @@
+read -sv nerv.sv  # 使用 SystemVerilog 模式读取文件
+prep -top nerv    # 准备顶层模块
