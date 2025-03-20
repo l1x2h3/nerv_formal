@@ -1,0 +1,18 @@
+# counter.sby
+[options]
+mode prove
+depth 20
+
+[engines]
+smtbmc  yices
+
+[script]
+read -formal counter.sv
+read -formal counter_props.sv
+read -formal counter_top.sv
+prep -top counter_top
+
+[files]
+counter.sv
+counter_props.sv
+counter_top.sv

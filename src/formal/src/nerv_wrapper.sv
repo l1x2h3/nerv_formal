@@ -1,277 +1,374 @@
+`define rvformal_rand_reg wire
+`define rvformal_rand_const_reg reg
+
 module nerv_extended_wrapper (
     input         clock,
     input         reset,
-    input         stall,
-    input  [31:0] io_inst,          // RiscvCore 输入：指令
-    input         io_valid,         // RiscvCore 输入：指令有效
-    input  [31:0] io_mem_read_data, // RiscvCore 输入：内存读取数据 (32-bit)
-    input  [31:0] io_tlb_Anotherread_0_data, // TLB 输入 (简化为 32-bit)
-    input  [31:0] io_tlb_Anotherread_1_data,
-    input  [31:0] io_tlb_Anotherread_2_data,
-    input  [31:0] irq,
-
-    // RiscvCore 输出信号
-    output        io_mem_read_valid,
-    output [63:0] io_mem_read_addr,
-    output [6:0]  io_mem_read_memWidth,
-    output        io_mem_write_valid,
-    output [63:0] io_mem_write_addr,
-    output [6:0]  io_mem_write_memWidth,
-    output [63:0] io_mem_write_data,
-    output        io_tlb_Anotherread_0_valid,
-    output [63:0] io_tlb_Anotherread_0_addr,
-    output        io_tlb_Anotherread_1_valid,
-    output [63:0] io_tlb_Anotherread_1_addr,
-    output        io_tlb_Anotherread_2_valid,
-    output [63:0] io_tlb_Anotherread_2_addr,
-    output [63:0] io_now_pc,
-    output [63:0] io_next_reg_0, io_next_reg_1, io_next_reg_2, io_next_reg_3, io_next_reg_4,
-    output [63:0] io_next_reg_5, io_next_reg_6, io_next_reg_7, io_next_reg_8, io_next_reg_9,
-    output [63:0] io_next_reg_10, io_next_reg_11, io_next_reg_12, io_next_reg_13, io_next_reg_14,
-    output [63:0] io_next_reg_15, io_next_reg_16, io_next_reg_17, io_next_reg_18, io_next_reg_19,
-    output [63:0] io_next_reg_20, io_next_reg_21, io_next_reg_22, io_next_reg_23, io_next_reg_24,
-    output [63:0] io_next_reg_25, io_next_reg_26, io_next_reg_27, io_next_reg_28, io_next_reg_29,
-    output [63:0] io_next_reg_30, io_next_reg_31,
-    output [63:0] io_next_csr_misa,
-    output [63:0] io_next_csr_mvendorid,
-    output [63:0] io_next_csr_marchid,
-    output [63:0] io_next_csr_mimpid,
-    output [63:0] io_next_csr_mhartid,
-    output [63:0] io_next_csr_mstatus,
-    output [63:0] io_next_csr_mscratch,
-    output [63:0] io_next_csr_mtvec,
-    output [63:0] io_next_csr_mcounteren,
-    output [63:0] io_next_csr_mip,
-    output [63:0] io_next_csr_mie,
-    output [63:0] io_next_csr_mepc,
-    output [63:0] io_next_csr_mcause,
-    output [63:0] io_next_csr_mtval,
-    output        io_event_valid,
-    output [63:0] io_event_cause,
-    output [63:0] io_event_exceptionPC,
-    output [63:0] io_event_exceptionInst,
-    output        rvfi_valid,
-    output [31:0] rvfi_insn,
-    // 在 nerv 模块中定义 CSR 值信号
-    //output reg [31:0] csr_mcounteren_value
+    // 指令提交信号
+    output        instCommit_valid,
+    output [31:0] instCommit_inst,
+    output [31:0] instCommit_pc,
+    // 寄存器文件
+    output [31:0] result_reg_0, result_reg_1, result_reg_2, result_reg_3, result_reg_4,
+    output [31:0] result_reg_5, result_reg_6, result_reg_7, result_reg_8, result_reg_9,
+    output [31:0] result_reg_10, result_reg_11, result_reg_12, result_reg_13, result_reg_14,
+    output [31:0] result_reg_15, result_reg_16, result_reg_17, result_reg_18, result_reg_19,
+    output [31:0] result_reg_20, result_reg_21, result_reg_22, result_reg_23, result_reg_24,
+    output [31:0] result_reg_25, result_reg_26, result_reg_27, result_reg_28, result_reg_29,
+    output [31:0] result_reg_30, result_reg_31,
+    // PC
+    output [31:0] result_pc,
+    // CSR 寄存器
+    output [31:0] result_csr_misa,
+    output [31:0] result_csr_mvendorid,
+    output [31:0] result_csr_marchid,
+    output [31:0] result_csr_mimpid,
+    output [31:0] result_csr_mhartid,
+    output [31:0] result_csr_mstatus,
+    output [31:0] result_csr_mstatush,
+    output [31:0] result_csr_mscratch,
+    output [31:0] result_csr_mtvec,
+    output [31:0] result_csr_mcounteren,
+    output [31:0] result_csr_medeleg,
+    output [31:0] result_csr_mideleg,
+    output [31:0] result_csr_mip,
+    output [31:0] result_csr_mie,
+    output [31:0] result_csr_mepc,
+    output [31:0] result_csr_mcause,
+    output [31:0] result_csr_mtval,
+    output [31:0] result_csr_cycle,
+    output [31:0] result_csr_scounteren,
+    output [31:0] result_csr_scause,
+    output [31:0] result_csr_stvec,
+    output [31:0] result_csr_sepc,
+    output [31:0] result_csr_stval,
+    output [31:0] result_csr_sscratch,
+    output [31:0] result_csr_satp,
+    output [31:0] result_csr_pmpcfg0,
+    output [31:0] result_csr_pmpcfg1,
+    output [31:0] result_csr_pmpcfg2,
+    output [31:0] result_csr_pmpcfg3,
+    output [31:0] result_csr_pmpaddr0,
+    output [31:0] result_csr_pmpaddr1,
+    output [31:0] result_csr_pmpaddr2,
+    output [31:0] result_csr_pmpaddr3,
+    output [7:0]  result_csr_MXLEN,
+    output [7:0]  result_csr_IALIGN,
+    output [7:0]  result_csr_ILEN,
+    output [1:0]  result_internal_privilegeMode,
+    // 事件信号
+    output        event_valid,
+    output [31:0] event_intrNO,
+    output [31:0] event_cause,
+    output [31:0] event_exceptionPC,
+    output [31:0] event_exceptionInst,
+    // 内存访问信号
+    output        mem_read_valid,
+    output [31:0] mem_read_addr,
+    output [6:0]  mem_read_memWidth,
+    output [31:0] mem_read_data,
+    output        mem_write_valid,
+    output [31:0] mem_write_addr,
+    output [6:0]  mem_write_memWidth,
+    output [31:0] mem_write_data,
+    // 数据内存读取数据
+    output [31:0] dmem_rdata
 );
+    (* keep *) `rvformal_rand_reg stall;
+    (* keep *) `rvformal_rand_reg [31:0] imem_data;
+    (* keep *) `rvformal_rand_reg [31:0] dmem_rdata;
+    (* keep *) `rvformal_rand_reg [31:0] irq;
+    
 
-    // 实例化原始 nerv 模块
-    wire [31:0] imem_addr;
-    wire        dmem_valid;
-    wire [31:0] dmem_addr;
-    wire [3:0]  dmem_wstrb;
-    wire [31:0] dmem_wdata;
-    wire        trap;
+    // 随机输入信号
 
-    nerv #(
-        .RESET_ADDR(32'h0000_0000),
-        .NUMREGS(32)
-    ) nerv_inst (
-        .clock          (clock),
-        .reset          (reset),
-        .stall          (stall),
-        .trap           (trap),
-        .imem_addr      (imem_addr),
-        .imem_data      (io_inst),         // 使用 io_inst 作为指令输入
-        .dmem_valid     (dmem_valid),
-        .dmem_addr      (dmem_addr),
-        .dmem_wstrb     (dmem_wstrb),
-        .dmem_wdata     (dmem_wdata),
-        .dmem_rdata     (io_mem_read_data), // 内存读取数据
-        .irq            (irq),
-        .rvfi_valid     (rvfi_valid),  // 确保 rvfi_valid 被正确连接
-        .rvfi_insn      (rvfi_insn),   // 确保 rvfi_insn 被正确连接
-        //.mem_rd_reg     (mem_rd_reg),  // 连接 mem_rd_reg
-        // .csr_mstatus_value   (csr_mstatus_value),
-        // .csr_misa_value      (csr_misa_value),
-        // .csr_mvendorid_value (csr_mvendorid_value),
-        // .csr_marchid_value   (csr_marchid_value),
-        // .csr_mimpid_value    (csr_mimpid_value),
-        // .csr_mhartid_value   (csr_mhartid_value),
-        // .csr_mtvec_value     (csr_mtvec_value),
-        // .csr_mscratch_value  (csr_mscratch_value),
-        // .csr_mepc_value      (csr_mepc_value),
-        // .csr_mcause_value    (csr_mcause_value),
-        // .csr_mtval_value     (csr_mtval_value),
-        // .csr_mip_value       (csr_mip_value),
-        // .csr_mie_value       (csr_mie_value),
-        //.csr_mcounteren_value (csr_mcounteren_value)
+    // NERV_FAULT 条件下的信号
+    `ifdef NERV_FAULT
+        (* keep *) reg imem_fault;
+        (* keep *) reg dmem_fault;
+    `else
+        wire imem_fault = 0;
+        wire dmem_fault = 0;
+    `endif
+
+    initial begin
+        assume (reset == 1'b1);
+    end
+
+    // 内部信号（从 nerv 引出）
+    wire        inst_valid;     // 指令有效
+    wire [31:0] inst;           // 当前指令
+    wire [31:0] pc;             // 当前 PC
+    wire [4:0]  rd_addr;        // 目标寄存器地址
+    wire [31:0] rd_wdata;       // 目标寄存器写入数据
+    wire        trap;           // 异常信号
+    wire [31:0] imem_addr;      // 指令内存地址
+    wire        dmem_valid;     // 数据内存访问有效
+    wire [31:0] dmem_addr;      // 数据内存地址
+    wire [3:0]  dmem_wstrb;     // 数据内存写选通
+    wire [31:0] dmem_wdata;     // 数据内存写入数据
+    wire [1:0]  mode;           // 特权模式
+
+    // 实例化 nerv 模块
+    nerv uut (
+        .clock      (clock),
+        .reset      (reset),
+        .stall      (stall),
+        .rvfi_trap       (trap),
+        .imem_addr  (imem_addr),
+        .imem_data  (imem_data),
+        .dmem_valid (dmem_valid),
+        .dmem_addr  (dmem_addr),
+        .dmem_wstrb (dmem_wstrb),
+        .dmem_wdata (dmem_wdata),
+        .dmem_rdata (dmem_rdata),
+        `ifdef NERV_FAULT
+            .imem_fault (imem_fault),
+            .dmem_fault (dmem_fault),
+        `endif
+        .irq        (irq),
+        // 自定义输出信号（假设 nerv 支持）
+        .rvfi_valid (inst_valid),
+        .rvfi_insn       (inst),
+        .imem_addr         (pc),
+        //理论上imem_addr和pc保持一致
+        .rvfi_rd_addr    (rd_addr),
+        .rvfi_rd_wdata   (rd_wdata),
+        .rvfi_mode       (mode)
     );
 
-    // 寄存器文件状态追踪
+    // 寄存器文件和 CSR 追踪
     reg [31:0] regfile [0:31];
-    integer i;
-    initial begin
-        for (i = 0; i < 32; i = i + 1)
-            regfile[i] = 32'b0;
-    end
-
-    always @(posedge clock) begin
-        if (reset) begin
-            for (i = 0; i < 32; i = i + 1)
-                regfile[i] <= 32'b0;
-        end else if (!stall && dmem_valid && dmem_wstrb == 4'b0) begin
-            // 假设在内存读取时更新寄存器文件
-            regfile[nerv_inst.mem_rd_reg] <= io_mem_read_data;
-        end
-    end
-
-    // CSR 状态追踪
     reg [31:0] csr_mstatus, csr_misa, csr_mvendorid, csr_marchid, csr_mimpid, csr_mhartid;
     reg [31:0] csr_mtvec, csr_mscratch, csr_mepc, csr_mcause, csr_mtval, csr_mip, csr_mie;
     reg [31:0] csr_mcounteren;
 
+    // 初始化
+    integer i;
     initial begin
-        csr_mstatus   = 32'h00001800; // 默认 MPP=11, MIE=0
-        csr_misa      = 32'b0;
-        csr_mvendorid = 32'b0;
-        csr_marchid   = 32'b0;
-        csr_mimpid    = 32'b0;
-        csr_mhartid   = 32'b0;
-        csr_mtvec     = 32'b0;
-        csr_mscratch  = 32'b0;
-        csr_mepc      = 32'b0;
-        csr_mcause    = 32'b0;
-        csr_mtval     = 32'b0;
-        csr_mip       = 32'b0;
-        csr_mie       = 32'b0;
+        for (i = 0; i < 32; i = i + 1)
+            regfile[i] = 32'b0;
+        csr_mstatus    = 32'h00001800; // 默认 MPP=11, MIE=0
+        csr_misa       = 32'b0;
+        csr_mvendorid  = 32'b0;
+        csr_marchid    = 32'b0;
+        csr_mimpid     = 32'b0;
+        csr_mhartid    = 32'b0;
+        csr_mtvec      = 32'b0;
+        csr_mscratch   = 32'b0;
+        csr_mepc       = 32'b0;
+        csr_mcause     = 32'b0;
+        csr_mtval      = 32'b0;
+        csr_mip        = 32'b0;
+        csr_mie        = 32'b0;
         csr_mcounteren = 32'b0;
+    end
+
+    // 更新寄存器文件和 CSR
+    always @(posedge clock) begin
+        if (reset) begin
+            for (i = 0; i < 32; i = i + 1)
+                regfile[i] <= 32'b0;
+            csr_mstatus    <= 32'h00001800;
+            csr_misa       <= 32'b0;
+            csr_mvendorid  <= 32'b0;
+            csr_marchid    <= 32'b0;
+            csr_mimpid     <= 32'b0;
+            csr_mhartid    <= 32'b0;
+            csr_mtvec      <= 32'b0;
+            csr_mscratch   <= 32'b0;
+            csr_mepc       <= 32'b0;
+            csr_mcause     <= 32'b0;
+            csr_mtval      <= 32'b0;
+            csr_mip        <= 32'b0;
+            csr_mie        <= 32'b0;
+            csr_mcounteren <= 32'b0;
+        end else if (inst_valid && !stall) begin
+            if (rd_addr != 5'b0)  // x0 不可写
+                regfile[rd_addr] <= rd_wdata;
+
+            // CSR 更新（假设从内存访问中推导，需 nerv 支持）
+            if (dmem_valid && dmem_wstrb != 4'b0) begin
+                case (dmem_addr)
+                    32'h300: csr_mstatus <= dmem_wdata;
+                    32'h301: csr_misa    <= dmem_wdata;
+                    32'hf11: csr_mvendorid <= dmem_wdata;
+                    32'hf12: csr_marchid <= dmem_wdata;
+                    32'hf13: csr_mimpid  <= dmem_wdata;
+                    32'hf14: csr_mhartid <= dmem_wdata;
+                    32'h305: csr_mtvec   <= dmem_wdata;
+                    32'h340: csr_mscratch <= dmem_wdata;
+                    32'h341: csr_mepc    <= dmem_wdata;
+                    32'h342: csr_mcause  <= dmem_wdata;
+                    32'h343: csr_mtval   <= dmem_wdata;
+                    32'h344: csr_mip     <= dmem_wdata;
+                    32'h304: csr_mie     <= dmem_wdata;
+                    32'h303: csr_mcounteren <= dmem_wdata;
+                endcase
+            end
+        end
+    end
+
+    // 内存访问控制逻辑
+    reg isRead, isWrite;
+    reg [31:0] addr, wdata;
+    reg [6:0] width;
+    reg mem_valid;
+    reg [31:0] rdata;
+
+    // 参考代码中的 dmem_rdata 处理
+    (* keep *) `rvformal_rand_reg [31:0] next_dmem_rdata;
+    reg [31:0] next_dmem_rdata_q;
+
+    always @(posedge clock) begin
+        if (!stall) begin
+            next_dmem_rdata_q <= next_dmem_rdata;
+        end
+    end
+
+    always @* begin
+        if (!stall) begin
+            assume (dmem_rdata == next_dmem_rdata_q);
+        end
     end
 
     always @(posedge clock) begin
         if (reset) begin
-            csr_mstatus   <= 32'h00001800;
-            csr_misa      <= 32'b0;
-            csr_mvendorid <= 32'b0;
-            csr_marchid   <= 32'b0;
-            csr_mimpid    <= 32'b0;
-            csr_mhartid   <= 32'b0;
-            csr_mtvec     <= 32'b0;
-            csr_mscratch  <= 32'b0;
-            csr_mepc      <= 32'b0;
-            csr_mcause    <= 32'b0;
-            csr_mtval     <= 32'b0;
-            csr_mip       <= 32'b0;
-            csr_mie       <= 32'b0;
-            csr_mcounteren <= 32'b0;
-        end else if (!stall && dmem_valid) begin
-            // 假设在内存操作时更新 CSR
-            csr_mstatus   <= nerv_inst.csr_mstatus_value;
-            csr_misa      <= nerv_inst.csr_misa_value;
-            csr_mvendorid <= nerv_inst.csr_mvendorid_value;
-            csr_marchid   <= nerv_inst.csr_marchid_value;
-            csr_mimpid    <= nerv_inst.csr_mimpid_value;
-            csr_mhartid   <= nerv_inst.csr_mhartid_value;
-            csr_mtvec     <= nerv_inst.csr_mtvec_value;
-            csr_mscratch  <= nerv_inst.csr_mscratch_value;
-            csr_mepc      <= nerv_inst.csr_mepc_value;
-            csr_mcause    <= nerv_inst.csr_mcause_value;
-            csr_mtval     <= nerv_inst.csr_mtval_value;
-            csr_mip       <= nerv_inst.csr_mip_value;
-            csr_mie       <= nerv_inst.csr_mie_value;
-            //csr_mcounteren <= nerv_inst.csr_mcounteren_value;
+            isRead    <= 1'b0;
+            isWrite   <= 1'b0;
+            addr      <= 32'b0;
+            wdata     <= 32'b0;
+            width     <= 7'b0;
+            mem_valid <= 1'b0;
+            rdata     <= 32'b0;
+        end else if (!stall) begin
+            if (dmem_valid) begin
+                if (dmem_wstrb != 4'b0) begin
+                    // 写操作
+                    isWrite <= 1'b1;
+                    isRead  <= 1'b0;
+                    addr    <= dmem_addr;
+                    wdata   <= dmem_wdata;
+                    width   <= (dmem_wstrb == 4'b1111) ? 7'd32 :
+                               (dmem_wstrb == 4'b0011 || dmem_wstrb == 4'b1100) ? 7'd16 : 7'd8;
+                end else begin
+                    // 读操作
+                    isRead  <= 1'b1;
+                    isWrite <= 1'b0;
+                    addr    <= dmem_addr;
+                    width   <= 7'd32;
+                    rdata   <= dmem_rdata;
+                end
+                mem_valid <= 1'b1;
+            end else begin
+                isRead    <= 1'b0;
+                isWrite   <= 1'b0;
+                mem_valid <= 1'b0;
+            end
         end
     end
 
-    // // 在 CSR 操作时赋值
+    reg event_valid_reg;
+    always @(posedge clock) begin
+        if (reset) begin
+            event_valid_reg <= 0;
+        end else begin
+            event_valid_reg <= 0;
+        end
+    end
+
     // always @(posedge clock) begin
-    //     if (csr_write_enable) begin
-    //         case (csr_addr)
-    //             CSR_MSTATUS:   csr_mstatus_value   <= csr_wdata;
-    //             CSR_MISA:      csr_misa_value      <= csr_wdata;
-    //             CSR_MVENDORID: csr_mvendorid_value <= csr_wdata;
-    //             CSR_MARCHID:   csr_marchid_value   <= csr_wdata;
-    //             CSR_MIMPID:    csr_mimpid_value    <= csr_wdata;
-    //             CSR_MHARTID:   csr_mhartid_value   <= csr_wdata;
-    //             CSR_MTVEC:     csr_mtvec_value     <= csr_wdata;
-    //             CSR_MSCRATCH:  csr_mscratch_value  <= csr_wdata;
-    //             CSR_MEPC:      csr_mepc_value      <= csr_wdata;
-    //             CSR_MCAUSE:    csr_mcause_value    <= csr_wdata;
-    //             CSR_MTVAL:     csr_mtval_value     <= csr_wdata;
-    //             CSR_MIP:       csr_mip_value       <= csr_wdata;
-    //             CSR_MIE:       csr_mie_value       <= csr_wdata;
-    //             CSR_MCOUNTEREN: csr_mcounteren_value <= csr_wdata;
-    //         endcase
-    //     end
+    //     $display("Step: %0d, event_valid: %b, specCore_valid: %b", step, event_valid, specCore.io.event.valid);
     // end
 
-
-    // 内存信号转换
-    assign io_mem_read_valid  = dmem_valid & (dmem_wstrb == 4'b0);
-    assign io_mem_read_addr   = {{32'b0}, dmem_addr};
-    assign io_mem_read_memWidth = (dmem_wstrb == 4'b1111) ? 7'd32 :
-                                 (dmem_wstrb == 4'b0011 || dmem_wstrb == 4'b1100) ? 7'd16 : 7'd8;
-    assign io_mem_write_valid = dmem_valid & (dmem_wstrb != 4'b0);
-    assign io_mem_write_addr  = {{32'b0}, dmem_addr};
-    assign io_mem_write_memWidth = io_mem_read_memWidth;
-    assign io_mem_write_data  = {{32'b0}, dmem_wdata};
-
-    // TLB 信号（nerv 不支持 TLB，置为无效）
-    assign io_tlb_Anotherread_0_valid = 1'b0;
-    assign io_tlb_Anotherread_0_addr  = 64'b0;
-    assign io_tlb_Anotherread_1_valid = 1'b0;
-    assign io_tlb_Anotherread_1_addr  = 64'b0;
-    assign io_tlb_Anotherread_2_valid = 1'b0;
-    assign io_tlb_Anotherread_2_addr  = 64'b0;
-
-    // 当前 PC
-    assign io_now_pc = {{32'b0}, imem_addr};
-
-    // 下一周期寄存器输出
-    assign io_next_reg_0  = 64'b0; // x0 恒为 0
-    assign io_next_reg_1  = {{32'b0}, regfile[1]};
-    assign io_next_reg_2  = {{32'b0}, regfile[2]};
-    assign io_next_reg_3  = {{32'b0}, regfile[3]};
-    assign io_next_reg_4  = {{32'b0}, regfile[4]};
-    assign io_next_reg_5  = {{32'b0}, regfile[5]};
-    assign io_next_reg_6  = {{32'b0}, regfile[6]};
-    assign io_next_reg_7  = {{32'b0}, regfile[7]};
-    assign io_next_reg_8  = {{32'b0}, regfile[8]};
-    assign io_next_reg_9  = {{32'b0}, regfile[9]};
-    assign io_next_reg_10 = {{32'b0}, regfile[10]};
-    assign io_next_reg_11 = {{32'b0}, regfile[11]};
-    assign io_next_reg_12 = {{32'b0}, regfile[12]};
-    assign io_next_reg_13 = {{32'b0}, regfile[13]};
-    assign io_next_reg_14 = {{32'b0}, regfile[14]};
-    assign io_next_reg_15 = {{32'b0}, regfile[15]};
-    assign io_next_reg_16 = {{32'b0}, regfile[16]};
-    assign io_next_reg_17 = {{32'b0}, regfile[17]};
-    assign io_next_reg_18 = {{32'b0}, regfile[18]};
-    assign io_next_reg_19 = {{32'b0}, regfile[19]};
-    assign io_next_reg_20 = {{32'b0}, regfile[20]};
-    assign io_next_reg_21 = {{32'b0}, regfile[21]};
-    assign io_next_reg_22 = {{32'b0}, regfile[22]};
-    assign io_next_reg_23 = {{32'b0}, regfile[23]};
-    assign io_next_reg_24 = {{32'b0}, regfile[24]};
-    assign io_next_reg_25 = {{32'b0}, regfile[25]};
-    assign io_next_reg_26 = {{32'b0}, regfile[26]};
-    assign io_next_reg_27 = {{32'b0}, regfile[27]};
-    assign io_next_reg_28 = {{32'b0}, regfile[28]};
-    assign io_next_reg_29 = {{32'b0}, regfile[29]};
-    assign io_next_reg_30 = {{32'b0}, regfile[30]};
-    assign io_next_reg_31 = {{32'b0}, regfile[31]};
-
-    // 下一周期 CSR 输出
-    assign io_next_csr_misa      = {{32'b0}, csr_misa};
-    assign io_next_csr_mvendorid = {{32'b0}, csr_mvendorid};
-    assign io_next_csr_marchid   = {{32'b0}, csr_marchid};
-    assign io_next_csr_mimpid    = {{32'b0}, csr_mimpid};
-    assign io_next_csr_mhartid   = {{32'b0}, csr_mhartid};
-    assign io_next_csr_mstatus   = {{32'b0}, csr_mstatus};
-    assign io_next_csr_mscratch  = {{32'b0}, csr_mscratch};
-    assign io_next_csr_mtvec     = {{32'b0}, csr_mtvec};
-    assign io_next_csr_mcounteren = {{32'b0}, csr_mcounteren};
-    assign io_next_csr_mip       = {{32'b0}, csr_mip};
-    assign io_next_csr_mie       = {{32'b0}, csr_mie};
-    assign io_next_csr_mepc      = {{32'b0}, csr_mepc};
-    assign io_next_csr_mcause    = {{32'b0}, csr_mcause};
-    assign io_next_csr_mtval     = {{32'b0}, csr_mtval};
-
-    // 事件信号
-    assign io_event_valid        = trap;
-    assign io_event_cause        = {{32'b0}, csr_mcause};
-    assign io_event_exceptionPC  = {{32'b0}, csr_mepc};
-    assign io_event_exceptionInst = {{32'b0}, io_inst};
+    // 输出信号连接
+    assign instCommit_valid = inst_valid;
+    assign instCommit_inst  = inst;
+    assign instCommit_pc    = pc;
+    assign result_reg_0     = 32'b0; // x0 恒为 0
+    assign result_reg_1     = regfile[1];
+    assign result_reg_2     = regfile[2];
+    assign result_reg_3     = regfile[3];
+    assign result_reg_4     = regfile[4];
+    assign result_reg_5     = regfile[5];
+    assign result_reg_6     = regfile[6];
+    assign result_reg_7     = regfile[7];
+    assign result_reg_8     = regfile[8];
+    assign result_reg_9     = regfile[9];
+    assign result_reg_10    = regfile[10];
+    assign result_reg_11    = regfile[11];
+    assign result_reg_12    = regfile[12];
+    assign result_reg_13    = regfile[13];
+    assign result_reg_14    = regfile[14];
+    assign result_reg_15    = regfile[15];
+    assign result_reg_16    = regfile[16];
+    assign result_reg_17    = regfile[17];
+    assign result_reg_18    = regfile[18];
+    assign result_reg_19    = regfile[19];
+    assign result_reg_20    = regfile[20];
+    assign result_reg_21    = regfile[21];
+    assign result_reg_22    = regfile[22];
+    assign result_reg_23    = regfile[23];
+    assign result_reg_24    = regfile[24];
+    assign result_reg_25    = regfile[25];
+    assign result_reg_26    = regfile[26];
+    assign result_reg_27    = regfile[27];
+    assign result_reg_28    = regfile[28];
+    assign result_reg_29    = regfile[29];
+    assign result_reg_30    = regfile[30];
+    assign result_reg_31    = regfile[31];
+    assign result_pc        = pc;
+    assign result_csr_misa  = csr_misa;
+    assign result_csr_mvendorid = csr_mvendorid;
+    assign result_csr_marchid = csr_marchid;
+    assign result_csr_mimpid  = csr_mimpid;
+    assign result_csr_mhartid = csr_mhartid;
+    assign result_csr_mstatus = csr_mstatus;
+    assign result_csr_mstatush = 32'b0; // 未支持
+    assign result_csr_mscratch = csr_mscratch;
+    assign result_csr_mtvec   = csr_mtvec;
+    assign result_csr_mcounteren = csr_mcounteren;
+    assign result_csr_medeleg = 32'b0; // 未支持
+    assign result_csr_mideleg = 32'b0; // 未支持
+    assign result_csr_mip     = csr_mip;
+    assign result_csr_mie     = csr_mie;
+    assign result_csr_mepc    = csr_mepc;
+    assign result_csr_mcause  = csr_mcause;
+    assign result_csr_mtval   = csr_mtval;
+    assign result_csr_cycle   = 32'b0; // 未支持
+    assign result_csr_scounteren = 32'b0; // 未支持
+    assign result_csr_scause  = 32'b0; // 未支持
+    assign result_csr_stvec   = 32'b0; // 未支持
+    assign result_csr_sepc    = 32'b0; // 未支持
+    assign result_csr_stval   = 32'b0; // 未支持
+    assign result_csr_sscratch = 32'b0; // 未支持
+    assign result_csr_satp    = 32'b0; // 未支持
+    assign result_csr_pmpcfg0  = 32'b0; // 未支持
+    assign result_csr_pmpcfg1  = 32'b0; // 未支持
+    assign result_csr_pmpcfg2  = 32'b0; // 未支持
+    assign result_csr_pmpcfg3  = 32'b0; // 未支持
+    assign result_csr_pmpaddr0 = 32'b0; // 未支持
+    assign result_csr_pmpaddr1 = 32'b0; // 未支持
+    assign result_csr_pmpaddr2 = 32'b0; // 未支持
+    assign result_csr_pmpaddr3 = 32'b0; // 未支持
+    assign result_csr_MXLEN    = 8'd32; // RV32
+    assign result_csr_IALIGN   = 8'd32; // 指令对齐 32 位
+    assign result_csr_ILEN     = 8'd32; // 指令长度 32 位
+    assign result_internal_privilegeMode = mode;
+    //assign event_valid        = event_valid_reg;
+    assign event_valid = (uut.trap || (uut.irq_num != 0)) && !stall;
+    assign event_intrNO       = uut.irq_num; // 未支持
+    //assign event_intrNO       = 32'b0; // 未支持
+    assign event_cause        = csr_mcause;
+    assign event_exceptionPC  = csr_mepc;
+    assign event_exceptionInst = uut.insn;
+    assign mem_read_valid     = isRead && mem_valid;
+    assign mem_read_addr      = addr;
+    assign mem_read_memWidth  = width;
+    assign mem_read_data      = rdata;
+    assign mem_write_valid    = isWrite && mem_valid;
+    assign mem_write_addr     = addr;
+    assign mem_write_memWidth = width;
+    assign mem_write_data     = wdata;
 
 endmodule

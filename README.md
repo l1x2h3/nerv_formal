@@ -128,9 +128,28 @@ Failed
 source /mnt/sda/oss-cad-suite/environment
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=http://127.0.0.1:7890
 ```sby -f formal.sby```
+`rm -rf sby_*`
+
+注意求解器的使用
+z3支持全过程调试，但是yices只支持部分（通常会很智障）
 
 挺神奇：
 script.ys脚本实现对sv文件的形式化检查，保证不会出现乱的语法错误
+`basecase` 和 `induction`
+刚写了一个简单的小栗子举例说明求解器的用法
+总结了下求解器选用与debug的办法
+开始情况z3求解器会执行好几个回合；然后发现了GPT写这种形式化验证代码容易出的问题：
+1. 在checker里面没有给定初值，然后结果崩溃，他的解决办法是在checker里面设定初值，但是我们想法是尝试在top里面给定初值
+2. 简单的例子没有考虑到参数的边界问题，导致check进行了多步，但是并行进行的另一个步数出了问题
+3. 调试开发过程建议使用z3求解器，yices只告诉出错的点，后面就全部中断了
+4. 这个debug模式会因为sby工具性质，导致debug的效率下降，sby往往不能提示到正真出错的地方，抓不住根本原因，调试过程还是需要我们去猜测，我的建议是不建议使用sby工具
+因为他能告诉你错了，但是不能告诉你错在哪里
+
+
+做形式化验证记得加入-formal参数到对应的sv文件，否则无法识别
+
+![alt text](image.png)
+波形有些逆天
 yosys script.ys
 ```shell
 2.14. Executing CHECK pass (checking for obvious problems).

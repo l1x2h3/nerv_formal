@@ -321,6 +321,7 @@ module nerv #(
 	output reg [31:0] rvfi_rd_wdata,
 	output reg [31:0] rvfi_pc_rdata,
 	output reg [31:0] rvfi_pc_wdata,
+	
 
 `ifdef NERV_CSR
 `define NERV_CSR_REG_MRW(NAME, ADDR, VALUE)			\
@@ -375,6 +376,7 @@ module nerv #(
 	output [ 3:0] dmem_wstrb,
 	output [31:0] dmem_wdata,
 	input  [31:0] dmem_rdata,
+	output [4:0]  mem_rd_func,  // 新增输出端口
 
 `ifdef NERV_FAULT
 	input         imem_fault,
