@@ -1,5 +1,5 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:18 (18)
-Elapsed process time [H:MM:SS (secs)]: 0:00:19 (19)
+Elapsed clock time [H:MM:SS (secs)]: 0:00:16 (16)
+Elapsed process time [H:MM:SS (secs)]: 0:00:17 (17)
 engine_0 (smtbmc yices) returned FAIL
 counterexample trace: engine_0/trace.vcd
-  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_15564_14050 at CheckerWrapper.sv:15564.7-15564.21 in step 2
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8866_6727 at CheckerWrapper.sv:8866.7-8866.62 in step 4

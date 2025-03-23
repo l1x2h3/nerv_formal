@@ -130,6 +130,6 @@ Creating SMT-LIBv2 representation of module counter.
 Creating SMT-LIBv2 representation of module counter_props.
 Creating SMT-LIBv2 representation of module counter_top.
 
-End of script. Logfile hash: 2641765912, CPU: user 0.00s system 0.01s, MEM: 13.41 MB peak
+End of script. Logfile hash: 2641765912, CPU: user 0.01s system 0.00s, MEM: 13.36 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 67% 2x write_smt2 (0 sec), 17% 2x read_ilang (0 sec), ...
+Time spent: 69% 2x write_smt2 (0 sec), 16% 2x read_ilang (0 sec), ...

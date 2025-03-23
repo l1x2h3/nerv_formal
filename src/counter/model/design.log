@@ -375,6 +375,6 @@ Module counter_top directly or indirectly contains formal properties -> setting 
 7. Executing RTLIL backend.
 Output filename: ../model/design.il
 
-End of script. Logfile hash: 8771c32ce9, CPU: user 0.03s system 0.00s, MEM: 13.32 MB peak
+End of script. Logfile hash: 8771c32ce9, CPU: user 0.02s system 0.01s, MEM: 13.28 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
 Time spent: 31% 6x opt_expr (0 sec), 18% 5x opt_clean (0 sec), ...

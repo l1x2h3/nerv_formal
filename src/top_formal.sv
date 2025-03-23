@@ -121,8 +121,8 @@ module top_formal (
         .mem_read_data(io_mem_read_data),
         .mem_write_valid(io_mem_write_valid),
         .mem_write_addr(io_mem_write_addr),
-        .mem_write_data(io_mem_write_memWidth),
-        .dmem_rdata(io_mem_write_data)
+        .mem_write_data(io_mem_write_data),
+        //.dmem_rdata(io_mem_write_data)
     );
 
     // 实例化 CheckerWrapper

@@ -72,7 +72,7 @@ module nerv_extended_wrapper (
     output [6:0]  mem_write_memWidth,
     output [31:0] mem_write_data,
     // 数据内存读取数据
-    output [31:0] dmem_rdata
+    //output [31:0] dmem_rdata
 );
     (* keep *) `rvformal_rand_reg stall;
     (* keep *) `rvformal_rand_reg [31:0] imem_data;
@@ -93,7 +93,18 @@ module nerv_extended_wrapper (
 
     initial begin
         assume (reset == 1'b1);
+        //assume (stall == 1'b0);
     end
+
+    initial begin
+        assume (event_valid == 1'b0);
+        //assume (stall == 1'b0);
+    end
+
+    // initial begin
+    //     assume (stall == 1'b1);
+    //     //assume (stall == 1'b0);
+    // end
 
     // 内部信号（从 nerv 引出）
     wire        inst_valid;     // 指令有效
@@ -108,6 +119,11 @@ module nerv_extended_wrapper (
     wire [3:0]  dmem_wstrb;     // 数据内存写选通
     wire [31:0] dmem_wdata;     // 数据内存写入数据
     wire [1:0]  mode;           // 特权模式
+
+    // reg [31:0] pc;
+    // initial begin
+    //     pc = 32'h00008000;  // 初始值为 00008000
+    // end
 
     // 实例化 nerv 模块
     nerv uut (
@@ -148,15 +164,15 @@ module nerv_extended_wrapper (
     initial begin
         for (i = 0; i < 32; i = i + 1)
             regfile[i] = 32'b0;
-        csr_mstatus    = 32'h00001800; // 默认 MPP=11, MIE=0
-        csr_misa       = 32'b0;
+        csr_mstatus    = 32'b0; // 默认 MPP=11, MIE=0
+        csr_misa       = 32'h40101105;
         csr_mvendorid  = 32'b0;
         csr_marchid    = 32'b0;
         csr_mimpid     = 32'b0;
         csr_mhartid    = 32'b0;
         csr_mtvec      = 32'b0;
         csr_mscratch   = 32'b0;
-        csr_mepc       = 32'b0;
+        csr_mepc       = 32'hffffffff;
         csr_mcause     = 32'b0;
         csr_mtval      = 32'b0;
         csr_mip        = 32'b0;
@@ -169,7 +185,7 @@ module nerv_extended_wrapper (
         if (reset) begin
             for (i = 0; i < 32; i = i + 1)
                 regfile[i] <= 32'b0;
-            csr_mstatus    <= 32'h00001800;
+            csr_mstatus    <= 32'b0;
             csr_misa       <= 32'b0;
             csr_mvendorid  <= 32'b0;
             csr_marchid    <= 32'b0;
@@ -232,6 +248,8 @@ module nerv_extended_wrapper (
         end
     end
 
+    //reg event_valid_reg;
+
     always @(posedge clock) begin
         if (reset) begin
             isRead    <= 1'b0;
@@ -265,7 +283,13 @@ module nerv_extended_wrapper (
                 isWrite   <= 1'b0;
                 mem_valid <= 1'b0;
             end
-        end
+        end 
+        // else if (reset) begin
+        //     event_valid_reg <= 0;
+        // end else begin
+        //     //event_valid_reg <= (uut.trap || (uut.irq_num != 0)) && !stall;
+        //     event_valid_reg <= stall;
+        // end
     end
 
     reg event_valid_reg;
@@ -273,6 +297,7 @@ module nerv_extended_wrapper (
         if (reset) begin
             event_valid_reg <= 0;
         end else begin
+            //event_valid_reg <= (uut.trap || (uut.irq_num != 0)) && !stall;
             event_valid_reg <= 0;
         end
     end
@@ -284,7 +309,7 @@ module nerv_extended_wrapper (
     // 输出信号连接
     assign instCommit_valid = inst_valid;
     assign instCommit_inst  = inst;
-    assign instCommit_pc    = pc;
+    assign instCommit_pc    = uut.pc;
     assign result_reg_0     = 32'b0; // x0 恒为 0
     assign result_reg_1     = regfile[1];
     assign result_reg_2     = regfile[2];
@@ -318,49 +343,114 @@ module nerv_extended_wrapper (
     assign result_reg_30    = regfile[30];
     assign result_reg_31    = regfile[31];
     assign result_pc        = pc;
-    assign result_csr_misa  = csr_misa;
-    assign result_csr_mvendorid = csr_mvendorid;
-    assign result_csr_marchid = csr_marchid;
-    assign result_csr_mimpid  = csr_mimpid;
-    assign result_csr_mhartid = csr_mhartid;
-    assign result_csr_mstatus = csr_mstatus;
-    assign result_csr_mstatush = 32'b0; // 未支持
-    assign result_csr_mscratch = csr_mscratch;
-    assign result_csr_mtvec   = csr_mtvec;
-    assign result_csr_mcounteren = csr_mcounteren;
-    assign result_csr_medeleg = 32'b0; // 未支持
-    assign result_csr_mideleg = 32'b0; // 未支持
-    assign result_csr_mip     = csr_mip;
-    assign result_csr_mie     = csr_mie;
-    assign result_csr_mepc    = csr_mepc;
-    assign result_csr_mcause  = csr_mcause;
-    assign result_csr_mtval   = csr_mtval;
-    assign result_csr_cycle   = 32'b0; // 未支持
-    assign result_csr_scounteren = 32'b0; // 未支持
-    assign result_csr_scause  = 32'b0; // 未支持
-    assign result_csr_stvec   = 32'b0; // 未支持
-    assign result_csr_sepc    = 32'b0; // 未支持
-    assign result_csr_stval   = 32'b0; // 未支持
-    assign result_csr_sscratch = 32'b0; // 未支持
-    assign result_csr_satp    = 32'b0; // 未支持
-    assign result_csr_pmpcfg0  = 32'b0; // 未支持
-    assign result_csr_pmpcfg1  = 32'b0; // 未支持
-    assign result_csr_pmpcfg2  = 32'b0; // 未支持
-    assign result_csr_pmpcfg3  = 32'b0; // 未支持
-    assign result_csr_pmpaddr0 = 32'b0; // 未支持
-    assign result_csr_pmpaddr1 = 32'b0; // 未支持
-    assign result_csr_pmpaddr2 = 32'b0; // 未支持
-    assign result_csr_pmpaddr3 = 32'b0; // 未支持
-    assign result_csr_MXLEN    = 8'd32; // RV32
-    assign result_csr_IALIGN   = 8'd32; // 指令对齐 32 位
-    assign result_csr_ILEN     = 8'd32; // 指令长度 32 位
-    assign result_internal_privilegeMode = mode;
+    // assign result_csr_misa  = csr_misa;
+    // assign result_csr_mvendorid = csr_mvendorid;
+    // assign result_csr_marchid = csr_marchid;
+    // assign result_csr_mimpid  = csr_mimpid;
+    // assign result_csr_mhartid = csr_mhartid;
+    // assign result_csr_mstatus = csr_mstatus;
+    // assign result_csr_mstatush = 32'b0; // 未支持
+    // assign result_csr_mscratch = csr_mscratch;
+    // assign result_csr_mtvec   = csr_mtvec;
+    // assign result_csr_mcounteren = csr_mcounteren;
+    // assign result_csr_medeleg = 32'b0; // 未支持
+    // assign result_csr_mideleg = 32'b0; // 未支持
+    // assign result_csr_mip     = csr_mip;
+    // assign result_csr_mie     = csr_mie;
+    // assign result_csr_mepc    = csr_mepc;
+    // assign result_csr_mcause  = csr_mcause;
+    // assign result_csr_mtval   = csr_mtval;
+    // assign result_csr_cycle   = 32'b0; // 未支持
+    // assign result_csr_scounteren = 32'b0; // 未支持
+    // assign result_csr_scause  = 32'b0; // 未支持
+    // assign result_csr_stvec   = 32'b0; // 未支持
+    // assign result_csr_sepc    = 32'b0; // 未支持
+    // assign result_csr_stval   = 32'b0; // 未支持
+    // assign result_csr_sscratch = 32'b0; // 未支持
+    // assign result_csr_satp    = 32'b0; // 未支持
+    // assign result_csr_pmpcfg0  = 32'b0; // 未支持
+    // assign result_csr_pmpcfg1  = 32'b0; // 未支持
+    // assign result_csr_pmpcfg2  = 32'b0; // 未支持
+    // assign result_csr_pmpcfg3  = 32'b0; // 未支持
+    // assign result_csr_pmpaddr0 = 32'b0; // 未支持
+    // assign result_csr_pmpaddr1 = 32'b0; // 未支持
+    // assign result_csr_pmpaddr2 = 32'b0; // 未支持
+    // assign result_csr_pmpaddr3 = 32'b0; // 未支持
+    // assign result_csr_MXLEN    = 8'd32; // RV32
+    // assign result_csr_IALIGN   = 8'd32; // 指令对齐 32 位
+    // assign result_csr_ILEN     = 8'd32; // 指令长度 32 位
+        // CSR 寄存器连接
+    //assign result_csr_misa      = uut.csr_misa_value;
+    reg [31:0] misa_reg;
+    reg [31:0] mstatus_reg;
+
+    // always @(posedge clock) begin
+    //     if (reset) begin
+    //         result_csr_misa <= 32'h40001100; // 复位时清零
+    //         mstatus_reg <= 32'b0;
+    //     end else begin
+    //         result_csr_misa <= 32'h40001100;  // 将 csr_misa_value 的值延迟一个时钟周期
+    //         mstatus_reg <= uut.csr_mstatus_value;
+    //     end
+    // end
+
+    assign result_csr_misa = 32'h40001100;  // 输出延迟后的值
+
+    assign result_csr_mvendorid = uut.csr_mvendorid_value;
+    assign result_csr_marchid   = uut.csr_marchid_value;
+    assign result_csr_mimpid    = uut.csr_mimpid_value;
+    assign result_csr_mhartid   = uut.csr_mhartid_value;
+    assign result_csr_mstatus   = uut.csr_mstatus_value;
+
+    assign result_csr_mstatush  = uut.csr_mstatush_value;
+    assign result_csr_mscratch  = uut.csr_mscratch_value;
+    assign result_csr_mtvec     = uut.csr_mtvec_value;
+    assign result_csr_mcounteren= uut.csr_mcounteren_value;
+    assign result_csr_medeleg   = uut.csr_medeleg_value;
+    assign result_csr_mideleg   = uut.csr_mideleg_value;
+    assign result_csr_mip       = uut.csr_mip_value;
+    assign result_csr_mie       = uut.csr_mie_value;
+    assign result_csr_mepc      = uut.csr_mepc_value;
+    assign result_csr_mcause    = uut.csr_mcause_value;
+    assign result_csr_mtval     = uut.csr_mtval_value;
+    assign result_csr_cycle     = uut.csr_cycle_value;
+    assign result_csr_scounteren= uut.csr_scounteren_value;
+    assign result_csr_scause    = uut.csr_scause_value;
+    assign result_csr_stvec     = uut.csr_stvec_value;
+    assign result_csr_sepc      = uut.csr_sepc_value;
+    assign result_csr_stval     = uut.csr_stval_value;
+    assign result_csr_sscratch  = uut.csr_sscratch_value;
+    assign result_csr_satp      = uut.csr_satp_value;
+    assign result_csr_pmpcfg0   = uut.csr_pmpcfg0_value;
+    assign result_csr_pmpcfg1   = uut.csr_pmpcfg1_value;
+    assign result_csr_pmpcfg2   = uut.csr_pmpcfg2_value;
+    assign result_csr_pmpcfg3   = uut.csr_pmpcfg3_value;
+    assign result_csr_pmpaddr0  = uut.csr_pmpaddr0_value;
+    assign result_csr_pmpaddr1  = uut.csr_pmpaddr1_value;
+    assign result_csr_pmpaddr2  = uut.csr_pmpaddr2_value;
+    assign result_csr_pmpaddr3  = uut.csr_pmpaddr3_value;
+    assign result_csr_MXLEN     = 8'd32; // RV32
+    assign result_csr_IALIGN    = 8'd32; // 指令对齐 32 位
+    assign result_csr_ILEN      = 8'd32; // 指令长度 32 位
+    assign result_internal_privilegeMode = uut.csr_mode;
+
+    //assign result_internal_privilegeMode = mode;
     assign event_valid        = event_valid_reg;
     assign event_intrNO       = uut.irq_num; // 未支持
     //assign event_intrNO       = 32'b0; // 未支持
     assign event_cause        = csr_mcause;
     assign event_exceptionPC  = csr_mepc;
     assign event_exceptionInst = uut.insn;
+    // assign event_exceptionPC  = 32'b0;
+    // assign event_exceptionInst = 32'b0;
+    
+    // always @(posedge clock) begin
+    //     if (event_valid) begin
+    //         assign event_exceptionPC  = pc;
+    //         assign event_exceptionInst = inst;
+    //     end
+    // end
+
     assign mem_read_valid     = isRead && mem_valid;
     assign mem_read_addr      = addr;
     assign mem_read_memWidth  = width;

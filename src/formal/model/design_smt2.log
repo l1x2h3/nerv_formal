@@ -44,16 +44,17 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
 
 === top_formal ===
 
-   Number of wires:                 67
-   Number of wire bits:           1870
+   Number of wires:                 66
+   Number of wire bits:           1844
    Number of public wires:          65
-   Number of public wire bits:    1844
+   Number of public wire bits:    1843
    Number of ports:                  2
    Number of port bits:              2
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  4
+   Number of cells:                 10
+     $anyseq                         6
      $assume                         1
      $not                            1
      CheckerWrapper                  1
@@ -61,27 +62,26 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
 
 === nerv_extended_wrapper ===
 
-   Number of wires:                260
-   Number of wire bits:           5979
-   Number of public wires:         137
-   Number of public wire bits:    3483
+   Number of wires:                185
+   Number of wire bits:           3664
+   Number of public wires:         136
+   Number of public wire bits:    3044
    Number of ports:                 89
    Number of port bits:           2510
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                234
+   Number of cells:                183
      $anyinit                        8
-     $anyseq                        81
+     $anyseq                       119
      $assume                         3
-     $eq                            18
-     $ff                            14
+     $eq                             4
      $initstate                      1
-     $logic_and                      5
+     $logic_and                      4
      $logic_not                      1
-     $logic_or                       2
+     $logic_or                       1
      $mem_v2                         1
-     $mux                           96
+     $mux                           37
      $not                            1
      $reduce_bool                    2
      nerv                            1
@@ -125,42 +125,41 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
 
 === RiscvTrans ===
 
-   Number of wires:               9241
-   Number of wire bits:         201616
-   Number of public wires:        9053
-   Number of public wire bits:  201428
+   Number of wires:               5028
+   Number of wire bits:         108587
+   Number of public wires:        4910
+   Number of public wire bits:  108469
    Number of ports:                158
    Number of port bits:           4614
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               5219
-     $add                           16
-     $and                           61
+   Number of cells:               3249
+     $add                            7
+     $and                           36
      $div                            2
-     $eq                           248
+     $eq                           164
      $ge                             2
-     $logic_not                     15
-     $lt                             7
+     $logic_not                      9
+     $lt                             6
      $mod                            2
      $mul                            3
-     $mux                         4752
-     $ne                             3
-     $not                            7
-     $or                            76
-     $reduce_bool                    7
-     $shl                            3
-     $shr                            7
-     $sshr                           3
-     $sub                            2
-     $xor                            3
+     $mux                         2975
+     $ne                             2
+     $not                            2
+     $or                            28
+     $shl                            2
+     $shr                            4
+     $sshr                           2
+     $sub                            1
+     $xor                            2
 
 === RiscvCore ===
 
-   Number of wires:                619
-   Number of wire bits:          16987
-   Number of public wires:         548
-   Number of public wire bits:   14848
+   Number of wires:                613
+   Number of wire bits:          16927
+   Number of public wires:         542
+   Number of public wire bits:   14788
    Number of ports:                158
    Number of port bits:           4614
    Number of memories:               0
@@ -222,46 +221,46 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
      nerv_extended_wrapper           1
        nerv                          1
 
-   Number of wires:              13100
-   Number of wire bits:         298785
-   Number of public wires:       11262
-   Number of public wire bits:  268564
+   Number of wires:               8805
+   Number of wire bits:         203355
+   Number of public wires:        7112
+   Number of public wire bits:  175105
    Number of ports:               1049
    Number of port bits:          31105
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               7926
-     $add                           57
-     $and                           69
+   Number of cells:               5911
+     $add                           48
+     $and                           44
      $anyinit                      552
-     $anyseq                       101
+     $anyseq                       145
      $assert                        59
      $assume                         8
      $div                            2
-     $eq                           568
-     $ff                            78
+     $eq                           470
+     $ff                            64
      $ge                             4
      $initstate                      1
-     $logic_and                    233
-     $logic_not                     30
-     $logic_or                      10
-     $lt                            11
+     $logic_and                    232
+     $logic_not                     24
+     $logic_or                       9
+     $lt                            10
      $mem_v2                         2
      $mod                            2
      $mul                            3
-     $mux                         5902
-     $ne                             5
-     $not                           15
-     $or                            82
+     $mux                         4066
+     $ne                             4
+     $not                           10
+     $or                            34
      $pmux                          44
-     $reduce_bool                   13
+     $reduce_bool                    6
      $reduce_or                     41
-     $shl                           10
-     $shr                           10
-     $sshr                           5
-     $sub                            4
-     $xor                            5
+     $shl                            9
+     $shr                            7
+     $sshr                           4
+     $sub                            3
+     $xor                            4
 
 6. Executing SMT2 backend.
 
@@ -276,6 +275,6 @@ Creating SMT-LIBv2 representation of module CheckerWithResult.
 Creating SMT-LIBv2 representation of module CheckerWrapper.
 Creating SMT-LIBv2 representation of module top_formal.
 
-End of script. Logfile hash: 2caef685bf, CPU: user 0.74s system 0.03s, MEM: 57.49 MB peak
+End of script. Logfile hash: 57d8b8b9f3, CPU: user 0.51s system 0.03s, MEM: 40.29 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 83% 2x write_smt2 (0 sec), 12% 2x read_ilang (0 sec), ...
+Time spent: 83% 2x write_smt2 (0 sec), 13% 2x read_ilang (0 sec), ...

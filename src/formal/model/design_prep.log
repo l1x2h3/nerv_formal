@@ -58,7 +58,23 @@ Checking module RiscvCore...
 Checking module RiscvTrans...
 Checking module nerv...
 Checking module nerv_extended_wrapper...
-Warning: Wire nerv_extended_wrapper.\event_exceptionInst [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mvendorid [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mtvec [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mtval [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mstatush [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mstatus [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mscratch [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_misa [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mip [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mimpid [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mie [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mhartid [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mepc [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_mcause [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_marchid [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\event_exceptionPC [0] is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\event_cause [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\irq [31] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\irq [30] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\irq [29] is used but has no driver.
@@ -155,8 +171,6 @@ Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [3] is used but has no driv
 Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [2] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [1] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [0] is used but has no driver.
-Warning: Wire nerv_extended_wrapper.\event_intrNO [0] is used but has no driver.
-Warning: Wire nerv_extended_wrapper.\uut.trap is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\stall is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\dmem_rdata [31] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\dmem_rdata [30] is used but has no driver.
@@ -191,7 +205,13 @@ Warning: Wire nerv_extended_wrapper.\dmem_rdata [2] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\dmem_rdata [1] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\dmem_rdata [0] is used but has no driver.
 Checking module top_formal...
-Found and reported 132 problems.
+Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+Found and reported 152 problems.
 
 10. Executing SETUNDEF pass (replace undef values with defined constants).
 
@@ -229,8 +249,8 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \nerv..
 Finding unused cells or wires in module \nerv_extended_wrapper..
 Finding unused cells or wires in module \top_formal..
-Removed 155 unused cells and 287 unused wires.
-<suppressed ~159 debug messages>
+Removed 91 unused cells and 269 unused wires.
+<suppressed ~96 debug messages>
 
 11.5. Finished fast OPT passes.
 
@@ -242,13 +262,13 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \nerv..
 Finding unused cells or wires in module \nerv_extended_wrapper..
 Finding unused cells or wires in module \top_formal..
-Removed 0 unused cells and 26 unused wires.
+Removed 0 unused cells and 24 unused wires.
 <suppressed ~2 debug messages>
 
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-Warnings: 132 unique messages, 132 total
-End of script. Logfile hash: 90e19fcc3b, CPU: user 3.14s system 0.09s, MEM: 199.59 MB peak
+Warnings: 152 unique messages, 152 total
+End of script. Logfile hash: bfea2a12d3, CPU: user 2.39s system 0.07s, MEM: 108.74 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 50% 4x opt_clean (1 sec), 15% 1x check (0 sec), ...
+Time spent: 52% 4x opt_clean (1 sec), 14% 1x check (0 sec), ...
