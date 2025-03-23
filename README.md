@@ -133,6 +133,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 注意求解器的使用
 z3支持全过程调试，但是yices只支持部分（通常会很智障）
 
+![alt text](image-1.png)
+这下知道MISA为什么报错了
+32位是00
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 挺神奇：
 script.ys脚本实现对sv文件的形式化检查，保证不会出现乱的语法错误
 `basecase` 和 `induction`
