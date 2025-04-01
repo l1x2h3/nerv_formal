@@ -154,6 +154,11 @@ script.ys脚本实现对sv文件的形式化检查，保证不会出现乱的语
 
 做形式化验证记得加入-formal参数到对应的sv文件，否则无法识别
 
+
+这里出现了很严重的问题
+DUT是三级流水线，而参考模型是单周期的
+
+
 ![alt text](image.png)
 波形有些逆天
 yosys script.ys

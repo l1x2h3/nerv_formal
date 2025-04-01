@@ -1,7 +1,7 @@
 # running in formal/src/
 read_verilog -D SYNTHESIS -D NERV_RVFI -D NERV_CSR -D YOSYS define.sv
 read_verilog -formal top_formal.sv
-read_verilog -formal -DFORMAL nerv_wrapper_new.sv
+read_verilog -formal -DFORMAL nerv_wrapper.sv
 read_verilog nerv.sv
 read_verilog -formal CheckerWrapper.sv
 prep -top top_formal

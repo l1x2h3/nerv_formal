@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2025-03-23T15:49:20" hostname="versys01" package="formal" id="0" name="default" tests="59" errors="0" failures="2" time="17" skipped="58">
+<testsuite timestamp="2025-03-31T17:32:43" hostname="versys01" package="formal" id="0" name="default" tests="59" errors="0" failures="4" time="30" skipped="56">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -9,546 +9,314 @@
 <testcase classname="default" name="build execution" time="0">
 <failure type="FAIL" message="Task returned status FAIL." />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8834.7-8834.62" id="_witness_.check_assert_CheckerWrapper_sv_8834_6704">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8834.7-8834.62" id="_witness_.check_assert_CheckerWrapper_sv_8834_6881" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8838.7-8838.60" id="_witness_.check_assert_CheckerWrapper_sv_8838_6884" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8842.7-8842.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8842.7-8842.68" id="_witness_.check_assert_CheckerWrapper_sv_8842_6887">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8838.7-8838.60" id="_witness_.check_assert_CheckerWrapper_sv_8838_6707">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8846.7-8846.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8846.7-8846.64" id="_witness_.check_assert_CheckerWrapper_sv_8846_6889">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8842.7-8842.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8842.7-8842.68" id="_witness_.check_assert_CheckerWrapper_sv_8842_6710">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8850.7-8850.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8850.7-8850.62" id="_witness_.check_assert_CheckerWrapper_sv_8850_6892">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8846.7-8846.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8846.7-8846.64" id="_witness_.check_assert_CheckerWrapper_sv_8846_6712">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8854.7-8854.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8854.7-8854.62" id="_witness_.check_assert_CheckerWrapper_sv_8854_6895">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8850.7-8850.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8850.7-8850.62" id="_witness_.check_assert_CheckerWrapper_sv_8850_6715">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8858.7-8858.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8858.7-8858.70" id="_witness_.check_assert_CheckerWrapper_sv_8858_6898">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8854.7-8854.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8854.7-8854.62" id="_witness_.check_assert_CheckerWrapper_sv_8854_6718">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8862.7-8862.51" time="0" type="ASSERT" location="CheckerWrapper.sv:8862.7-8862.51" id="_witness_.check_assert_CheckerWrapper_sv_8862_6901">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8858.7-8858.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8858.7-8858.70" id="_witness_.check_assert_CheckerWrapper_sv_8858_6721">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8866.7-8866.62" id="_witness_.check_assert_CheckerWrapper_sv_8866_6904">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8862.7-8862.53" time="0" type="ASSERT" location="CheckerWrapper.sv:8862.7-8862.53" id="_witness_.check_assert_CheckerWrapper_sv_8862_6724">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8870.7-8870.72" time="0" type="ASSERT" location="CheckerWrapper.sv:8870.7-8870.72" id="_witness_.check_assert_CheckerWrapper_sv_8870_6907">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8866.7-8866.62" id="_witness_.check_assert_CheckerWrapper_sv_8866_6727" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8870.7-8870.72" time="0" type="ASSERT" location="CheckerWrapper.sv:8870.7-8870.72" id="_witness_.check_assert_CheckerWrapper_sv_8870_6730">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8874.7-8874.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8874.7-8874.68" id="_witness_.check_assert_CheckerWrapper_sv_8874_6910">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8874.7-8874.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8874.7-8874.68" id="_witness_.check_assert_CheckerWrapper_sv_8874_6733">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8878.7-8878.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8878.7-8878.66" id="_witness_.check_assert_CheckerWrapper_sv_8878_6913">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8878.7-8878.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8878.7-8878.66" id="_witness_.check_assert_CheckerWrapper_sv_8878_6736">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8882.7-8882.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8882.7-8882.68" id="_witness_.check_assert_CheckerWrapper_sv_8882_6916">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8882.7-8882.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8882.7-8882.68" id="_witness_.check_assert_CheckerWrapper_sv_8882_6739">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8886.7-8886.61" time="0" type="ASSERT" location="CheckerWrapper.sv:8886.7-8886.61" id="_witness_.check_assert_CheckerWrapper_sv_8886_6919">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8886.7-8886.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8886.7-8886.68" id="_witness_.check_assert_CheckerWrapper_sv_8886_6742">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8890.7-8890.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8890.7-8890.70" id="_witness_.check_assert_CheckerWrapper_sv_8890_6922">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8890.7-8890.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8890.7-8890.70" id="_witness_.check_assert_CheckerWrapper_sv_8890_6745">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8894.7-8894.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8894.7-8894.64" id="_witness_.check_assert_CheckerWrapper_sv_8894_6925">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8894.7-8894.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8894.7-8894.64" id="_witness_.check_assert_CheckerWrapper_sv_8894_6748">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8898.7-8898.74" time="0" type="ASSERT" location="CheckerWrapper.sv:8898.7-8898.74" id="_witness_.check_assert_CheckerWrapper_sv_8898_6928">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8898.7-8898.74" time="0" type="ASSERT" location="CheckerWrapper.sv:8898.7-8898.74" id="_witness_.check_assert_CheckerWrapper_sv_8898_6751">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8902.7-8902.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8902.7-8902.60" id="_witness_.check_assert_CheckerWrapper_sv_8902_6931">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8902.7-8902.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8902.7-8902.60" id="_witness_.check_assert_CheckerWrapper_sv_8902_6754">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8906.7-8906.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8906.7-8906.60" id="_witness_.check_assert_CheckerWrapper_sv_8906_6934">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8906.7-8906.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8906.7-8906.60" id="_witness_.check_assert_CheckerWrapper_sv_8906_6757">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8910.7-8910.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8910.7-8910.62" id="_witness_.check_assert_CheckerWrapper_sv_8910_6937">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8910.7-8910.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8910.7-8910.62" id="_witness_.check_assert_CheckerWrapper_sv_8910_6760">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8914.7-8914.59" time="0" type="ASSERT" location="CheckerWrapper.sv:8914.7-8914.59" id="_witness_.check_assert_CheckerWrapper_sv_8914_6940">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8914.7-8914.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8914.7-8914.66" id="_witness_.check_assert_CheckerWrapper_sv_8914_6763">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8918.7-8918.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8918.7-8918.64" id="_witness_.check_assert_CheckerWrapper_sv_8918_6943">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8918.7-8918.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8918.7-8918.64" id="_witness_.check_assert_CheckerWrapper_sv_8918_6766">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8922.7-8922.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8922.7-8922.56" id="_witness_.check_assert_CheckerWrapper_sv_8922_6946">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8922.7-8922.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8922.7-8922.56" id="_witness_.check_assert_CheckerWrapper_sv_8922_6769">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8926.7-8926.56" id="_witness_.check_assert_CheckerWrapper_sv_8926_6949">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8926.7-8926.56" id="_witness_.check_assert_CheckerWrapper_sv_8926_6772">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8930.7-8930.56" id="_witness_.check_assert_CheckerWrapper_sv_8930_6952">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8930.7-8930.56" id="_witness_.check_assert_CheckerWrapper_sv_8930_6775">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8934.7-8934.56" id="_witness_.check_assert_CheckerWrapper_sv_8934_6955">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8934.7-8934.56" id="_witness_.check_assert_CheckerWrapper_sv_8934_6778">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8938.7-8938.56" id="_witness_.check_assert_CheckerWrapper_sv_8938_6958">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8938.7-8938.56" id="_witness_.check_assert_CheckerWrapper_sv_8938_6781">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8942.7-8942.56" id="_witness_.check_assert_CheckerWrapper_sv_8942_6961">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8942.7-8942.56" id="_witness_.check_assert_CheckerWrapper_sv_8942_6784">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8946.7-8946.56" id="_witness_.check_assert_CheckerWrapper_sv_8946_6964">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8946.7-8946.56" id="_witness_.check_assert_CheckerWrapper_sv_8946_6787">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8950.7-8950.56" id="_witness_.check_assert_CheckerWrapper_sv_8950_6967">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8950.7-8950.56" id="_witness_.check_assert_CheckerWrapper_sv_8950_6790">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8954.7-8954.56" id="_witness_.check_assert_CheckerWrapper_sv_8954_6970">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8954.7-8954.56" id="_witness_.check_assert_CheckerWrapper_sv_8954_6793">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8958.7-8958.56" id="_witness_.check_assert_CheckerWrapper_sv_8958_6973">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8958.7-8958.56" id="_witness_.check_assert_CheckerWrapper_sv_8958_6796">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8962.7-8962.58" id="_witness_.check_assert_CheckerWrapper_sv_8962_6976">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8962.7-8962.58" id="_witness_.check_assert_CheckerWrapper_sv_8962_6799">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8966.7-8966.58" id="_witness_.check_assert_CheckerWrapper_sv_8966_6979">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8966.7-8966.58" id="_witness_.check_assert_CheckerWrapper_sv_8966_6802">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8970.7-8970.58" id="_witness_.check_assert_CheckerWrapper_sv_8970_6982">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8970.7-8970.58" id="_witness_.check_assert_CheckerWrapper_sv_8970_6805">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8974.7-8974.58" id="_witness_.check_assert_CheckerWrapper_sv_8974_6985">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8974.7-8974.58" id="_witness_.check_assert_CheckerWrapper_sv_8974_6808">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8978.7-8978.58" id="_witness_.check_assert_CheckerWrapper_sv_8978_6988">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8978.7-8978.58" id="_witness_.check_assert_CheckerWrapper_sv_8978_6811">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8982.7-8982.58" id="_witness_.check_assert_CheckerWrapper_sv_8982_6991">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8982.7-8982.58" id="_witness_.check_assert_CheckerWrapper_sv_8982_6814">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8986.7-8986.58" id="_witness_.check_assert_CheckerWrapper_sv_8986_6994">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8986.7-8986.58" id="_witness_.check_assert_CheckerWrapper_sv_8986_6817">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8990.7-8990.58" id="_witness_.check_assert_CheckerWrapper_sv_8990_6997">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8990.7-8990.58" id="_witness_.check_assert_CheckerWrapper_sv_8990_6820">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8994.7-8994.58" id="_witness_.check_assert_CheckerWrapper_sv_8994_7000">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8994.7-8994.58" id="_witness_.check_assert_CheckerWrapper_sv_8994_6823">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8998.7-8998.58" id="_witness_.check_assert_CheckerWrapper_sv_8998_7003" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9002.7-9002.58" id="_witness_.check_assert_CheckerWrapper_sv_9002_7006">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8998.7-8998.58" id="_witness_.check_assert_CheckerWrapper_sv_8998_6826">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9006.7-9006.58" id="_witness_.check_assert_CheckerWrapper_sv_9006_7009">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9002.7-9002.58" id="_witness_.check_assert_CheckerWrapper_sv_9002_6829">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9010.7-9010.58" id="_witness_.check_assert_CheckerWrapper_sv_9010_7012">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9006.7-9006.58" id="_witness_.check_assert_CheckerWrapper_sv_9006_6832">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9014.7-9014.58" id="_witness_.check_assert_CheckerWrapper_sv_9014_7015">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9010.7-9010.58" id="_witness_.check_assert_CheckerWrapper_sv_9010_6835">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9018.7-9018.58" id="_witness_.check_assert_CheckerWrapper_sv_9018_7018">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9014.7-9014.58" id="_witness_.check_assert_CheckerWrapper_sv_9014_6838">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9022.7-9022.58" id="_witness_.check_assert_CheckerWrapper_sv_9022_7021">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9018.7-9018.58" id="_witness_.check_assert_CheckerWrapper_sv_9018_6841">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9026.7-9026.58" id="_witness_.check_assert_CheckerWrapper_sv_9026_7024">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9022.7-9022.58" id="_witness_.check_assert_CheckerWrapper_sv_9022_6844">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9030.7-9030.58" id="_witness_.check_assert_CheckerWrapper_sv_9030_7027">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9026.7-9026.58" id="_witness_.check_assert_CheckerWrapper_sv_9026_6847">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9034.7-9034.58" id="_witness_.check_assert_CheckerWrapper_sv_9034_7030">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9030.7-9030.58" id="_witness_.check_assert_CheckerWrapper_sv_9030_6850">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9038.7-9038.58" id="_witness_.check_assert_CheckerWrapper_sv_9038_7033">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9034.7-9034.58" id="_witness_.check_assert_CheckerWrapper_sv_9034_6853">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9042.7-9042.58" id="_witness_.check_assert_CheckerWrapper_sv_9042_7036">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9038.7-9038.58" id="_witness_.check_assert_CheckerWrapper_sv_9038_6856">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9046.7-9046.58" id="_witness_.check_assert_CheckerWrapper_sv_9046_7039">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9042.7-9042.58" id="_witness_.check_assert_CheckerWrapper_sv_9042_6859">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9050.7-9050.21" time="0" type="ASSERT" location="CheckerWrapper.sv:9050.7-9050.21" id="_witness_.check_assert_CheckerWrapper_sv_9050_7042">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9046.7-9046.58" id="_witness_.check_assert_CheckerWrapper_sv_9046_6862">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9054.7-9054.39" time="0" type="ASSERT" location="CheckerWrapper.sv:9054.7-9054.39" id="_witness_.check_assert_CheckerWrapper_sv_9054_7044">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9050.7-9050.21" time="0" type="ASSERT" location="CheckerWrapper.sv:9050.7-9050.21" id="_witness_.check_assert_CheckerWrapper_sv_9050_6865">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9058.7-9058.47" time="0" type="ASSERT" location="CheckerWrapper.sv:9058.7-9058.47" id="_witness_.check_assert_CheckerWrapper_sv_9058_7047">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9054.7-9054.39" time="0" type="ASSERT" location="CheckerWrapper.sv:9054.7-9054.39" id="_witness_.check_assert_CheckerWrapper_sv_9054_6867">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9062.7-9062.59" time="0" type="ASSERT" location="CheckerWrapper.sv:9062.7-9062.59" id="_witness_.check_assert_CheckerWrapper_sv_9062_7050">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9058.7-9058.56" time="0" type="ASSERT" location="CheckerWrapper.sv:9058.7-9058.56" id="_witness_.check_assert_CheckerWrapper_sv_9058_6870">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9066.7-9066.72" time="0" type="ASSERT" location="CheckerWrapper.sv:9066.7-9066.72" id="_witness_.check_assert_CheckerWrapper_sv_9066_7053">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9062.7-9062.68" time="0" type="ASSERT" location="CheckerWrapper.sv:9062.7-9062.68" id="_witness_.check_assert_CheckerWrapper_sv_9062_6873">
-<skipped />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9066.7-9066.72" time="0" type="ASSERT" location="CheckerWrapper.sv:9066.7-9066.72" id="_witness_.check_assert_CheckerWrapper_sv_9066_6876">
-<skipped />
-</testcase>
-<system-out>SBY 15:49:04 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
-SBY 15:49:04 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
-SBY 15:49:04 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
-SBY 15:49:04 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper_new.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper_new.sv'.
-SBY 15:49:04 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
-SBY 15:49:04 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
-SBY 15:49:04 [formal] engine_0: smtbmc yices
-SBY 15:49:04 [formal] base: starting process &quot;cd formal/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:287: Warning: Identifier `\uut.csr_misa_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:288: Warning: Identifier `\uut.csr_mvendorid_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:289: Warning: Identifier `\uut.csr_marchid_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:290: Warning: Identifier `\uut.csr_mimpid_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:291: Warning: Identifier `\uut.csr_mhartid_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:292: Warning: Identifier `\uut.csr_mstatus_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:293: Warning: Identifier `\uut.csr_mstatush_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:294: Warning: Identifier `\uut.csr_mscratch_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:295: Warning: Identifier `\uut.csr_mtvec_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:299: Warning: Identifier `\uut.csr_mip_next' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:300: Warning: Identifier `\uut.csr_mie_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:301: Warning: Identifier `\uut.csr_mepc_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:302: Warning: Identifier `\uut.csr_mcause_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:303: Warning: Identifier `\uut.csr_mtval_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:304: Warning: Identifier `\uut.csr_mcycle_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:326: Warning: Identifier `\csr_mcause_value' is implicitly declared.
-SBY 15:49:04 [formal] base: nerv_wrapper_new.sv:327: Warning: Identifier `\csr_mepc_value' is implicitly declared.
-SBY 15:49:05 [formal] base: Warning: Resizing cell port top_formal.checker_inst.io_mem_write_memWidth from 7 bits to 6 bits.
-SBY 15:49:05 [formal] base: Warning: Resizing cell port top_formal.checker_inst.io_mem_read_memWidth from 7 bits to 6 bits.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mvendorid [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mtvec [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mtval [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mstatush [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mstatus [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mscratch [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_misa [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mip [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mimpid [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mie [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mhartid [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mepc [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mcause [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_marchid [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\event_exceptionPC [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\event_cause [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [31] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [30] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [29] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [28] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [27] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [26] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [25] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [24] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [23] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [22] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [21] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [20] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [19] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [18] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [17] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [16] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [15] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [14] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [13] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [12] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [11] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [10] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [9] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [8] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [7] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [6] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [5] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [4] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [3] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [2] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [1] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\irq [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [31] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [30] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [29] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [28] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [27] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [26] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [25] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [24] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [23] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [22] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [21] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [20] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [19] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [18] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [17] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [16] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [15] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [14] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [13] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [12] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [11] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [10] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [9] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [8] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [7] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [6] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [5] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [4] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [3] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [2] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [1] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\imem_data [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [31] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [30] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [29] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [28] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [27] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [26] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [25] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [24] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [23] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [22] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [21] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [20] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [19] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [18] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [17] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [16] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [15] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [14] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [13] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [12] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [11] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [10] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [9] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [8] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [7] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [6] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [5] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [4] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [3] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [2] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [1] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\stall is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [31] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [30] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [29] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [28] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [27] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [26] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [25] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [24] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [23] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [22] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [21] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [20] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [19] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [18] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [17] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [16] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [15] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [14] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [13] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [12] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [11] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [10] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [9] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [8] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [7] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [6] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [5] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [4] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [3] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [2] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [1] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire nerv_extended_wrapper.\dmem_rdata [0] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY 15:49:08 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY 15:49:10 [formal] base: finished (returncode=0)
-SBY 15:49:11 [formal] prep: starting process &quot;cd formal/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mvendorid [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mtvec [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mtval [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mstatush [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mstatus [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mscratch [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_misa [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mip [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mimpid [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mie [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mhartid [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mepc [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mcause [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_marchid [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\event_exceptionPC [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\event_cause [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [31] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [30] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [29] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [28] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [27] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [26] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [25] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [24] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [23] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [22] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [21] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [20] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [19] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [18] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [17] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [16] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [15] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [14] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [13] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [12] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [11] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [10] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [9] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [8] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [7] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [6] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [5] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [4] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [3] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [2] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [1] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\irq [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [31] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [30] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [29] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [28] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [27] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [26] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [25] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [24] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [23] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [22] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [21] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [20] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [19] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [18] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [17] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [16] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [15] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [14] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [13] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [12] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [11] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [10] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [9] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [8] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [7] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [6] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [5] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [4] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [3] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [2] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [1] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\imem_data [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [31] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [30] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [29] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [28] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [27] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [26] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [25] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [24] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [23] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [22] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [21] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [20] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [19] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [18] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [17] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [16] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [15] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [14] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [13] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [12] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [11] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [10] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [9] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [8] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [7] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [6] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [5] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [4] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [3] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [2] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [1] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\next_dmem_rdata [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\stall is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [31] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [30] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [29] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [28] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [27] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [26] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [25] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [24] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [23] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [22] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [21] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [20] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [19] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [18] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [17] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [16] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [15] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [14] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [13] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [12] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [11] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [10] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [9] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [8] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [7] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [6] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [5] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [4] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [3] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [2] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [1] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire nerv_extended_wrapper.\dmem_rdata [0] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY 15:49:12 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY 15:49:13 [formal] prep: finished (returncode=0)
-SBY 15:49:13 [formal] smt2: starting process &quot;cd formal/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 15:49:14 [formal] smt2: finished (returncode=0)
-SBY 15:49:14 [formal] engine_0: starting process &quot;cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 15:49:14 [formal] engine_0: ##   0:00:00  Solver: yices
-SBY 15:49:14 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 15:49:14 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 15:49:15 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 15:49:15 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 15:49:15 [formal] engine_0: ##   0:00:01  Checking assumptions in step 2..
-SBY 15:49:15 [formal] engine_0: ##   0:00:01  Checking assertions in step 2..
-SBY 15:49:15 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
-SBY 15:49:15 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
-SBY 15:49:16 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
-SBY 15:49:16 [formal] engine_0: ##   0:00:02  Checking assertions in step 4..
-SBY 15:49:17 [formal] engine_0: ##   0:00:03  BMC failed!
-SBY 15:49:17 [formal] engine_0: ##   0:00:03  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8866.7-8866.62 (_witness_.check_assert_CheckerWrapper_sv_8866_6727)
-SBY 15:49:17 [formal] engine_0: ##   0:00:03  Writing trace to VCD file: engine_0/trace.vcd
-SBY 15:49:20 [formal] engine_0: ##   0:00:06  Writing trace to Verilog testbench: engine_0/trace_tb.v
-SBY 15:49:20 [formal] engine_0: ##   0:00:06  Writing trace to constraints file: engine_0/trace.smtc
-SBY 15:49:20 [formal] engine_0: ##   0:00:06  Writing trace to Yosys witness file: engine_0/trace.yw
-SBY 15:49:20 [formal] engine_0: ##   0:00:06  Status: failed
-SBY 15:49:20 [formal] engine_0: finished (returncode=1)
-SBY 15:49:20 [formal] engine_0: Status returned by engine: FAIL
-SBY 15:49:20 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:16 (16)
-SBY 15:49:20 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:17 (17)
-SBY 15:49:20 [formal] summary: engine_0 (smtbmc yices) returned FAIL
-SBY 15:49:20 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
-SBY 15:49:20 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8866_6727 at CheckerWrapper.sv:8866.7-8866.62 in step 4
-SBY 15:49:20 [formal] DONE (FAIL, rc=2)
+<system-out>SBY 17:32:14 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
+SBY 17:32:14 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
+SBY 17:32:14 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
+SBY 17:32:14 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
+SBY 17:32:14 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
+SBY 17:32:14 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
+SBY 17:32:14 [formal] engine_0: smtbmc yices
+SBY 17:32:14 [formal] base: starting process &quot;cd formal/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:32:14 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:473.19-475.56.
+SBY 17:32:14 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:476.22-476.42.
+SBY 17:32:14 [formal] base: Warning: Replacing memory \shadow_regfile with list of registers. See nerv_wrapper.sv:307
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:411: Warning: Identifier `\uut.rvfi_csr_medeleg_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:412: Warning: Identifier `\uut.rvfi_csr_mideleg_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:427: Warning: Identifier `\uut.rvfi_trap' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:427: Warning: Identifier `\uut.rvfi_csr_mcause_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:427: Warning: Range select out of bounds on signal `\uut.rvfi_csr_mcause_rdata': Setting result bit to undef.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:431: Warning: Identifier `\uut.irq_num' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:432: Warning: Range select [4:0] out of bounds on signal `\uut.irq_num': Setting all 5 result bits to undef.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:440: Warning: Identifier `\uut.rvfi_csr_cycle_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:441: Warning: Identifier `\uut.rvfi_csr_scounteren_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:442: Warning: Identifier `\uut.rvfi_csr_scause_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:443: Warning: Identifier `\uut.rvfi_csr_stvec_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:444: Warning: Identifier `\uut.rvfi_csr_sepc_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:445: Warning: Identifier `\uut.rvfi_csr_stval_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:446: Warning: Identifier `\uut.rvfi_csr_sscratch_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:447: Warning: Identifier `\uut.rvfi_csr_satp_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:448: Warning: Identifier `\uut.rvfi_csr_pmpcfg0_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:449: Warning: Identifier `\uut.rvfi_csr_pmpcfg1_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:450: Warning: Identifier `\uut.rvfi_csr_pmpcfg2_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:451: Warning: Identifier `\uut.rvfi_csr_pmpcfg3_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:452: Warning: Identifier `\uut.rvfi_csr_pmpaddr0_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:453: Warning: Identifier `\uut.rvfi_csr_pmpaddr1_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:454: Warning: Identifier `\uut.rvfi_csr_pmpaddr2_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:455: Warning: Identifier `\uut.rvfi_csr_pmpaddr3_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:474: Warning: Identifier `\uut.rvfi_pc_rdata' is implicitly declared.
+SBY 17:32:14 [formal] base: nerv_wrapper.sv:475: Warning: Identifier `\uut.rvfi_csr_mepc_rdata' is implicitly declared.
+SBY 17:32:15 [formal] base: Warning: Resizing cell port top_formal.checker_inst.io_mem_write_memWidth from 7 bits to 6 bits.
+SBY 17:32:15 [formal] base: Warning: Resizing cell port top_formal.checker_inst.io_mem_read_memWidth from 7 bits to 6 bits.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_pc_rdata is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mcause_rdata is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.irq_num is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 17:32:17 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 17:32:20 [formal] base: finished (returncode=0)
+SBY 17:32:20 [formal] prep: starting process &quot;cd formal/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mcause_rdata is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.irq_num is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 17:32:21 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 17:32:23 [formal] prep: finished (returncode=0)
+SBY 17:32:23 [formal] smt2: starting process &quot;cd formal/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:32:23 [formal] smt2: finished (returncode=0)
+SBY 17:32:23 [formal] engine_0: starting process &quot;cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 17:32:23 [formal] engine_0: ##   0:00:00  Solver: yices
+SBY 17:32:24 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:32:24 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:32:24 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:32:24 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assumptions in step 2..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assertions in step 2..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
+SBY 17:32:25 [formal] engine_0: ##   0:00:01  Checking assertions in step 4..
+SBY 17:32:40 [formal] engine_0: ##   0:00:16  BMC failed!
+SBY 17:32:40 [formal] engine_0: ##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8998.7-8998.58 (_witness_.check_assert_CheckerWrapper_sv_8998_7003)
+SBY 17:32:40 [formal] engine_0: ##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8838.7-8838.60 (_witness_.check_assert_CheckerWrapper_sv_8838_6884)
+SBY 17:32:40 [formal] engine_0: ##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8834.7-8834.62 (_witness_.check_assert_CheckerWrapper_sv_8834_6881)
+SBY 17:32:40 [formal] engine_0: ##   0:00:16  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:32:43 [formal] engine_0: ##   0:00:19  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:32:43 [formal] engine_0: ##   0:00:19  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:32:43 [formal] engine_0: ##   0:00:19  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:32:43 [formal] engine_0: ##   0:00:19  Status: failed
+SBY 17:32:43 [formal] engine_0: finished (returncode=1)
+SBY 17:32:43 [formal] engine_0: Status returned by engine: FAIL
+SBY 17:32:43 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:29 (29)
+SBY 17:32:43 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:30 (30)
+SBY 17:32:43 [formal] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 17:32:43 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
+SBY 17:32:43 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8834_6881 at CheckerWrapper.sv:8834.7-8834.62 in step 4
+SBY 17:32:43 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8838_6884 at CheckerWrapper.sv:8838.7-8838.60 in step 4
+SBY 17:32:43 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8998_7003 at CheckerWrapper.sv:8998.7-8998.58 in step 4
+SBY 17:32:43 [formal] DONE (FAIL, rc=2)
 </system-out>
 <system-err>
 </system-err>

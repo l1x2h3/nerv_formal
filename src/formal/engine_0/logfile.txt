@@ -8,11 +8,13 @@
 ##   0:00:01  Checking assumptions in step 3..
 ##   0:00:01  Checking assertions in step 3..
 ##   0:00:01  Checking assumptions in step 4..
-##   0:00:02  Checking assertions in step 4..
-##   0:00:03  BMC failed!
-##   0:00:03  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8866.7-8866.62 (_witness_.check_assert_CheckerWrapper_sv_8866_6727)
-##   0:00:03  Writing trace to VCD file: engine_0/trace.vcd
-##   0:00:06  Writing trace to Verilog testbench: engine_0/trace_tb.v
-##   0:00:06  Writing trace to constraints file: engine_0/trace.smtc
-##   0:00:06  Writing trace to Yosys witness file: engine_0/trace.yw
-##   0:00:06  Status: failed
+##   0:00:01  Checking assertions in step 4..
+##   0:00:16  BMC failed!
+##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8998.7-8998.58 (_witness_.check_assert_CheckerWrapper_sv_8998_7003)
+##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8838.7-8838.60 (_witness_.check_assert_CheckerWrapper_sv_8838_6884)
+##   0:00:16  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8834.7-8834.62 (_witness_.check_assert_CheckerWrapper_sv_8834_6881)
+##   0:00:16  Writing trace to VCD file: engine_0/trace.vcd
+##   0:00:19  Writing trace to Verilog testbench: engine_0/trace_tb.v
+##   0:00:19  Writing trace to constraints file: engine_0/trace.smtc
+##   0:00:19  Writing trace to Yosys witness file: engine_0/trace.yw
+##   0:00:19  Status: failed

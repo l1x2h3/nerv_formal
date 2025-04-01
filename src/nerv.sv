@@ -55,7 +55,8 @@
 	/* mcounteren should only exist if U mode is available */			\
 /*	`NERV_CSR_REG_MRW(mcounteren,        12'h 306, 32'h 0000_0000) */		\
 											\
-	`NERV_CSR_REG_MRW(mstatush,          12'h 310, 32'h 0000_0000)
+	`NERV_CSR_REG_MRW(mstatush,          12'h 310, 32'h 0000_0000)   \
+	`NERV_CSR_REG_MRW(mcounteren, 12'h306, 32'h0000_0000) 
 
 `define NERV_TRAP_HANDLING_CSRS /* Machine Trap Handling CSRs */			\
 	`NERV_CSR_REG_MRW(mscratch,          12'h 340, 32'h 0000_0000)	 		\
