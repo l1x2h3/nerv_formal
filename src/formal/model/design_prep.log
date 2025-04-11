@@ -35,8 +35,8 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \RiscvCore..
 Finding unused cells or wires in module \CheckerWrapper..
 Finding unused cells or wires in module \CheckerWithResult..
-Removed 179 unused cells and 179 unused wires.
-<suppressed ~181 debug messages>
+Removed 184 unused cells and 185 unused wires.
+<suppressed ~187 debug messages>
 
 7. Executing FORMALFF pass.
 
@@ -76,10 +76,8 @@ Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no 
 Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mcause_rdata is used but has no driver.
-Warning: Wire nerv_extended_wrapper.\uut.irq_num is used but has no driver.
-Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
 Checking module top_formal...
 Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
@@ -87,7 +85,39 @@ Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-Found and reported 28 problems.
+Warning: Wire top_formal.\io_now_pc [31] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [30] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [29] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [28] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [27] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [26] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [25] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [24] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [23] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [22] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [21] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [20] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [19] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [18] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [17] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [16] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [15] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [14] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [13] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [12] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [11] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [10] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [9] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [8] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [7] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [6] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [5] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [4] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [3] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [2] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [1] is used but has no driver.
+Warning: Wire top_formal.\io_now_pc [0] is used but has no driver.
+Found and reported 58 problems.
 
 10. Executing SETUNDEF pass (replace undef values with defined constants).
 
@@ -106,17 +136,17 @@ Optimizing module top_formal.
 
 11.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\CheckerWithResult'.
-<suppressed ~185 debug messages>
+<suppressed ~167 debug messages>
 Finding identical cells in module `\CheckerWrapper'.
 Finding identical cells in module `\RiscvCore'.
 Finding identical cells in module `\RiscvTrans'.
 Finding identical cells in module `\nerv'.
 Finding identical cells in module `\nerv_extended_wrapper'.
 Finding identical cells in module `\top_formal'.
-Removed a total of 63 cells.
+Removed a total of 56 cells.
 
 11.3. Executing OPT_DFF pass (perform DFF optimizations).
-Setting constant 1-bit at position 0 on $auto$async2sync.cc:112:execute$12648 ($ff) from module CheckerWithResult.
+Setting constant 1-bit at position 0 on $auto$async2sync.cc:112:execute$12127 ($ff) from module CheckerWithResult.
 
 11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \CheckerWithResult..
@@ -126,8 +156,8 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \nerv..
 Finding unused cells or wires in module \nerv_extended_wrapper..
 Finding unused cells or wires in module \top_formal..
-Removed 94 unused cells and 188 unused wires.
-<suppressed ~102 debug messages>
+Removed 115 unused cells and 211 unused wires.
+<suppressed ~123 debug messages>
 
 11.5. Rerunning OPT passes. (Removed registers in this run.)
 
@@ -171,13 +201,13 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \nerv..
 Finding unused cells or wires in module \nerv_extended_wrapper..
 Finding unused cells or wires in module \top_formal..
-Removed 0 unused cells and 28 unused wires.
-<suppressed ~2 debug messages>
+Removed 0 unused cells and 20 unused wires.
+<suppressed ~1 debug messages>
 
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-Warnings: 28 unique messages, 28 total
-End of script. Logfile hash: 6ea5a17f1b, CPU: user 2.98s system 0.07s, MEM: 114.66 MB peak
+Warnings: 58 unique messages, 58 total
+End of script. Logfile hash: 07fb42d7ae, CPU: user 3.10s system 0.09s, MEM: 115.95 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 50% 5x opt_clean (1 sec), 13% 1x check (0 sec), ...
+Time spent: 48% 5x opt_clean (1 sec), 14% 1x check (0 sec), ...

@@ -6,11 +6,11 @@ module top_formal (
     // 输出信号
     wire        io_mem_read_valid;
     wire [31:0] io_mem_read_addr;
-    wire [6:0]  io_mem_read_memWidth;  // 与 CheckerWrapper 一致，调整为 6:0
+    wire [5:0]  io_mem_read_memWidth;  // 与 CheckerWrapper 一致，调整为 6:0
     wire [31:0] io_mem_read_data;
     wire        io_mem_write_valid;
     wire [31:0] io_mem_write_addr;
-    wire [6:0]  io_mem_write_memWidth; // 与 CheckerWrapper 一致，调整为 6:0
+    wire [5:0]  io_mem_write_memWidth; // 与 CheckerWrapper 一致，调整为 6:0
     wire [31:0] io_mem_write_data;
     wire [31:0] io_now_pc;
     wire [31:0] result_pc;
@@ -39,7 +39,7 @@ module top_formal (
         .reset(reset),
         .instCommit_valid(io_instCommit_valid),
         .instCommit_inst(io_instCommit_inst),
-        .instCommit_pc(io_now_pc),
+        .instCommit_pc( ),
         .result_reg_0(io_next_reg_0),
         .result_reg_1(io_next_reg_1),
         .result_reg_2(io_next_reg_2),

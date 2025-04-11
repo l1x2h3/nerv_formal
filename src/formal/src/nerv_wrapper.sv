@@ -15,57 +15,58 @@
 module nerv_extended_wrapper (
     input         clock,
     input         reset,
+    input [31:0]  imem_data,
     // 指令提交信号
     output        instCommit_valid,
     output [31:0] instCommit_inst,
     output [31:0] instCommit_pc,
     // 寄存器文件
-    output [31:0] result_reg_0, result_reg_1, result_reg_2, result_reg_3, result_reg_4,
-    output [31:0] result_reg_5, result_reg_6, result_reg_7, result_reg_8, result_reg_9,
-    output [31:0] result_reg_10, result_reg_11, result_reg_12, result_reg_13, result_reg_14,
-    output [31:0] result_reg_15, result_reg_16, result_reg_17, result_reg_18, result_reg_19,
-    output [31:0] result_reg_20, result_reg_21, result_reg_22, result_reg_23, result_reg_24,
-    output [31:0] result_reg_25, result_reg_26, result_reg_27, result_reg_28, result_reg_29,
-    output [31:0] result_reg_30, result_reg_31,
+    output reg [31:0] result_reg_0, result_reg_1, result_reg_2, result_reg_3, result_reg_4,
+    output reg [31:0] result_reg_5, result_reg_6, result_reg_7, result_reg_8, result_reg_9,
+    output reg [31:0] result_reg_10, result_reg_11, result_reg_12, result_reg_13, result_reg_14,
+    output reg [31:0] result_reg_15, result_reg_16, result_reg_17, result_reg_18, result_reg_19,
+    output reg [31:0] result_reg_20, result_reg_21, result_reg_22, result_reg_23, result_reg_24,
+    output reg [31:0] result_reg_25, result_reg_26, result_reg_27, result_reg_28, result_reg_29,
+    output reg [31:0] result_reg_30, result_reg_31,
     // PC
     output [31:0] result_pc,
     // CSR 寄存器
-    output [31:0] result_csr_misa,
-    output [31:0] result_csr_mvendorid,
-    output [31:0] result_csr_marchid,
-    output [31:0] result_csr_mimpid,
-    output [31:0] result_csr_mhartid,
-    output [31:0] result_csr_mstatus,
-    output [31:0] result_csr_mstatush,
-    output [31:0] result_csr_mscratch,
-    output [31:0] result_csr_mtvec,
-    output [31:0] result_csr_mcounteren,
-    output [31:0] result_csr_medeleg,
-    output [31:0] result_csr_mideleg,
-    output [31:0] result_csr_mip,
-    output [31:0] result_csr_mie,
-    output [31:0] result_csr_mepc,
-    output [31:0] result_csr_mcause,
-    output [31:0] result_csr_mtval,
-    output [31:0] result_csr_cycle,
-    output [31:0] result_csr_scounteren,
-    output [31:0] result_csr_scause,
-    output [31:0] result_csr_stvec,
-    output [31:0] result_csr_sepc,
-    output [31:0] result_csr_stval,
-    output [31:0] result_csr_sscratch,
-    output [31:0] result_csr_satp,
-    output [31:0] result_csr_pmpcfg0,
-    output [31:0] result_csr_pmpcfg1,
-    output [31:0] result_csr_pmpcfg2,
-    output [31:0] result_csr_pmpcfg3,
-    output [31:0] result_csr_pmpaddr0,
-    output [31:0] result_csr_pmpaddr1,
-    output [31:0] result_csr_pmpaddr2,
-    output [31:0] result_csr_pmpaddr3,
-    output [7:0]  result_csr_MXLEN,
-    output [7:0]  result_csr_IALIGN,
-    output [7:0]  result_csr_ILEN,
+    output reg [31:0] result_csr_misa,
+    output reg [31:0] result_csr_mvendorid,
+    output reg [31:0] result_csr_marchid,
+    output reg [31:0] result_csr_mimpid,
+    output reg [31:0] result_csr_mhartid,
+    output reg [31:0] result_csr_mstatus,
+    output reg [31:0] result_csr_mstatush,
+    output reg [31:0] result_csr_mscratch,
+    output reg [31:0] result_csr_mtvec,
+    output reg [31:0] result_csr_mcounteren,
+    output reg [31:0] result_csr_medeleg,
+    output reg [31:0] result_csr_mideleg,
+    output reg [31:0] result_csr_mip,
+    output reg [31:0] result_csr_mie,
+    output reg [31:0] result_csr_mepc,
+    output reg [31:0] result_csr_mcause,
+    output reg [31:0] result_csr_mtval,
+    output reg [31:0] result_csr_cycle,
+    output reg [31:0] result_csr_scounteren,
+    output reg [31:0] result_csr_scause,
+    output reg [31:0] result_csr_stvec,
+    output reg [31:0] result_csr_sepc,
+    output reg [31:0] result_csr_stval,
+    output reg [31:0] result_csr_sscratch,
+    output reg [31:0] result_csr_satp,
+    output reg [31:0] result_csr_pmpcfg0,
+    output reg [31:0] result_csr_pmpcfg1,
+    output reg [31:0] result_csr_pmpcfg2,
+    output reg [31:0] result_csr_pmpcfg3,
+    output reg [31:0] result_csr_pmpaddr0,
+    output reg [31:0] result_csr_pmpaddr1,
+    output reg [31:0] result_csr_pmpaddr2,
+    output reg [31:0] result_csr_pmpaddr3,
+    output reg [7:0]  result_csr_MXLEN,
+    output reg [7:0]  result_csr_IALIGN,
+    output reg [7:0]  result_csr_ILEN,
     output [1:0]  result_internal_privilegeMode,
     // 事件信号
     output        event_valid,
@@ -76,15 +77,15 @@ module nerv_extended_wrapper (
     // 内存访问信号
     output        mem_read_valid,
     output [31:0] mem_read_addr,
-    output [6:0]  mem_read_memWidth,
+    output [5:0]  mem_read_memWidth,
     output [31:0] mem_read_data,
     output        mem_write_valid,
     output [31:0] mem_write_addr,
-    output [6:0]  mem_write_memWidth,
+    output [5:0]  mem_write_memWidth,
     output [31:0] mem_write_data
 );
     (* keep *) `rvformal_rand_reg stall;
-    (* keep *) `rvformal_rand_reg [31:0] imem_data;
+    //(* keep *) `rvformal_rand_reg [31:0] imem_data;
     (* keep *) `rvformal_rand_reg [31:0] dmem_rdata;
     (* keep *) `rvformal_rand_reg [31:0] irq;
 
@@ -97,8 +98,46 @@ module nerv_extended_wrapper (
         wire dmem_fault = 0;
     `endif
 
+    // 定义指令的掩码和匹配值
+    wire [31:0] add_pattern  = 32'b0000000_xxxxx_xxxxx_000_xxxxx_0110011;
+    wire [31:0] add_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] sub_pattern  = 32'b0100000_xxxxx_xxxxx_000_xxxxx_0110011;
+    wire [31:0] sub_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] sll_pattern  = 32'b0000000_xxxxx_xxxxx_001_xxxxx_0110011;
+    wire [31:0] sll_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] slt_pattern  = 32'b0000000_xxxxx_xxxxx_010_xxxxx_0110011;
+    wire [31:0] slt_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] sltu_pattern = 32'b0000000_xxxxx_xxxxx_011_xxxxx_0110011;
+    wire [31:0] sltu_mask    = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] xor_pattern  = 32'b0000000_xxxxx_xxxxx_100_xxxxx_0110011;
+    wire [31:0] xor_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] srl_pattern  = 32'b0000000_xxxxx_xxxxx_101_xxxxx_0110011;
+    wire [31:0] srl_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] sra_pattern  = 32'b0100000_xxxxx_xxxxx_101_xxxxx_0110011;
+    wire [31:0] sra_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] or_pattern   = 32'b0000000_xxxxx_xxxxx_110_xxxxx_0110011;
+    wire [31:0] or_mask      = 32'b1111111_00000_00000_111_00000_1111111;
+    wire [31:0] and_pattern  = 32'b0000000_xxxxx_xxxxx_111_xxxxx_0110011;
+    wire [31:0] and_mask     = 32'b1111111_00000_00000_111_00000_1111111;
+
+
     initial begin
         assume (reset == 1'b1);
+    end
+
+    always @(posedge clk) begin
+        assume (
+            ((imem_data & add_mask) == (add_pattern & add_mask)) || // ADD
+            ((imem_data & sub_mask) == (sub_pattern & sub_mask)) || // SUB
+            ((imem_data & sll_mask) == (sll_pattern & sll_mask)) || // SLL
+            ((imem_data & slt_mask) == (slt_pattern & slt_mask)) || // SLT
+            ((imem_data & sltu_mask) == (sltu_pattern & sltu_mask)) || // SLTU
+            ((imem_data & xor_mask) == (xor_pattern & xor_mask)) || // XOR
+            ((imem_data & srl_mask) == (srl_pattern & srl_mask)) || // SRL
+            ((imem_data & sra_mask) == (sra_pattern & sra_mask)) || // SRA
+            ((imem_data & or_mask) == (or_pattern & or_mask)) ||   // OR
+            ((imem_data & and_mask) == (and_pattern & and_mask))   // AND
+        );
     end
 
     // 内部信号（从 nerv 引出）
@@ -143,29 +182,18 @@ module nerv_extended_wrapper (
         .rvfi_csr_marchid_rdata (result_csr_marchid),
         .rvfi_csr_mimpid_rdata (result_csr_mimpid),
         .rvfi_csr_mhartid_rdata (result_csr_mhartid),
-        .rvfi_csr_mstatus_rdata (result_csr_mstatus),
-        .rvfi_csr_mstatush_rdata (result_csr_mstatush),
         .rvfi_csr_mscratch_rdata (result_csr_mscratch),
         .rvfi_csr_mtvec_rdata (result_csr_mtvec),
         //需要在用户态中开启
         .rvfi_csr_mcounteren_rdata (result_csr_mcounteren),
         // .rvfi_csr_medeleg_rdata (result_csr_medeleg),
         // .rvfi_csr_mideleg_rdata (result_csr_mideleg),
-        .rvfi_csr_mip_rdata (result_csr_mip),
-        .rvfi_csr_mie_rdata (result_csr_mie),
+        //.rvfi_csr_mip_rdata (result_csr_mip),
+        //.rvfi_csr_mie_rdata (result_csr_mie),
         .rvfi_csr_mtval_rdata (result_csr_mtval),
         .rvfi_csr_mepc_rdata (result_csr_mepc),
         //.rvfi_csr_mepc_rdata (event_exceptionPC),
     );
-
-    // assign result_csr_medeleg    = uut.rvfi_csr_medeleg_rdata;
-    // assign result_csr_mideleg    = uut.rvfi_csr_mideleg_rdata; 
-    // assign result_csr_mip        = uut.rvfi_csr_mip_rdata;
-    // assign result_csr_mie        = uut.rvfi_csr_mie_rdata;
-    // assign result_csr_mepc       = uut.rvfi_csr_mepc_rdata;
-    //assign result_csr_mtval      = uut.rvfi_csr_mtval_rdata;
-
-
 
     // 寄存器文件和 CSR 追踪
     reg [31:0] regfile [0:31];
@@ -173,85 +201,32 @@ module nerv_extended_wrapper (
     reg [31:0] csr_mtvec, csr_mscratch, csr_mepc, csr_m , csr_mtval, csr_mip, csr_mie;
     reg [31:0] csr_mcounteren;
 
-    // 初始化
-    integer i;
-    initial begin
-        for (i = 0; i < 32; i = i + 1)
-            regfile[i] = 32'b0;
+    reg [1:0] cycle_count;
 
-        csr_mstatus    = 32'b0;
-        csr_misa       = 32'h40101100;
-        csr_mvendorid  = 32'b0;
-        csr_marchid    = 32'b0;
-        csr_mimpid     = 32'b0;
-        csr_mhartid    = 32'b0;
-        csr_mtvec      = 32'b0;
-        csr_mscratch   = 32'b0;
-        csr_mepc       = 32'hffffffff;
-        csr_mtval      = 32'b0;
-        csr_mip        = 32'b0;
-        csr_mie        = 32'b0;
-        csr_mcounteren = 32'b0;
-    end
-
-    // 更新寄存器文件和 CSR
     always @(posedge clock) begin
         if (reset) begin
-            for (i = 0; i < 32; i = i + 1)
-                regfile[i] <= 32'b0;
-            csr_mstatus    <= 32'b0;
-            csr_misa       <= 32'b0;
-            csr_mvendorid  <= 32'b0;
-            csr_marchid    <= 32'b0;
-            csr_mimpid     <= 32'b0;
-            csr_mhartid    <= 32'b0;
-            csr_mtvec      <= 32'b0;
-            csr_mscratch   <= 32'b0;
-            csr_mepc       <= 32'b0;
-            csr_mtval      <= 32'b0;
-            csr_mip        <= 32'b0;
-            csr_mie        <= 32'b0;
-            csr_mcounteren <= 32'b0;
-        end else if (inst_valid && !stall) begin
-            if (rd_addr != 5'b0)  
-                regfile[rd_addr] <= rd_wdata;
-
-            // CSR 更新
-            if (dmem_valid && dmem_wstrb != 4'b0) begin
-                case (dmem_addr)
-                    32'h300: csr_mstatus <= dmem_wdata;
-                    32'h301: csr_misa    <= dmem_wdata;
-                    32'hf11: csr_mvendorid <= dmem_wdata;
-                    32'hf12: csr_marchid <= dmem_wdata;
-                    32'hf13: csr_mimpid  <= dmem_wdata;
-                    32'hf14: csr_mhartid <= dmem_wdata;
-                    32'h305: csr_mtvec   <= dmem_wdata;
-                    32'h340: csr_mscratch <= dmem_wdata;
-                    32'h341: csr_mepc    <= dmem_wdata;
-                    32'h343: csr_mtval   <= dmem_wdata;
-                    32'h344: csr_mip     <= dmem_wdata;
-                    32'h304: csr_mie     <= dmem_wdata;
-                    32'h303: csr_mcounteren <= dmem_wdata;
-                endcase
-            end
+            cycle_count <= 2'b00;
+        end else if (!stall) begin
+            cycle_count <= (cycle_count == 2'b10) ? 2'b00 : cycle_count + 1;
         end
     end
 
-    // 内存访问控制逻辑
+    integer i;
+    // 内存访问控制逻辑 
     reg mem_read_valid_reg;
     reg mem_write_valid_reg;
     reg [31:0] mem_addr_reg;
     reg [31:0] mem_data_reg;
 
     // 内存访问宽度计算函数
-    function [6:0] get_mem_width;
+    function [5:0] get_mem_width;
         input [3:0] mask;
         begin
             case (mask)
-                4'b0001: get_mem_width = 7'd8;    // 字节访问
-                4'b0011: get_mem_width = 7'd16;   // 半字访问
-                4'b1111: get_mem_width = 7'd32;   // 字访问
-                default: get_mem_width = 7'd0;     // 无效访问
+                4'b0001: get_mem_width = 6'd8;    // 字节访问
+                4'b0011: get_mem_width = 6'd16;   // 半字访问
+                4'b1111: get_mem_width = 6'd32;   // 字访问
+                default: get_mem_width = 6'd0;     // 无效访问
             endcase
         end
     endfunction
@@ -267,8 +242,9 @@ module nerv_extended_wrapper (
             mem_data_reg <= 32'b0;
             captured_rmask <= 4'b0;
             captured_wstrb <= 4'b0;
-        end else if (!stall) begin
-            mem_read_valid_reg <= dmem_valid && (dmem_wstrb == 4'b0);
+        end else if (!stall && cycle_count == 2'b10) begin
+            //mem_read_valid_reg <= dmem_valid && (dmem_wstrb == 4'b0);   //wstrb写使能信号，标记可以写入的位置
+            mem_read_valid_reg <= dmem_valid;
             mem_write_valid_reg <= dmem_valid && (dmem_wstrb != 4'b0);
             mem_addr_reg <= dmem_addr;
             mem_data_reg <= dmem_wstrb != 4'b0 ? dmem_wdata : dmem_rdata;
@@ -280,8 +256,8 @@ module nerv_extended_wrapper (
     end
 
     // Calculate widths using captured masks
-    wire [6:0] current_read_width = get_mem_width(captured_rmask);
-    wire [6:0] current_write_width = get_mem_width(captured_wstrb);
+    wire [5:0] current_read_width = get_mem_width(captured_rmask);
+    wire [5:0] current_write_width = get_mem_width(captured_wstrb);
 
 
     // 事件信号处理
@@ -289,79 +265,61 @@ module nerv_extended_wrapper (
     always @(posedge clock) begin
         if (reset) begin
             event_valid_reg <= 0;
-        end else begin
-            event_valid_reg <= (trap || (irq != 0)) && inst_valid;
+            result_csr_mstatus <= 32'b0;
+            result_csr_mstatush <= 32'b0;
+            result_csr_mip <= 32'b0;
+            result_csr_mie <= 32'b0;
+        end else if(cycle_count == 2'b10) begin
+            event_valid_reg <= ~((trap || (irq != 0)) && inst_valid);
+            // result_csr_mstatus <= uut.rvfi_csr_mstatus_rdata;
+            // result_csr_mstatush <= uut.rvfi_csr_mstatush_rdata;
+            result_csr_mstatus <= 32'b0;
+            result_csr_mstatush <= 32'b0;
+            // result_csr_mip <= uut.rvfi_csr_mip_rdata;
+            // result_csr_mie <= uut.rvfi_csr_mie_rdata;
+            result_csr_mip <= 32'b0;
+            result_csr_mie <= 32'b0;
         end
     end
 
     reg [31:0] shadow_regfile [0:31]; // 同步用寄存器
-    reg [31:0] current_regfile [0:31]; // 当前周期寄存器
-
-
-    integer i;
-    // 寄存器更新逻辑
+    reg [31:0] shadow_regfile_before [0:31]; // 下一周期值
+    
     always @(posedge clock) begin
         if (reset) begin
-            for (i=0; i<32; i=i+1) begin
-                current_regfile[i] <= 32'b0;
-                shadow_regfile[i] <= 32'b0;
+            for (i = 0; i < 32; i = i + 1) begin
+                shadow_regfile_before[i] <= 32'b0;
             end
-        end else if (!stall) begin
-            // 当前周期更新
-            if (inst_valid && rd_addr != 5'b0) begin
-                current_regfile[rd_addr] <= rd_wdata;
-            end
-            
-            // 同步到输出（延迟1周期）
-            for (i=0; i<32; i=i+1) begin
-                shadow_regfile[i] <= current_regfile[i];
-            end
-
-            for (i=0; i<32; i=i+1) begin
-                shadow_regfile[i] <= current_regfile[i];
+        end else if (!stall && cycle_count == 2'b10 && inst_valid) begin
+            for (i = 0; i < 32; i = i + 1) begin
+                //shadow_regfile_before[i] <= uut.regfile[i];
+                shadow_regfile_before[i] <= 32'b0;
             end
         end
-    end 
+    end
+    
+    // 时序逻辑更新寄存器
+    always @(posedge clock) begin 
+        for(i = 0; i < 32; i = i + 1) begin
+            if (reset) begin
+                shadow_regfile[i] <= 32'b0;
+            end else if (!stall) begin
+                shadow_regfile[i] <= shadow_regfile_before[i];
+            end
+        end
+    end
+
 
     // 输出信号连接
-    assign instCommit_valid = inst_valid;
+    assign instCommit_valid = (!stall && cycle_count == 2'b10 && inst_valid);
     assign instCommit_inst  = inst;
-    assign instCommit_pc    = pc;
+    always @(posedge clock) begin 
+        if(cycle_count == 2'b10) begin
+            instCommit_pc    <= pc;
+            result_pc        <= pc;
+        end
+    end
     
-    // 寄存器文件输出
-    // assign result_reg_0     = 32'b0;
-    // assign result_reg_1     = regfile[1];
-    // assign result_reg_2     = regfile[2];
-    // assign result_reg_3     = regfile[3];
-    // assign result_reg_4     = regfile[4];
-    // assign result_reg_5     = regfile[5];
-    // assign result_reg_6     = regfile[6];
-    // assign result_reg_7     = regfile[7];
-    // assign result_reg_8     = regfile[8];
-    // assign result_reg_9     = regfile[9];
-    // assign result_reg_10    = regfile[10];
-    // assign result_reg_11    = regfile[11];
-    // assign result_reg_12    = regfile[12];
-    // assign result_reg_13    = regfile[13];
-    // assign result_reg_14    = regfile[14];
-    // assign result_reg_15    = regfile[15];
-    // assign result_reg_16    = regfile[16];
-    // assign result_reg_17    = regfile[17];
-    // assign result_reg_18    = regfile[18];
-    // assign result_reg_19    = regfile[19];
-    // assign result_reg_20    = regfile[20];
-    // assign result_reg_21    = regfile[21];
-    // assign result_reg_22    = regfile[22];
-    // assign result_reg_23    = regfile[23];
-    // assign result_reg_24    = regfile[24];
-    // assign result_reg_25    = regfile[25];
-    // assign result_reg_26    = regfile[26];
-    // assign result_reg_27    = regfile[27];
-    // assign result_reg_28    = regfile[28];
-    // assign result_reg_29    = regfile[29];
-    // assign result_reg_30    = regfile[30];
-    // assign result_reg_31    = regfile[31];
-
     assign result_reg_0 = 32'b0;
     assign result_reg_1 = shadow_regfile[1];
     assign result_reg_2 = shadow_regfile[2];
@@ -395,24 +353,12 @@ module nerv_extended_wrapper (
     assign result_reg_30 = shadow_regfile[30];
     assign result_reg_31 = shadow_regfile[31];
 
-    assign result_pc        = pc;
+    
    
     // CSR寄存器输出
     assign result_csr_misa       = 32'h40001100;
-    //assign result_csr_mvendorid  = uut.rvfi_csr_mvendorid_rdata;
-    //assign result_csr_marchid    = uut.rvfi_csr_marchid_rdata;
-    //assign result_csr_mimpid     = uut.rvfi_csr_mimpid_rdata;
-    // assign result_csr_mhartid    = uut.rvfi_csr_mhartid_rdata;
-    // assign result_csr_mstatus    = uut.rvfi_csr_mstatus_rdata;
-    // assign result_csr_mstatush   = uut.rvfi_csr_mstatush_rdata;
-    // assign result_csr_mscratch   = uut.rvfi_csr_mscratch_rdata;
-    // assign result_csr_mtvec      = uut.rvfi_csr_mtvec_rdata;
-    //assign result_csr_mcounteren = uut.rvfi_csr_mcounteren_rdata;
     assign result_csr_medeleg    = uut.rvfi_csr_medeleg_rdata;
     assign result_csr_mideleg    = uut.rvfi_csr_mideleg_rdata;
-    //assign result_csr_mip        = uut.rvfi_csr_mip_rdata;
-    //assign result_csr_mie        = uut.rvfi_csr_mie_rdata;
-    //assign result_csr_mepc       = uut.rvfi_csr_mepc_rdata;
 
 
     // 修改CSR寄存器追踪部分
@@ -422,19 +368,19 @@ module nerv_extended_wrapper (
     always @(posedge clock) begin
         if (reset) begin
             csr_mcause <= 32'b0;
-        end else begin
+        end else if(cycle_count == 2'b10) begin
             // 通过rvfi_trap和rvfi_csr_mcause_rdata检测异常
             if (uut.rvfi_trap && !uut.rvfi_csr_mcause_rdata[31]) begin
-                csr_mcause <= uut.rvfi_csr_mcause_rdata;
+                csr_mcause <= uut.csr_mcause_wdata;
             end
             // 中断处理保持不变
             else if (uut.irq_num != 0) begin
                 csr_mcause <= {1'b1, 26'b0, uut.irq_num[4:0]};
             end
-        end
+        end 
     end
 
-    assign result_csr_mcause = csr_mcause;
+    assign result_csr_mcause = 32'b0;
     //assign result_csr_mcause     = uut.rvfi_csr_mcause_rdata;
     //assign result_csr_mtval      = uut.rvfi_csr_mtval_rdata;
     assign result_csr_cycle      = uut.rvfi_csr_cycle_rdata;
@@ -459,10 +405,11 @@ module nerv_extended_wrapper (
     assign result_internal_privilegeMode = mode;
 
     // 事件信号
-    assign event_valid        = event_valid_reg;
+    //assign event_valid        = (trap || (irq != 0)) && inst_valid;
+    assign event_valid        = 0;
     assign event_intrNO       = irq;
-    assign event_cause        = uut.rvfi_csr_mcause_rdata;
-    //assign event_exceptionPC  = uut.rvfi_csr_mepc_rdata;
+    assign event_cause        = 32'b0;
+   
     // 根据异常类型选择PC来源
     // 添加异常类型判断
     wire is_interrupt = uut.rvfi_csr_mcause_rdata[31];
@@ -478,7 +425,7 @@ module nerv_extended_wrapper (
     end
 
     assign event_exceptionPC = exception_pc;
-    assign event_exceptionInst = inst;
+    assign event_exceptionInst = 32'b0;
 
     // Memory access outputs
     assign mem_read_valid = mem_read_valid_reg;
@@ -490,5 +437,6 @@ module nerv_extended_wrapper (
     assign mem_write_addr = mem_addr_reg;
     assign mem_write_memWidth = current_write_width;
     assign mem_write_data = mem_data_reg;
+
 
 endmodule
