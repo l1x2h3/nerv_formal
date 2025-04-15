@@ -39,7 +39,7 @@ module top_formal (
         .reset(reset),
         .instCommit_valid(io_instCommit_valid),
         .instCommit_inst(io_instCommit_inst),
-        .instCommit_pc( ),
+        .instCommit_pc(io_now_pc),
         .result_reg_0(io_next_reg_0),
         .result_reg_1(io_next_reg_1),
         .result_reg_2(io_next_reg_2),

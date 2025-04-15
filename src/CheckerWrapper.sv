@@ -8859,7 +8859,7 @@ module CheckerWithResult(
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_instCommit_pc == io_instCommit_pc); // @[src/main/scala/rvspeccore/checker/Checker.scala 225:11]
+      assert(io_instCommit_pc == specCore_io_now_pc); // @[src/main/scala/rvspeccore/checker/Checker.scala 225:11]
     end
     //
     if (io_instCommit_valid & _T_2) begin
@@ -8923,7 +8923,7 @@ module CheckerWithResult(
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_result_reg_1 == io_result_reg_1); // @[src/main/scala/rvspeccore/checker/Checker.scala 235:13]
+      assert(io_result_reg_1 == specCore_io_next_reg_1); // @[src/main/scala/rvspeccore/checker/Checker.scala 235:13]
     end
     //
     if (io_instCommit_valid & _T_2) begin

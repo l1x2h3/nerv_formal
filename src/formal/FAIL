@@ -1,0 +1,35 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:12 (12)
+Elapsed process time [H:MM:SS (secs)]: 0:00:13 (13)
+engine_0 (smtbmc yices) returned FAIL
+counterexample trace: engine_0/trace.vcd
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8926_6595 at CheckerWrapper.sv:8926.7-8926.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8930_6598 at CheckerWrapper.sv:8930.7-8930.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8934_6601 at CheckerWrapper.sv:8934.7-8934.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8938_6604 at CheckerWrapper.sv:8938.7-8938.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8942_6607 at CheckerWrapper.sv:8942.7-8942.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8946_6610 at CheckerWrapper.sv:8946.7-8946.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8950_6613 at CheckerWrapper.sv:8950.7-8950.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8954_6616 at CheckerWrapper.sv:8954.7-8954.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8958_6619 at CheckerWrapper.sv:8958.7-8958.56 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8962_6622 at CheckerWrapper.sv:8962.7-8962.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8966_6625 at CheckerWrapper.sv:8966.7-8966.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8970_6628 at CheckerWrapper.sv:8970.7-8970.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8974_6631 at CheckerWrapper.sv:8974.7-8974.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8978_6634 at CheckerWrapper.sv:8978.7-8978.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8982_6637 at CheckerWrapper.sv:8982.7-8982.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8986_6640 at CheckerWrapper.sv:8986.7-8986.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8990_6643 at CheckerWrapper.sv:8990.7-8990.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8994_6646 at CheckerWrapper.sv:8994.7-8994.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8998_6649 at CheckerWrapper.sv:8998.7-8998.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9002_6652 at CheckerWrapper.sv:9002.7-9002.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9006_6655 at CheckerWrapper.sv:9006.7-9006.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9010_6658 at CheckerWrapper.sv:9010.7-9010.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9014_6661 at CheckerWrapper.sv:9014.7-9014.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9018_6664 at CheckerWrapper.sv:9018.7-9018.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9022_6667 at CheckerWrapper.sv:9022.7-9022.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9026_6670 at CheckerWrapper.sv:9026.7-9026.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9030_6673 at CheckerWrapper.sv:9030.7-9030.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9034_6676 at CheckerWrapper.sv:9034.7-9034.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9038_6679 at CheckerWrapper.sv:9038.7-9038.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9042_6682 at CheckerWrapper.sv:9042.7-9042.58 in step 4
+  failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_9046_6685 at CheckerWrapper.sv:9046.7-9046.58 in step 4

@@ -18,6 +18,7 @@
  */
 
 `define NERV_CSR
+
 `ifdef NERV_CSR
 	/**********************
 	 *  CSR DECLARATIONS  *
@@ -55,8 +56,7 @@
 	/* mcounteren should only exist if U mode is available */			\
 /*	`NERV_CSR_REG_MRW(mcounteren,        12'h 306, 32'h 0000_0000) */		\
 											\
-	`NERV_CSR_REG_MRW(mstatush,          12'h 310, 32'h 0000_0000)   \
-	`NERV_CSR_REG_MRW(mcounteren, 12'h306, 32'h0000_0000) 
+	`NERV_CSR_REG_MRW(mstatush,          12'h 310, 32'h 0000_0000)
 
 `define NERV_TRAP_HANDLING_CSRS /* Machine Trap Handling CSRs */			\
 	`NERV_CSR_REG_MRW(mscratch,          12'h 340, 32'h 0000_0000)	 		\
@@ -304,7 +304,6 @@ module nerv #(
 	input stall,
 	output trap,
 
-
 `ifdef NERV_RVFI
 	output reg        rvfi_valid,
 	output reg [63:0] rvfi_order,
@@ -322,7 +321,6 @@ module nerv #(
 	output reg [31:0] rvfi_rd_wdata,
 	output reg [31:0] rvfi_pc_rdata,
 	output reg [31:0] rvfi_pc_wdata,
-	
 
 `ifdef NERV_CSR
 `define NERV_CSR_REG_MRW(NAME, ADDR, VALUE)			\
@@ -377,7 +375,6 @@ module nerv #(
 	output [ 3:0] dmem_wstrb,
 	output [31:0] dmem_wdata,
 	input  [31:0] dmem_rdata,
-	output [4:0]  mem_rd_func,  // 新增输出端口
 
 `ifdef NERV_FAULT
 	input         imem_fault,
@@ -684,7 +681,6 @@ module nerv #(
 		csr_ack = 0;
 		csr_rdval = 'hx;
 
-		//unique case (1'b1)
 		case (1'b1)
 `define NERV_CSR_REG_MRW(NAME, ADDR, VALUE)		\
 			csr_mode && csr_``NAME``_sel: begin		\

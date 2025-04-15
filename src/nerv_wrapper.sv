@@ -185,7 +185,7 @@ module nerv_extended_wrapper (
         .rvfi_csr_mscratch_rdata (result_csr_mscratch),
         .rvfi_csr_mtvec_rdata (result_csr_mtvec),
         //需要在用户态中开启
-        .rvfi_csr_mcounteren_rdata (result_csr_mcounteren),
+        //.rvfi_csr_mcounteren_rdata (result_csr_mcounteren),
         // .rvfi_csr_medeleg_rdata (result_csr_medeleg),
         // .rvfi_csr_mideleg_rdata (result_csr_mideleg),
         //.rvfi_csr_mip_rdata (result_csr_mip),
@@ -195,6 +195,7 @@ module nerv_extended_wrapper (
         //.rvfi_csr_mepc_rdata (event_exceptionPC),
     );
 
+    assign result_csr_mcounteren = 32'b0;
     // 寄存器文件和 CSR 追踪
     reg [31:0] regfile [0:31];
     reg [31:0] csr_mstatus, csr_misa, csr_mvendorid, csr_marchid, csr_mimpid, csr_mhartid;
@@ -202,14 +203,6 @@ module nerv_extended_wrapper (
     reg [31:0] csr_mcounteren;
 
     reg [1:0] cycle_count;
-
-    always @(posedge clock) begin
-        if (reset) begin
-            cycle_count <= 2'b00;
-        end else if (!stall) begin
-            cycle_count <= (cycle_count == 2'b10) ? 2'b00 : cycle_count + 1;
-        end
-    end
 
     integer i;
     // 内存访问控制逻辑 
@@ -242,7 +235,7 @@ module nerv_extended_wrapper (
             mem_data_reg <= 32'b0;
             captured_rmask <= 4'b0;
             captured_wstrb <= 4'b0;
-        end else if (!stall && cycle_count == 2'b10) begin
+        end else if (!stall) begin
             //mem_read_valid_reg <= dmem_valid && (dmem_wstrb == 4'b0);   //wstrb写使能信号，标记可以写入的位置
             mem_read_valid_reg <= dmem_valid;
             mem_write_valid_reg <= dmem_valid && (dmem_wstrb != 4'b0);
@@ -269,12 +262,12 @@ module nerv_extended_wrapper (
             result_csr_mstatush <= 32'b0;
             result_csr_mip <= 32'b0;
             result_csr_mie <= 32'b0;
-        end else if(cycle_count == 2'b10) begin
+        end else if(event_valid) begin
             event_valid_reg <= ~((trap || (irq != 0)) && inst_valid);
-            // result_csr_mstatus <= uut.rvfi_csr_mstatus_rdata;
-            // result_csr_mstatush <= uut.rvfi_csr_mstatush_rdata;
-            result_csr_mstatus <= 32'b0;
-            result_csr_mstatush <= 32'b0;
+            result_csr_mstatus <= uut.rvfi_csr_mstatus_rdata;
+            result_csr_mstatush <= uut.rvfi_csr_mstatush_rdata;
+            // result_csr_mstatus <= 32'b0;
+            // result_csr_mstatush <= 32'b0;
             // result_csr_mip <= uut.rvfi_csr_mip_rdata;
             // result_csr_mie <= uut.rvfi_csr_mie_rdata;
             result_csr_mip <= 32'b0;
@@ -283,43 +276,46 @@ module nerv_extended_wrapper (
     end
 
     reg [31:0] shadow_regfile [0:31]; // 同步用寄存器
-    reg [31:0] shadow_regfile_before [0:31]; // 下一周期值
+    //reg [31:0] shadow_regfile_before [0:31]; // 下一周期值
     
     always @(posedge clock) begin
         if (reset) begin
             for (i = 0; i < 32; i = i + 1) begin
-                shadow_regfile_before[i] <= 32'b0;
-            end
-        end else if (!stall && cycle_count == 2'b10 && inst_valid) begin
-            for (i = 0; i < 32; i = i + 1) begin
-                //shadow_regfile_before[i] <= uut.regfile[i];
-                shadow_regfile_before[i] <= 32'b0;
-            end
-        end
-    end
-    
-    // 时序逻辑更新寄存器
-    always @(posedge clock) begin 
-        for(i = 0; i < 32; i = i + 1) begin
-            if (reset) begin
                 shadow_regfile[i] <= 32'b0;
-            end else if (!stall) begin
-                shadow_regfile[i] <= shadow_regfile_before[i];
+            end
+        end else begin
+            for (i = 0; i < 32; i = i + 1) begin
+                shadow_regfile[i] <= uut.regfile[i];
+                //shadow_regfile[i] <= 32'b0;
             end
         end
     end
-
 
     // 输出信号连接
-    assign instCommit_valid = (!stall && cycle_count == 2'b10 && inst_valid);
-    assign instCommit_inst  = inst;
-    always @(posedge clock) begin 
-        if(cycle_count == 2'b10) begin
-            instCommit_pc    <= pc;
-            result_pc        <= pc;
+    assign instCommit_valid = (!stall && inst_valid);
+
+
+    //assign instCommit_pc = pc; //延迟
+    reg [31:0] temo_pc;
+    always @(posedge clock) begin
+        if (reset) begin
+            temo_pc <= 32'b0;
+        end else begin
+            temo_pc <= pc;
         end
     end
-    
+    always @(posedge clock) begin
+        if (reset) begin
+            instCommit_pc <= 32'b0;
+        end else begin
+            instCommit_pc <= temo_pc;
+        end
+    end
+    //assign instCommit_pc = temo_pc;
+    assign result_pc = pc;
+    assign instCommit_inst = inst;
+
+
     assign result_reg_0 = 32'b0;
     assign result_reg_1 = shadow_regfile[1];
     assign result_reg_2 = shadow_regfile[2];
@@ -353,8 +349,7 @@ module nerv_extended_wrapper (
     assign result_reg_30 = shadow_regfile[30];
     assign result_reg_31 = shadow_regfile[31];
 
-    
-   
+
     // CSR寄存器输出
     assign result_csr_misa       = 32'h40001100;
     assign result_csr_medeleg    = uut.rvfi_csr_medeleg_rdata;
@@ -368,7 +363,7 @@ module nerv_extended_wrapper (
     always @(posedge clock) begin
         if (reset) begin
             csr_mcause <= 32'b0;
-        end else if(cycle_count == 2'b10) begin
+        end else if(event_valid) begin
             // 通过rvfi_trap和rvfi_csr_mcause_rdata检测异常
             if (uut.rvfi_trap && !uut.rvfi_csr_mcause_rdata[31]) begin
                 csr_mcause <= uut.csr_mcause_wdata;
@@ -380,7 +375,7 @@ module nerv_extended_wrapper (
         end 
     end
 
-    assign result_csr_mcause = 32'b0;
+    assign result_csr_mcause = csr_mcause;
     //assign result_csr_mcause     = uut.rvfi_csr_mcause_rdata;
     //assign result_csr_mtval      = uut.rvfi_csr_mtval_rdata;
     assign result_csr_cycle      = uut.rvfi_csr_cycle_rdata;
@@ -405,7 +400,7 @@ module nerv_extended_wrapper (
     assign result_internal_privilegeMode = mode;
 
     // 事件信号
-    //assign event_valid        = (trap || (irq != 0)) && inst_valid;
+    ///assign event_valid        = (trap || (irq != 0)) && inst_valid;
     assign event_valid        = 0;
     assign event_intrNO       = irq;
     assign event_cause        = 32'b0;

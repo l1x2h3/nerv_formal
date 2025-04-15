@@ -1,270 +1,221 @@
-SBY  9:02:54 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
-SBY  9:02:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
-SBY  9:02:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
-SBY  9:02:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
-SBY  9:02:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
-SBY  9:02:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
-SBY  9:02:54 [formal] engine_0: smtbmc yices
-SBY  9:02:54 [formal] base: starting process "cd formal/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY  9:02:54 [formal] base: Warning: wire '\instCommit_pc' is assigned in a block at nerv_wrapper.sv:318.13-318.35.
-SBY  9:02:54 [formal] base: Warning: wire '\result_pc' is assigned in a block at nerv_wrapper.sv:319.13-319.35.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_0' is assigned in a continuous assignment at nerv_wrapper.sv:323.12-323.32.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_1' is assigned in a continuous assignment at nerv_wrapper.sv:324.12-324.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_2' is assigned in a continuous assignment at nerv_wrapper.sv:325.12-325.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_3' is assigned in a continuous assignment at nerv_wrapper.sv:326.12-326.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_4' is assigned in a continuous assignment at nerv_wrapper.sv:327.12-327.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_5' is assigned in a continuous assignment at nerv_wrapper.sv:328.12-328.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_6' is assigned in a continuous assignment at nerv_wrapper.sv:329.12-329.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_7' is assigned in a continuous assignment at nerv_wrapper.sv:330.12-330.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_8' is assigned in a continuous assignment at nerv_wrapper.sv:331.12-331.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_9' is assigned in a continuous assignment at nerv_wrapper.sv:332.12-332.44.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_10' is assigned in a continuous assignment at nerv_wrapper.sv:333.12-333.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_11' is assigned in a continuous assignment at nerv_wrapper.sv:334.12-334.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_12' is assigned in a continuous assignment at nerv_wrapper.sv:335.12-335.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_13' is assigned in a continuous assignment at nerv_wrapper.sv:336.12-336.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_14' is assigned in a continuous assignment at nerv_wrapper.sv:337.12-337.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_15' is assigned in a continuous assignment at nerv_wrapper.sv:338.12-338.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_16' is assigned in a continuous assignment at nerv_wrapper.sv:339.12-339.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_17' is assigned in a continuous assignment at nerv_wrapper.sv:340.12-340.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_18' is assigned in a continuous assignment at nerv_wrapper.sv:341.12-341.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_19' is assigned in a continuous assignment at nerv_wrapper.sv:342.12-342.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_20' is assigned in a continuous assignment at nerv_wrapper.sv:343.12-343.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_21' is assigned in a continuous assignment at nerv_wrapper.sv:344.12-344.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_22' is assigned in a continuous assignment at nerv_wrapper.sv:345.12-345.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_23' is assigned in a continuous assignment at nerv_wrapper.sv:346.12-346.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_24' is assigned in a continuous assignment at nerv_wrapper.sv:347.12-347.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_25' is assigned in a continuous assignment at nerv_wrapper.sv:348.12-348.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_26' is assigned in a continuous assignment at nerv_wrapper.sv:349.12-349.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_27' is assigned in a continuous assignment at nerv_wrapper.sv:350.12-350.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_28' is assigned in a continuous assignment at nerv_wrapper.sv:351.12-351.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_29' is assigned in a continuous assignment at nerv_wrapper.sv:352.12-352.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_30' is assigned in a continuous assignment at nerv_wrapper.sv:353.12-353.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_reg_31' is assigned in a continuous assignment at nerv_wrapper.sv:354.12-354.46.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_misa' is assigned in a continuous assignment at nerv_wrapper.sv:359.12-359.48.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_medeleg' is assigned in a continuous assignment at nerv_wrapper.sv:360.12-360.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_mideleg' is assigned in a continuous assignment at nerv_wrapper.sv:361.12-361.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_mcause' is assigned in a continuous assignment at nerv_wrapper.sv:383.12-383.37.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_cycle' is assigned in a continuous assignment at nerv_wrapper.sv:386.12-386.60.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_scounteren' is assigned in a continuous assignment at nerv_wrapper.sv:387.12-387.65.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_scause' is assigned in a continuous assignment at nerv_wrapper.sv:388.12-388.61.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_stvec' is assigned in a continuous assignment at nerv_wrapper.sv:389.12-389.60.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_sepc' is assigned in a continuous assignment at nerv_wrapper.sv:390.12-390.59.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_stval' is assigned in a continuous assignment at nerv_wrapper.sv:391.12-391.60.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_sscratch' is assigned in a continuous assignment at nerv_wrapper.sv:392.12-392.63.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_satp' is assigned in a continuous assignment at nerv_wrapper.sv:393.12-393.59.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpcfg0' is assigned in a continuous assignment at nerv_wrapper.sv:394.12-394.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpcfg1' is assigned in a continuous assignment at nerv_wrapper.sv:395.12-395.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpcfg2' is assigned in a continuous assignment at nerv_wrapper.sv:396.12-396.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpcfg3' is assigned in a continuous assignment at nerv_wrapper.sv:397.12-397.62.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpaddr0' is assigned in a continuous assignment at nerv_wrapper.sv:398.12-398.63.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpaddr1' is assigned in a continuous assignment at nerv_wrapper.sv:399.12-399.63.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpaddr2' is assigned in a continuous assignment at nerv_wrapper.sv:400.12-400.63.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_pmpaddr3' is assigned in a continuous assignment at nerv_wrapper.sv:401.12-401.63.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_MXLEN' is assigned in a continuous assignment at nerv_wrapper.sv:402.12-402.41.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_IALIGN' is assigned in a continuous assignment at nerv_wrapper.sv:403.12-403.41.
-SBY  9:02:54 [formal] base: Warning: reg '\result_csr_ILEN' is assigned in a continuous assignment at nerv_wrapper.sv:404.12-404.41.
-SBY  9:02:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:420.19-422.56.
-SBY  9:02:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:423.22-423.42.
-SBY  9:02:54 [formal] base: Warning: Replacing memory \shadow_regfile with list of registers. See nerv_wrapper.sv:305
-SBY  9:02:54 [formal] base: Warning: Replacing memory \shadow_regfile_before with list of registers. See nerv_wrapper.sv:291
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:128: Warning: Identifier `\clk' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:360: Warning: Identifier `\uut.rvfi_csr_medeleg_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:361: Warning: Identifier `\uut.rvfi_csr_mideleg_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:373: Warning: Identifier `\uut.rvfi_trap' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:373: Warning: Identifier `\uut.rvfi_csr_mcause_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:373: Warning: Range select out of bounds on signal `\uut.rvfi_csr_mcause_rdata': Setting result bit to undef.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:374: Warning: Identifier `\uut.csr_mcause_wdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:377: Warning: Identifier `\uut.irq_num' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:378: Warning: Range select [4:0] out of bounds on signal `\uut.irq_num': Setting all 5 result bits to undef.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:386: Warning: Identifier `\uut.rvfi_csr_cycle_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:387: Warning: Identifier `\uut.rvfi_csr_scounteren_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:388: Warning: Identifier `\uut.rvfi_csr_scause_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:389: Warning: Identifier `\uut.rvfi_csr_stvec_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:390: Warning: Identifier `\uut.rvfi_csr_sepc_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:391: Warning: Identifier `\uut.rvfi_csr_stval_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:392: Warning: Identifier `\uut.rvfi_csr_sscratch_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:393: Warning: Identifier `\uut.rvfi_csr_satp_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:394: Warning: Identifier `\uut.rvfi_csr_pmpcfg0_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:395: Warning: Identifier `\uut.rvfi_csr_pmpcfg1_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:396: Warning: Identifier `\uut.rvfi_csr_pmpcfg2_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:397: Warning: Identifier `\uut.rvfi_csr_pmpcfg3_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:398: Warning: Identifier `\uut.rvfi_csr_pmpaddr0_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:399: Warning: Identifier `\uut.rvfi_csr_pmpaddr1_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:400: Warning: Identifier `\uut.rvfi_csr_pmpaddr2_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:401: Warning: Identifier `\uut.rvfi_csr_pmpaddr3_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:421: Warning: Identifier `\uut.rvfi_pc_rdata' is implicitly declared.
-SBY  9:02:54 [formal] base: nerv_wrapper.sv:422: Warning: Identifier `\uut.rvfi_csr_mepc_rdata' is implicitly declared.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_pc_rdata is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire nerv_extended_wrapper.\clk is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [31] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [30] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [29] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [28] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [27] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [26] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [25] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [24] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [23] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [22] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [21] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [20] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [19] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [18] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [17] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [16] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [15] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [14] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [13] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [12] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [11] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [10] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [9] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [8] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [7] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [6] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [5] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [4] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [3] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [2] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [1] is used but has no driver.
-SBY  9:02:57 [formal] base: Warning: Wire top_formal.\io_now_pc [0] is used but has no driver.
-SBY  9:03:00 [formal] base: finished (returncode=0)
-SBY  9:03:00 [formal] prep: starting process "cd formal/model; yosys -ql design_prep.log design_prep.ys"
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [31] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [30] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [29] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [28] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [27] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [26] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [25] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [24] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [23] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [22] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [21] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [20] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [19] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [18] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [17] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [16] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [15] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [14] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [13] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [12] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [11] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [10] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [9] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [8] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [7] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [6] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [5] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [4] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [3] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [2] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [1] is used but has no driver.
-SBY  9:03:02 [formal] prep: Warning: Wire top_formal.\io_now_pc [0] is used but has no driver.
-SBY  9:03:04 [formal] prep: finished (returncode=0)
-SBY  9:03:04 [formal] smt2: starting process "cd formal/model; yosys -ql design_smt2.log design_smt2.ys"
-SBY  9:03:04 [formal] smt2: finished (returncode=0)
-SBY  9:03:04 [formal] engine_0: starting process "cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
-SBY  9:03:04 [formal] engine_0: ##   0:00:00  Solver: yices
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY  9:03:05 [formal] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY  9:03:05 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
-SBY  9:03:05 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
-SBY  9:03:06 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
-SBY  9:03:06 [formal] engine_0: ##   0:00:01  Checking assertions in step 4..
-SBY  9:03:06 [formal] engine_0: ##   0:00:01  Checking assumptions in step 5..
-SBY  9:03:06 [formal] engine_0: ##   0:00:02  Checking assertions in step 5..
-SBY  9:03:07 [formal] engine_0: ##   0:00:02  Checking assumptions in step 6..
-SBY  9:03:07 [formal] engine_0: ##   0:00:03  Checking assertions in step 6..
-SBY  9:03:08 [formal] engine_0: ##   0:00:03  Checking assumptions in step 7..
-SBY  9:03:09 [formal] engine_0: ##   0:00:04  Checking assertions in step 7..
-SBY  9:03:10 [formal] engine_0: ##   0:00:06  Checking assumptions in step 8..
-SBY  9:03:11 [formal] engine_0: ##   0:00:07  Checking assertions in step 8..
-SBY  9:03:15 [formal] engine_0: ##   0:00:11  Checking assumptions in step 9..
-SBY  9:03:16 [formal] engine_0: ##   0:00:12  Checking assertions in step 9..
-SBY  9:03:22 [formal] engine_0: ##   0:00:17  Checking assumptions in step 10..
-SBY  9:03:23 [formal] engine_0: ##   0:00:18  Checking assertions in step 10..
-SBY  9:03:31 [formal] engine_0: ##   0:00:26  Checking assumptions in step 11..
-SBY  9:03:32 [formal] engine_0: ##   0:00:27  Checking assertions in step 11..
-SBY  9:03:44 [formal] engine_0: ##   0:00:39  Checking assumptions in step 12..
-SBY  9:03:46 [formal] engine_0: ##   0:00:41  Checking assertions in step 12..
-SBY  9:04:02 [formal] engine_0: ##   0:00:57  Checking assumptions in step 13..
-SBY  9:04:04 [formal] engine_0: ##   0:01:00  Checking assertions in step 13..
-SBY  9:04:22 [formal] engine_0: ##   0:01:17  Checking assumptions in step 14..
-SBY  9:04:28 [formal] engine_0: ##   0:01:24  Checking assertions in step 14..
-SBY  9:04:52 [formal] engine_0: ##   0:01:47  Checking assumptions in step 15..
-SBY  9:04:55 [formal] engine_0: ##   0:01:50  Checking assertions in step 15..
-SBY  9:05:19 [formal] engine_0: ##   0:02:14  Checking assumptions in step 16..
-SBY  9:05:27 [formal] engine_0: ##   0:02:22  Checking assertions in step 16..
-SBY  9:06:09 [formal] engine_0: ##   0:03:04  Checking assumptions in step 17..
-SBY  9:06:13 [formal] engine_0: ##   0:03:08  Checking assertions in step 17..
-SBY  9:06:55 [formal] engine_0: ##   0:03:50  Checking assumptions in step 18..
-SBY  9:07:13 [formal] engine_0: ##   0:04:08  Checking assertions in step 18..
-SBY  9:08:04 [formal] engine_0: ##   0:05:00  Checking assumptions in step 19..
-SBY  9:08:08 [formal] engine_0: ##   0:05:03  Checking assertions in step 19..
-SBY  9:09:08 [formal] engine_0: ##   0:06:03  waiting for solver (1 minute)
-SBY  9:09:22 [formal] engine_0: ##   0:06:18  Status: passed
-SBY  9:09:22 [formal] engine_0: finished (returncode=0)
-SBY  9:09:22 [formal] engine_0: Status returned by engine: pass
-SBY  9:09:22 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:06:28 (388)
-SBY  9:09:22 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:06:29 (389)
-SBY  9:09:22 [formal] summary: engine_0 (smtbmc yices) returned pass
-SBY  9:09:22 [formal] summary: engine_0 did not produce any traces
-SBY  9:09:22 [formal] DONE (PASS, rc=0)
+SBY 12:07:54 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
+SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
+SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
+SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
+SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
+SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
+SBY 12:07:54 [formal] engine_0: smtbmc yices
+SBY 12:07:54 [formal] base: starting process "cd formal/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mcounteren' is assigned in a continuous assignment at nerv_wrapper.sv:198.12-198.41.
+SBY 12:07:54 [formal] base: Warning: wire '\instCommit_pc' is assigned in a block at nerv_wrapper.sv:309.13-309.35.
+SBY 12:07:54 [formal] base: Warning: wire '\instCommit_pc' is assigned in a block at nerv_wrapper.sv:311.13-311.37.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_0' is assigned in a continuous assignment at nerv_wrapper.sv:319.12-319.32.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_1' is assigned in a continuous assignment at nerv_wrapper.sv:320.12-320.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_2' is assigned in a continuous assignment at nerv_wrapper.sv:321.12-321.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_3' is assigned in a continuous assignment at nerv_wrapper.sv:322.12-322.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_4' is assigned in a continuous assignment at nerv_wrapper.sv:323.12-323.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_5' is assigned in a continuous assignment at nerv_wrapper.sv:324.12-324.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_6' is assigned in a continuous assignment at nerv_wrapper.sv:325.12-325.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_7' is assigned in a continuous assignment at nerv_wrapper.sv:326.12-326.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_8' is assigned in a continuous assignment at nerv_wrapper.sv:327.12-327.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_9' is assigned in a continuous assignment at nerv_wrapper.sv:328.12-328.44.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_10' is assigned in a continuous assignment at nerv_wrapper.sv:329.12-329.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_11' is assigned in a continuous assignment at nerv_wrapper.sv:330.12-330.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_12' is assigned in a continuous assignment at nerv_wrapper.sv:331.12-331.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_13' is assigned in a continuous assignment at nerv_wrapper.sv:332.12-332.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_14' is assigned in a continuous assignment at nerv_wrapper.sv:333.12-333.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_15' is assigned in a continuous assignment at nerv_wrapper.sv:334.12-334.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_16' is assigned in a continuous assignment at nerv_wrapper.sv:335.12-335.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_17' is assigned in a continuous assignment at nerv_wrapper.sv:336.12-336.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_18' is assigned in a continuous assignment at nerv_wrapper.sv:337.12-337.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_19' is assigned in a continuous assignment at nerv_wrapper.sv:338.12-338.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_20' is assigned in a continuous assignment at nerv_wrapper.sv:339.12-339.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_21' is assigned in a continuous assignment at nerv_wrapper.sv:340.12-340.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_22' is assigned in a continuous assignment at nerv_wrapper.sv:341.12-341.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_23' is assigned in a continuous assignment at nerv_wrapper.sv:342.12-342.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_24' is assigned in a continuous assignment at nerv_wrapper.sv:343.12-343.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_25' is assigned in a continuous assignment at nerv_wrapper.sv:344.12-344.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_26' is assigned in a continuous assignment at nerv_wrapper.sv:345.12-345.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_27' is assigned in a continuous assignment at nerv_wrapper.sv:346.12-346.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_28' is assigned in a continuous assignment at nerv_wrapper.sv:347.12-347.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_29' is assigned in a continuous assignment at nerv_wrapper.sv:348.12-348.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_30' is assigned in a continuous assignment at nerv_wrapper.sv:349.12-349.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_reg_31' is assigned in a continuous assignment at nerv_wrapper.sv:350.12-350.46.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_misa' is assigned in a continuous assignment at nerv_wrapper.sv:354.12-354.48.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_medeleg' is assigned in a continuous assignment at nerv_wrapper.sv:355.12-355.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mideleg' is assigned in a continuous assignment at nerv_wrapper.sv:356.12-356.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mcause' is assigned in a continuous assignment at nerv_wrapper.sv:378.12-378.42.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_cycle' is assigned in a continuous assignment at nerv_wrapper.sv:381.12-381.60.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_scounteren' is assigned in a continuous assignment at nerv_wrapper.sv:382.12-382.65.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_scause' is assigned in a continuous assignment at nerv_wrapper.sv:383.12-383.61.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_stvec' is assigned in a continuous assignment at nerv_wrapper.sv:384.12-384.60.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_sepc' is assigned in a continuous assignment at nerv_wrapper.sv:385.12-385.59.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_stval' is assigned in a continuous assignment at nerv_wrapper.sv:386.12-386.60.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_sscratch' is assigned in a continuous assignment at nerv_wrapper.sv:387.12-387.63.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_satp' is assigned in a continuous assignment at nerv_wrapper.sv:388.12-388.59.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg0' is assigned in a continuous assignment at nerv_wrapper.sv:389.12-389.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg1' is assigned in a continuous assignment at nerv_wrapper.sv:390.12-390.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg2' is assigned in a continuous assignment at nerv_wrapper.sv:391.12-391.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg3' is assigned in a continuous assignment at nerv_wrapper.sv:392.12-392.62.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr0' is assigned in a continuous assignment at nerv_wrapper.sv:393.12-393.63.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr1' is assigned in a continuous assignment at nerv_wrapper.sv:394.12-394.63.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr2' is assigned in a continuous assignment at nerv_wrapper.sv:395.12-395.63.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr3' is assigned in a continuous assignment at nerv_wrapper.sv:396.12-396.63.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_MXLEN' is assigned in a continuous assignment at nerv_wrapper.sv:397.12-397.41.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_IALIGN' is assigned in a continuous assignment at nerv_wrapper.sv:398.12-398.41.
+SBY 12:07:54 [formal] base: Warning: reg '\result_csr_ILEN' is assigned in a continuous assignment at nerv_wrapper.sv:399.12-399.41.
+SBY 12:07:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:415.19-417.56.
+SBY 12:07:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:418.22-418.42.
+SBY 12:07:54 [formal] base: Warning: Replacing memory \shadow_regfile with list of registers. See nerv_wrapper.sv:284
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:128: Warning: Identifier `\clk' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:267: Warning: Identifier `\uut.rvfi_csr_mstatus_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:268: Warning: Identifier `\uut.rvfi_csr_mstatush_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:288: Warning: Identifier `\uut.regfile' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:288: Warning: Range select out of bounds on signal `\uut.regfile': Setting result bit to undef.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:355: Warning: Identifier `\uut.rvfi_csr_medeleg_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:356: Warning: Identifier `\uut.rvfi_csr_mideleg_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Identifier `\uut.rvfi_trap' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Identifier `\uut.rvfi_csr_mcause_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Range select out of bounds on signal `\uut.rvfi_csr_mcause_rdata': Setting result bit to undef.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:369: Warning: Identifier `\uut.csr_mcause_wdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:372: Warning: Identifier `\uut.irq_num' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:373: Warning: Range select [4:0] out of bounds on signal `\uut.irq_num': Setting all 5 result bits to undef.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:381: Warning: Identifier `\uut.rvfi_csr_cycle_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:382: Warning: Identifier `\uut.rvfi_csr_scounteren_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:383: Warning: Identifier `\uut.rvfi_csr_scause_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:384: Warning: Identifier `\uut.rvfi_csr_stvec_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:385: Warning: Identifier `\uut.rvfi_csr_sepc_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:386: Warning: Identifier `\uut.rvfi_csr_stval_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:387: Warning: Identifier `\uut.rvfi_csr_sscratch_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:388: Warning: Identifier `\uut.rvfi_csr_satp_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:389: Warning: Identifier `\uut.rvfi_csr_pmpcfg0_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:390: Warning: Identifier `\uut.rvfi_csr_pmpcfg1_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:391: Warning: Identifier `\uut.rvfi_csr_pmpcfg2_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:392: Warning: Identifier `\uut.rvfi_csr_pmpcfg3_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:393: Warning: Identifier `\uut.rvfi_csr_pmpaddr0_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:394: Warning: Identifier `\uut.rvfi_csr_pmpaddr1_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:395: Warning: Identifier `\uut.rvfi_csr_pmpaddr2_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:396: Warning: Identifier `\uut.rvfi_csr_pmpaddr3_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:416: Warning: Identifier `\uut.rvfi_pc_rdata' is implicitly declared.
+SBY 12:07:54 [formal] base: nerv_wrapper.sv:417: Warning: Identifier `\uut.rvfi_csr_mepc_rdata' is implicitly declared.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_pc_rdata is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\clk is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 12:08:00 [formal] base: finished (returncode=0)
+SBY 12:08:00 [formal] prep: starting process "cd formal/model; yosys -ql design_prep.log design_prep.ys"
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 12:08:02 [formal] prep: finished (returncode=0)
+SBY 12:08:02 [formal] smt2: starting process "cd formal/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 12:08:02 [formal] smt2: finished (returncode=0)
+SBY 12:08:02 [formal] engine_0: starting process "cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 12:08:02 [formal] engine_0: ##   0:00:00  Solver: yices
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 12:08:03 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
+SBY 12:08:03 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Checking assertions in step 4..
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  BMC failed!
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9046.7-9046.58 (_witness_.check_assert_CheckerWrapper_sv_9046_6685)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9042.7-9042.58 (_witness_.check_assert_CheckerWrapper_sv_9042_6682)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9038.7-9038.58 (_witness_.check_assert_CheckerWrapper_sv_9038_6679)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9034.7-9034.58 (_witness_.check_assert_CheckerWrapper_sv_9034_6676)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9030.7-9030.58 (_witness_.check_assert_CheckerWrapper_sv_9030_6673)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9026.7-9026.58 (_witness_.check_assert_CheckerWrapper_sv_9026_6670)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9022.7-9022.58 (_witness_.check_assert_CheckerWrapper_sv_9022_6667)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9018.7-9018.58 (_witness_.check_assert_CheckerWrapper_sv_9018_6664)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9014.7-9014.58 (_witness_.check_assert_CheckerWrapper_sv_9014_6661)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9010.7-9010.58 (_witness_.check_assert_CheckerWrapper_sv_9010_6658)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9006.7-9006.58 (_witness_.check_assert_CheckerWrapper_sv_9006_6655)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9002.7-9002.58 (_witness_.check_assert_CheckerWrapper_sv_9002_6652)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8998.7-8998.58 (_witness_.check_assert_CheckerWrapper_sv_8998_6649)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8994.7-8994.58 (_witness_.check_assert_CheckerWrapper_sv_8994_6646)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8990.7-8990.58 (_witness_.check_assert_CheckerWrapper_sv_8990_6643)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8986.7-8986.58 (_witness_.check_assert_CheckerWrapper_sv_8986_6640)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8982.7-8982.58 (_witness_.check_assert_CheckerWrapper_sv_8982_6637)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8978.7-8978.58 (_witness_.check_assert_CheckerWrapper_sv_8978_6634)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8974.7-8974.58 (_witness_.check_assert_CheckerWrapper_sv_8974_6631)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8970.7-8970.58 (_witness_.check_assert_CheckerWrapper_sv_8970_6628)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8966.7-8966.58 (_witness_.check_assert_CheckerWrapper_sv_8966_6625)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8962.7-8962.58 (_witness_.check_assert_CheckerWrapper_sv_8962_6622)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8958.7-8958.56 (_witness_.check_assert_CheckerWrapper_sv_8958_6619)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8954.7-8954.56 (_witness_.check_assert_CheckerWrapper_sv_8954_6616)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8950.7-8950.56 (_witness_.check_assert_CheckerWrapper_sv_8950_6613)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8946.7-8946.56 (_witness_.check_assert_CheckerWrapper_sv_8946_6610)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8942.7-8942.56 (_witness_.check_assert_CheckerWrapper_sv_8942_6607)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8938.7-8938.56 (_witness_.check_assert_CheckerWrapper_sv_8938_6604)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8934.7-8934.56 (_witness_.check_assert_CheckerWrapper_sv_8934_6601)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8930.7-8930.56 (_witness_.check_assert_CheckerWrapper_sv_8930_6598)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8926.7-8926.56 (_witness_.check_assert_CheckerWrapper_sv_8926_6595)
+SBY 12:08:04 [formal] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace.vcd
+SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to constraints file: engine_0/trace.smtc
+SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 12:08:07 [formal] engine_0: ##   0:00:04  Status: failed
+SBY 12:08:07 [formal] engine_0: finished (returncode=1)
+SBY 12:08:07 [formal] engine_0: Status returned by engine: FAIL
+SBY 12:08:07 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:12 (12)
+SBY 12:08:07 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:13 (13)
+SBY 12:08:07 [formal] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 12:08:07 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
+SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8926_6595 at CheckerWrapper.sv:8926.7-8926.56 in step 4
+SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8930_6598 at CheckerWrapper.sv:8930.7-8930.56 in step 4
+SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8934_6601 at CheckerWrapper.sv:8934.7-8934.56 in step 4
+SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8938_6604 at CheckerWrapper.sv:8938.7-8938.56 in step 4
+SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8942_6607 at CheckerWrapper.sv:8942.7-8942.56 in step 4
+SBY 12:08:07 [formal] summary:   and 26 further assertions
+SBY 12:08:07 [formal] DONE (FAIL, rc=2)
