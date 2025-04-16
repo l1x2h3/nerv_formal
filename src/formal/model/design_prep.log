@@ -57,7 +57,104 @@ Checking module CheckerWrapper...
 Checking module RiscvCore...
 Checking module RiscvTrans...
 Checking module nerv...
+Warning: Wire nerv.\dbg_reg_x3 [31] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [30] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [29] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [28] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [27] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [26] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [25] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [24] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [23] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [22] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [21] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [20] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [19] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [18] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [17] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [16] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [15] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [14] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [13] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [12] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [11] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [10] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [9] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [8] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [7] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [6] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [5] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [4] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [3] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [2] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [1] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x3 [0] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [31] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [30] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [29] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [28] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [27] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [26] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [25] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [24] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [23] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [22] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [21] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [20] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [19] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [18] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [17] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [16] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [15] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [14] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [13] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [12] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [11] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [10] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [9] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [8] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [7] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [6] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [5] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [4] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [3] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [2] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [1] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x2 [0] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [31] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [30] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [29] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [28] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [27] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [26] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [25] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [24] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [23] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [22] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [21] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [20] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [19] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [18] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [17] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [16] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [15] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [14] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [13] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [12] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [11] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [10] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [9] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [8] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [7] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [6] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [5] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [4] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [3] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [2] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [1] is used but has no driver.
+Warning: Wire nerv.\dbg_reg_x1 [0] is used but has no driver.
 Checking module nerv_extended_wrapper...
+Warning: Wire nerv_extended_wrapper.\result_pc [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
 Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
@@ -85,7 +182,7 @@ Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
 Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-Found and reported 26 problems.
+Found and reported 123 problems.
 
 10. Executing SETUNDEF pass (replace undef values with defined constants).
 
@@ -123,7 +220,7 @@ Finding unused cells or wires in module \RiscvTrans..
 Finding unused cells or wires in module \nerv..
 Finding unused cells or wires in module \nerv_extended_wrapper..
 Finding unused cells or wires in module \top_formal..
-Removed 114 unused cells and 200 unused wires.
+Removed 114 unused cells and 278 unused wires.
 <suppressed ~122 debug messages>
 
 11.5. Finished fast OPT passes.
@@ -142,7 +239,7 @@ Removed 0 unused cells and 21 unused wires.
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-Warnings: 26 unique messages, 26 total
-End of script. Logfile hash: fbef0e651c, CPU: user 2.01s system 0.06s, MEM: 108.46 MB peak
+Warnings: 123 unique messages, 123 total
+End of script. Logfile hash: b2f8ef4b2f, CPU: user 3.41s system 0.10s, MEM: 108.54 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 51% 4x opt_clean (1 sec), 15% 1x check (0 sec), ...
+Time spent: 48% 4x opt_clean (1 sec), 14% 1x check (0 sec), ...

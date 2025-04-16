@@ -203,7 +203,7 @@ module top_formal (
         .io_result_csr_ILEN(8'd32), // 指令长度 32 位
         .io_result_internal_privilegeMode(2'b11), // 默认 Machine 模式
         .io_event_valid(io_event_valid),
-        .io_event_intrNO(32'b0), // 未支持中断号
+        .io_event_intrNO(io_event_intrNO), // 未支持中断号
         .io_event_cause(io_event_cause),
         .io_event_exceptionPC(io_event_exceptionPC),
         .io_event_exceptionInst(io_event_exceptionInst),

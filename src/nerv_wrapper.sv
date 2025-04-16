@@ -90,13 +90,13 @@ module nerv_extended_wrapper (
     (* keep *) `rvformal_rand_reg [31:0] irq;
 
     // NERV_FAULT 条件下的信号
-    `ifdef NERV_FAULT
-        (* keep *) reg imem_fault;
-        (* keep *) reg dmem_fault;
-    `else
-        wire imem_fault = 0;
-        wire dmem_fault = 0;
-    `endif
+    // `ifdef NERV_FAULT
+    //     (* keep *) reg imem_fault;
+    //     (* keep *) reg dmem_fault;
+    // `else
+    //     wire imem_fault = 0;
+    //     wire dmem_fault = 0;
+    // `endif
 
     // 定义指令的掩码和匹配值
     wire [31:0] add_pattern  = 32'b0000000_xxxxx_xxxxx_000_xxxxx_0110011;
@@ -162,7 +162,7 @@ module nerv_extended_wrapper (
         .reset      (reset),
         .stall      (stall),
         .rvfi_trap  (trap),
-        .imem_addr  (imem_addr),
+        .imem_addr  (pc),
         .imem_data  (imem_data),
         .dmem_valid (dmem_valid),
         .dmem_addr  (dmem_addr),
@@ -172,7 +172,6 @@ module nerv_extended_wrapper (
         .irq        (irq),
         .rvfi_valid (inst_valid),
         .rvfi_insn  (inst),
-        .imem_addr  (pc),
         .rvfi_rd_addr (rd_addr),
         .rvfi_rd_wdata (rd_wdata),
         .rvfi_mode  (mode),
@@ -184,6 +183,10 @@ module nerv_extended_wrapper (
         .rvfi_csr_mhartid_rdata (result_csr_mhartid),
         .rvfi_csr_mscratch_rdata (result_csr_mscratch),
         .rvfi_csr_mtvec_rdata (result_csr_mtvec),
+        .rvfi_pc_rdata(instCommit_pc),
+        .dbg_reg_x1(result_reg_1),
+        .dbg_reg_x2(result_reg_2),
+        .dbg_reg_x3(result_reg_3),
         //需要在用户态中开启
         //.rvfi_csr_mcounteren_rdata (result_csr_mcounteren),
         // .rvfi_csr_medeleg_rdata (result_csr_medeleg),
@@ -292,34 +295,33 @@ module nerv_extended_wrapper (
     end
 
     // 输出信号连接
-    assign instCommit_valid = (!stall && inst_valid);
+    assign instCommit_valid = inst_valid;
 
-
-    //assign instCommit_pc = pc; //延迟
-    reg [31:0] temo_pc;
-    always @(posedge clock) begin
-        if (reset) begin
-            temo_pc <= 32'b0;
-        end else begin
-            temo_pc <= pc;
-        end
-    end
-    always @(posedge clock) begin
-        if (reset) begin
-            instCommit_pc <= 32'b0;
-        end else begin
-            instCommit_pc <= temo_pc;
-        end
-    end
+    //assign instCommit_pc = uut.rvfi_pc_rdata; //延迟
+    // reg [31:0] temo_pc;
+    // always @(posedge clock) begin
+    //     if (reset) begin
+    //         temo_pc <= 32'b0;
+    //     end else begin
+    //         temo_pc <= pc;
+    //     end
+    // end
+    // always @(posedge clock) begin
+    //     if (reset) begin
+    //         instCommit_pc <= 32'b0;
+    //     end else begin
+    //         instCommit_pc <= temo_pc;
+    //     end
+    // end
     //assign instCommit_pc = temo_pc;
-    assign result_pc = pc;
+    assign result_pc = uut.rvfi_pc_rdata;
     assign instCommit_inst = inst;
 
 
     assign result_reg_0 = 32'b0;
-    assign result_reg_1 = shadow_regfile[1];
-    assign result_reg_2 = shadow_regfile[2];
-    assign result_reg_3 = shadow_regfile[3];
+    // assign result_reg_1 = uut.dbg_reg_x1;
+    // assign result_reg_2 = uut.dbg_reg_x2;
+    // assign result_reg_3 = uut.dbg_reg_x3;
     assign result_reg_4 = shadow_regfile[4];
     assign result_reg_5 = shadow_regfile[5];
     assign result_reg_6 = shadow_regfile[6];

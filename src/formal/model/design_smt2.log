@@ -62,25 +62,24 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
 
 === nerv_extended_wrapper ===
 
-   Number of wires:                241
-   Number of wire bits:           4996
-   Number of public wires:         190
-   Number of public wire bits:    4561
+   Number of wires:                233
+   Number of wire bits:           4802
+   Number of public wires:         185
+   Number of public wire bits:    4432
    Number of ports:                 89
    Number of port bits:           2508
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                127
-     $anyinit                       44
-     $anyseq                        24
+   Number of cells:                119
+     $anyinit                       39
+     $anyseq                        25
      $assume                         3
      $eq                            16
      $initstate                      1
-     $logic_and                      2
-     $logic_not                      1
+     $logic_and                      1
      $logic_or                       9
-     $mux                           22
+     $mux                           20
      $not                            1
      $pmux                           2
      $reduce_bool                    1
@@ -88,20 +87,20 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
 
 === nerv ===
 
-   Number of wires:               2294
-   Number of wire bits:          60094
-   Number of public wires:         973
-   Number of public wire bits:   34855
-   Number of ports:                465
-   Number of port bits:          14408
+   Number of wires:               2297
+   Number of wire bits:          60190
+   Number of public wires:         976
+   Number of public wire bits:   34951
+   Number of ports:                468
+   Number of port bits:          14504
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2131
+   Number of cells:               2208
      $add                           41
      $and                            4
      $anyinit                      474
-     $anyseq                        20
+     $anyseq                        97
      $assume                         1
      $eq                           244
      $ge                             2
@@ -221,20 +220,20 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
      nerv_extended_wrapper           1
        nerv                          1
 
-   Number of wires:               8861
-   Number of wire bits:         204686
-   Number of public wires:        7166
-   Number of public wire bits:  176621
-   Number of ports:               1048
-   Number of port bits:          31098
+   Number of wires:               8856
+   Number of wire bits:         204588
+   Number of public wires:        7164
+   Number of public wire bits:  176588
+   Number of ports:               1051
+   Number of port bits:          31194
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               5855
+   Number of cells:               5924
      $add                           48
      $and                           44
-     $anyinit                      588
-     $anyseq                        50
+     $anyinit                      583
+     $anyseq                       128
      $assert                        59
      $assume                         8
      $div                            2
@@ -242,14 +241,14 @@ Module CheckerWithResult directly or indirectly contains formal properties -> se
      $ff                            64
      $ge                             4
      $initstate                      1
-     $logic_and                    230
-     $logic_not                     24
+     $logic_and                    229
+     $logic_not                     23
      $logic_or                      17
      $lt                            10
      $mem_v2                         1
      $mod                            2
      $mul                            3
-     $mux                         4051
+     $mux                         4049
      $ne                             4
      $not                           10
      $or                            34
@@ -275,6 +274,6 @@ Creating SMT-LIBv2 representation of module CheckerWithResult.
 Creating SMT-LIBv2 representation of module CheckerWrapper.
 Creating SMT-LIBv2 representation of module top_formal.
 
-End of script. Logfile hash: 350dcde824, CPU: user 0.50s system 0.03s, MEM: 40.27 MB peak
+End of script. Logfile hash: bdfaaf82f7, CPU: user 0.61s system 0.03s, MEM: 39.12 MB peak
 Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
-Time spent: 84% 2x write_smt2 (0 sec), 12% 2x read_ilang (0 sec), ...
+Time spent: 83% 2x write_smt2 (0 sec), 12% 2x read_ilang (0 sec), ...

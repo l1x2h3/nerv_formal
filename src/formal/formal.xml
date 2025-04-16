@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2025-04-15T12:08:07" hostname="versys01" package="formal" id="0" name="default" tests="59" errors="0" failures="32" time="13" skipped="28">
+<testsuite timestamp="2025-04-16T18:29:59" hostname="versys01" package="formal" id="0" name="default" tests="59" errors="0" failures="2" time="22" skipped="58">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -9,404 +9,558 @@
 <testcase classname="default" name="build execution" time="0">
 <failure type="FAIL" message="Task returned status FAIL." />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8834.7-8834.62" id="_witness_.check_assert_CheckerWrapper_sv_8834_6527">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8834.7-8834.62" id="_witness_.check_assert_CheckerWrapper_sv_8834_6523">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8838.7-8838.60" id="_witness_.check_assert_CheckerWrapper_sv_8838_6530">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8838.7-8838.60" id="_witness_.check_assert_CheckerWrapper_sv_8838_6526">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8842.7-8842.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8842.7-8842.68" id="_witness_.check_assert_CheckerWrapper_sv_8842_6533">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8842.7-8842.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8842.7-8842.68" id="_witness_.check_assert_CheckerWrapper_sv_8842_6529">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8846.7-8846.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8846.7-8846.64" id="_witness_.check_assert_CheckerWrapper_sv_8846_6535">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8846.7-8846.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8846.7-8846.64" id="_witness_.check_assert_CheckerWrapper_sv_8846_6531">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8850.7-8850.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8850.7-8850.62" id="_witness_.check_assert_CheckerWrapper_sv_8850_6538">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8850.7-8850.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8850.7-8850.62" id="_witness_.check_assert_CheckerWrapper_sv_8850_6534">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8854.7-8854.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8854.7-8854.62" id="_witness_.check_assert_CheckerWrapper_sv_8854_6541">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8854.7-8854.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8854.7-8854.62" id="_witness_.check_assert_CheckerWrapper_sv_8854_6537">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8858.7-8858.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8858.7-8858.70" id="_witness_.check_assert_CheckerWrapper_sv_8858_6544">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8858.7-8858.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8858.7-8858.70" id="_witness_.check_assert_CheckerWrapper_sv_8858_6540">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8862.7-8862.53" time="0" type="ASSERT" location="CheckerWrapper.sv:8862.7-8862.53" id="_witness_.check_assert_CheckerWrapper_sv_8862_6547">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8862.7-8862.53" time="0" type="ASSERT" location="CheckerWrapper.sv:8862.7-8862.53" id="_witness_.check_assert_CheckerWrapper_sv_8862_6543">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8866.7-8866.62" id="_witness_.check_assert_CheckerWrapper_sv_8866_6550">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8866.7-8866.62" id="_witness_.check_assert_CheckerWrapper_sv_8866_6546">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8870.7-8870.72" time="0" type="ASSERT" location="CheckerWrapper.sv:8870.7-8870.72" id="_witness_.check_assert_CheckerWrapper_sv_8870_6553">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8870.7-8870.72" time="0" type="ASSERT" location="CheckerWrapper.sv:8870.7-8870.72" id="_witness_.check_assert_CheckerWrapper_sv_8870_6549">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8874.7-8874.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8874.7-8874.68" id="_witness_.check_assert_CheckerWrapper_sv_8874_6556">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8874.7-8874.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8874.7-8874.68" id="_witness_.check_assert_CheckerWrapper_sv_8874_6552">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8878.7-8878.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8878.7-8878.66" id="_witness_.check_assert_CheckerWrapper_sv_8878_6559">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8878.7-8878.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8878.7-8878.66" id="_witness_.check_assert_CheckerWrapper_sv_8878_6555">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8882.7-8882.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8882.7-8882.68" id="_witness_.check_assert_CheckerWrapper_sv_8882_6562">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8882.7-8882.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8882.7-8882.68" id="_witness_.check_assert_CheckerWrapper_sv_8882_6558">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8886.7-8886.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8886.7-8886.68" id="_witness_.check_assert_CheckerWrapper_sv_8886_6565">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8886.7-8886.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8886.7-8886.68" id="_witness_.check_assert_CheckerWrapper_sv_8886_6561">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8890.7-8890.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8890.7-8890.70" id="_witness_.check_assert_CheckerWrapper_sv_8890_6568">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8890.7-8890.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8890.7-8890.70" id="_witness_.check_assert_CheckerWrapper_sv_8890_6564">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8894.7-8894.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8894.7-8894.64" id="_witness_.check_assert_CheckerWrapper_sv_8894_6571">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8894.7-8894.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8894.7-8894.64" id="_witness_.check_assert_CheckerWrapper_sv_8894_6567">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8898.7-8898.74" time="0" type="ASSERT" location="CheckerWrapper.sv:8898.7-8898.74" id="_witness_.check_assert_CheckerWrapper_sv_8898_6574">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8898.7-8898.74" time="0" type="ASSERT" location="CheckerWrapper.sv:8898.7-8898.74" id="_witness_.check_assert_CheckerWrapper_sv_8898_6570">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8902.7-8902.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8902.7-8902.60" id="_witness_.check_assert_CheckerWrapper_sv_8902_6577">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8902.7-8902.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8902.7-8902.60" id="_witness_.check_assert_CheckerWrapper_sv_8902_6573">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8906.7-8906.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8906.7-8906.60" id="_witness_.check_assert_CheckerWrapper_sv_8906_6580">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8906.7-8906.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8906.7-8906.60" id="_witness_.check_assert_CheckerWrapper_sv_8906_6576">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8910.7-8910.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8910.7-8910.62" id="_witness_.check_assert_CheckerWrapper_sv_8910_6583">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8910.7-8910.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8910.7-8910.62" id="_witness_.check_assert_CheckerWrapper_sv_8910_6579">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8914.7-8914.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8914.7-8914.66" id="_witness_.check_assert_CheckerWrapper_sv_8914_6586">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8914.7-8914.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8914.7-8914.66" id="_witness_.check_assert_CheckerWrapper_sv_8914_6582">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8918.7-8918.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8918.7-8918.64" id="_witness_.check_assert_CheckerWrapper_sv_8918_6589">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8918.7-8918.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8918.7-8918.64" id="_witness_.check_assert_CheckerWrapper_sv_8918_6585">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8922.7-8922.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8922.7-8922.56" id="_witness_.check_assert_CheckerWrapper_sv_8922_6592">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8922.7-8922.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8922.7-8922.56" id="_witness_.check_assert_CheckerWrapper_sv_8922_6588">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8926.7-8926.56" id="_witness_.check_assert_CheckerWrapper_sv_8926_6595" tracefile="engine_0/trace.vcd">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8926.7-8926.56" id="_witness_.check_assert_CheckerWrapper_sv_8926_6591" tracefile="engine_0/trace.vcd">
 <failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56 failed. Trace file: engine_0/trace.vcd" />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8930.7-8930.56" id="_witness_.check_assert_CheckerWrapper_sv_8930_6598" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8934.7-8934.56" id="_witness_.check_assert_CheckerWrapper_sv_8934_6601" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8938.7-8938.56" id="_witness_.check_assert_CheckerWrapper_sv_8938_6604" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8942.7-8942.56" id="_witness_.check_assert_CheckerWrapper_sv_8942_6607" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8946.7-8946.56" id="_witness_.check_assert_CheckerWrapper_sv_8946_6610" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8950.7-8950.56" id="_witness_.check_assert_CheckerWrapper_sv_8950_6613" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8954.7-8954.56" id="_witness_.check_assert_CheckerWrapper_sv_8954_6616" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8958.7-8958.56" id="_witness_.check_assert_CheckerWrapper_sv_8958_6619" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8962.7-8962.58" id="_witness_.check_assert_CheckerWrapper_sv_8962_6622" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8966.7-8966.58" id="_witness_.check_assert_CheckerWrapper_sv_8966_6625" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8970.7-8970.58" id="_witness_.check_assert_CheckerWrapper_sv_8970_6628" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8974.7-8974.58" id="_witness_.check_assert_CheckerWrapper_sv_8974_6631" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8978.7-8978.58" id="_witness_.check_assert_CheckerWrapper_sv_8978_6634" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8982.7-8982.58" id="_witness_.check_assert_CheckerWrapper_sv_8982_6637" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8986.7-8986.58" id="_witness_.check_assert_CheckerWrapper_sv_8986_6640" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8990.7-8990.58" id="_witness_.check_assert_CheckerWrapper_sv_8990_6643" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8994.7-8994.58" id="_witness_.check_assert_CheckerWrapper_sv_8994_6646" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8998.7-8998.58" id="_witness_.check_assert_CheckerWrapper_sv_8998_6649" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9002.7-9002.58" id="_witness_.check_assert_CheckerWrapper_sv_9002_6652" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9006.7-9006.58" id="_witness_.check_assert_CheckerWrapper_sv_9006_6655" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9010.7-9010.58" id="_witness_.check_assert_CheckerWrapper_sv_9010_6658" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9014.7-9014.58" id="_witness_.check_assert_CheckerWrapper_sv_9014_6661" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9018.7-9018.58" id="_witness_.check_assert_CheckerWrapper_sv_9018_6664" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9022.7-9022.58" id="_witness_.check_assert_CheckerWrapper_sv_9022_6667" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9026.7-9026.58" id="_witness_.check_assert_CheckerWrapper_sv_9026_6670" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9030.7-9030.58" id="_witness_.check_assert_CheckerWrapper_sv_9030_6673" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9034.7-9034.58" id="_witness_.check_assert_CheckerWrapper_sv_9034_6676" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9038.7-9038.58" id="_witness_.check_assert_CheckerWrapper_sv_9038_6679" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9042.7-9042.58" id="_witness_.check_assert_CheckerWrapper_sv_9042_6682" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9046.7-9046.58" id="_witness_.check_assert_CheckerWrapper_sv_9046_6685" tracefile="engine_0/trace.vcd">
-<failure type="ASSERT" message="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58 failed. Trace file: engine_0/trace.vcd" />
-</testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9050.7-9050.21" time="0" type="ASSERT" location="CheckerWrapper.sv:9050.7-9050.21" id="_witness_.check_assert_CheckerWrapper_sv_9050_6688">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8930.7-8930.56" id="_witness_.check_assert_CheckerWrapper_sv_8930_6594">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9054.7-9054.39" time="0" type="ASSERT" location="CheckerWrapper.sv:9054.7-9054.39" id="_witness_.check_assert_CheckerWrapper_sv_9054_6690">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8934.7-8934.56" id="_witness_.check_assert_CheckerWrapper_sv_8934_6597">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9058.7-9058.56" time="0" type="ASSERT" location="CheckerWrapper.sv:9058.7-9058.56" id="_witness_.check_assert_CheckerWrapper_sv_9058_6693">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8938.7-8938.56" id="_witness_.check_assert_CheckerWrapper_sv_8938_6600">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9062.7-9062.68" time="0" type="ASSERT" location="CheckerWrapper.sv:9062.7-9062.68" id="_witness_.check_assert_CheckerWrapper_sv_9062_6696">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8942.7-8942.56" id="_witness_.check_assert_CheckerWrapper_sv_8942_6603">
 <skipped />
 </testcase>
-<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9066.7-9066.72" time="0" type="ASSERT" location="CheckerWrapper.sv:9066.7-9066.72" id="_witness_.check_assert_CheckerWrapper_sv_9066_6699">
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8946.7-8946.56" id="_witness_.check_assert_CheckerWrapper_sv_8946_6606">
 <skipped />
 </testcase>
-<system-out>SBY 12:07:54 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
-SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
-SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
-SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
-SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
-SBY 12:07:54 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
-SBY 12:07:54 [formal] engine_0: smtbmc yices
-SBY 12:07:54 [formal] base: starting process &quot;cd formal/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mcounteren' is assigned in a continuous assignment at nerv_wrapper.sv:198.12-198.41.
-SBY 12:07:54 [formal] base: Warning: wire '\instCommit_pc' is assigned in a block at nerv_wrapper.sv:309.13-309.35.
-SBY 12:07:54 [formal] base: Warning: wire '\instCommit_pc' is assigned in a block at nerv_wrapper.sv:311.13-311.37.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_0' is assigned in a continuous assignment at nerv_wrapper.sv:319.12-319.32.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_1' is assigned in a continuous assignment at nerv_wrapper.sv:320.12-320.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_2' is assigned in a continuous assignment at nerv_wrapper.sv:321.12-321.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_3' is assigned in a continuous assignment at nerv_wrapper.sv:322.12-322.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_4' is assigned in a continuous assignment at nerv_wrapper.sv:323.12-323.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_5' is assigned in a continuous assignment at nerv_wrapper.sv:324.12-324.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_6' is assigned in a continuous assignment at nerv_wrapper.sv:325.12-325.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_7' is assigned in a continuous assignment at nerv_wrapper.sv:326.12-326.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_8' is assigned in a continuous assignment at nerv_wrapper.sv:327.12-327.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_9' is assigned in a continuous assignment at nerv_wrapper.sv:328.12-328.44.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_10' is assigned in a continuous assignment at nerv_wrapper.sv:329.12-329.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_11' is assigned in a continuous assignment at nerv_wrapper.sv:330.12-330.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_12' is assigned in a continuous assignment at nerv_wrapper.sv:331.12-331.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_13' is assigned in a continuous assignment at nerv_wrapper.sv:332.12-332.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_14' is assigned in a continuous assignment at nerv_wrapper.sv:333.12-333.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_15' is assigned in a continuous assignment at nerv_wrapper.sv:334.12-334.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_16' is assigned in a continuous assignment at nerv_wrapper.sv:335.12-335.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_17' is assigned in a continuous assignment at nerv_wrapper.sv:336.12-336.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_18' is assigned in a continuous assignment at nerv_wrapper.sv:337.12-337.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_19' is assigned in a continuous assignment at nerv_wrapper.sv:338.12-338.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_20' is assigned in a continuous assignment at nerv_wrapper.sv:339.12-339.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_21' is assigned in a continuous assignment at nerv_wrapper.sv:340.12-340.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_22' is assigned in a continuous assignment at nerv_wrapper.sv:341.12-341.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_23' is assigned in a continuous assignment at nerv_wrapper.sv:342.12-342.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_24' is assigned in a continuous assignment at nerv_wrapper.sv:343.12-343.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_25' is assigned in a continuous assignment at nerv_wrapper.sv:344.12-344.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_26' is assigned in a continuous assignment at nerv_wrapper.sv:345.12-345.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_27' is assigned in a continuous assignment at nerv_wrapper.sv:346.12-346.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_28' is assigned in a continuous assignment at nerv_wrapper.sv:347.12-347.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_29' is assigned in a continuous assignment at nerv_wrapper.sv:348.12-348.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_30' is assigned in a continuous assignment at nerv_wrapper.sv:349.12-349.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_reg_31' is assigned in a continuous assignment at nerv_wrapper.sv:350.12-350.46.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_misa' is assigned in a continuous assignment at nerv_wrapper.sv:354.12-354.48.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_medeleg' is assigned in a continuous assignment at nerv_wrapper.sv:355.12-355.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mideleg' is assigned in a continuous assignment at nerv_wrapper.sv:356.12-356.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_mcause' is assigned in a continuous assignment at nerv_wrapper.sv:378.12-378.42.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_cycle' is assigned in a continuous assignment at nerv_wrapper.sv:381.12-381.60.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_scounteren' is assigned in a continuous assignment at nerv_wrapper.sv:382.12-382.65.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_scause' is assigned in a continuous assignment at nerv_wrapper.sv:383.12-383.61.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_stvec' is assigned in a continuous assignment at nerv_wrapper.sv:384.12-384.60.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_sepc' is assigned in a continuous assignment at nerv_wrapper.sv:385.12-385.59.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_stval' is assigned in a continuous assignment at nerv_wrapper.sv:386.12-386.60.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_sscratch' is assigned in a continuous assignment at nerv_wrapper.sv:387.12-387.63.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_satp' is assigned in a continuous assignment at nerv_wrapper.sv:388.12-388.59.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg0' is assigned in a continuous assignment at nerv_wrapper.sv:389.12-389.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg1' is assigned in a continuous assignment at nerv_wrapper.sv:390.12-390.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg2' is assigned in a continuous assignment at nerv_wrapper.sv:391.12-391.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpcfg3' is assigned in a continuous assignment at nerv_wrapper.sv:392.12-392.62.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr0' is assigned in a continuous assignment at nerv_wrapper.sv:393.12-393.63.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr1' is assigned in a continuous assignment at nerv_wrapper.sv:394.12-394.63.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr2' is assigned in a continuous assignment at nerv_wrapper.sv:395.12-395.63.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_pmpaddr3' is assigned in a continuous assignment at nerv_wrapper.sv:396.12-396.63.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_MXLEN' is assigned in a continuous assignment at nerv_wrapper.sv:397.12-397.41.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_IALIGN' is assigned in a continuous assignment at nerv_wrapper.sv:398.12-398.41.
-SBY 12:07:54 [formal] base: Warning: reg '\result_csr_ILEN' is assigned in a continuous assignment at nerv_wrapper.sv:399.12-399.41.
-SBY 12:07:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:415.19-417.56.
-SBY 12:07:54 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:418.22-418.42.
-SBY 12:07:54 [formal] base: Warning: Replacing memory \shadow_regfile with list of registers. See nerv_wrapper.sv:284
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:128: Warning: Identifier `\clk' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:267: Warning: Identifier `\uut.rvfi_csr_mstatus_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:268: Warning: Identifier `\uut.rvfi_csr_mstatush_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:288: Warning: Identifier `\uut.regfile' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:288: Warning: Range select out of bounds on signal `\uut.regfile': Setting result bit to undef.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:355: Warning: Identifier `\uut.rvfi_csr_medeleg_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:356: Warning: Identifier `\uut.rvfi_csr_mideleg_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Identifier `\uut.rvfi_trap' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Identifier `\uut.rvfi_csr_mcause_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:368: Warning: Range select out of bounds on signal `\uut.rvfi_csr_mcause_rdata': Setting result bit to undef.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:369: Warning: Identifier `\uut.csr_mcause_wdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:372: Warning: Identifier `\uut.irq_num' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:373: Warning: Range select [4:0] out of bounds on signal `\uut.irq_num': Setting all 5 result bits to undef.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:381: Warning: Identifier `\uut.rvfi_csr_cycle_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:382: Warning: Identifier `\uut.rvfi_csr_scounteren_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:383: Warning: Identifier `\uut.rvfi_csr_scause_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:384: Warning: Identifier `\uut.rvfi_csr_stvec_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:385: Warning: Identifier `\uut.rvfi_csr_sepc_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:386: Warning: Identifier `\uut.rvfi_csr_stval_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:387: Warning: Identifier `\uut.rvfi_csr_sscratch_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:388: Warning: Identifier `\uut.rvfi_csr_satp_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:389: Warning: Identifier `\uut.rvfi_csr_pmpcfg0_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:390: Warning: Identifier `\uut.rvfi_csr_pmpcfg1_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:391: Warning: Identifier `\uut.rvfi_csr_pmpcfg2_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:392: Warning: Identifier `\uut.rvfi_csr_pmpcfg3_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:393: Warning: Identifier `\uut.rvfi_csr_pmpaddr0_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:394: Warning: Identifier `\uut.rvfi_csr_pmpaddr1_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:395: Warning: Identifier `\uut.rvfi_csr_pmpaddr2_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:396: Warning: Identifier `\uut.rvfi_csr_pmpaddr3_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:416: Warning: Identifier `\uut.rvfi_pc_rdata' is implicitly declared.
-SBY 12:07:54 [formal] base: nerv_wrapper.sv:417: Warning: Identifier `\uut.rvfi_csr_mepc_rdata' is implicitly declared.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_pc_rdata is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire nerv_extended_wrapper.\clk is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY 12:07:57 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY 12:08:00 [formal] base: finished (returncode=0)
-SBY 12:08:00 [formal] prep: starting process &quot;cd formal/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
-SBY 12:08:01 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
-SBY 12:08:02 [formal] prep: finished (returncode=0)
-SBY 12:08:02 [formal] smt2: starting process &quot;cd formal/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 12:08:02 [formal] smt2: finished (returncode=0)
-SBY 12:08:02 [formal] engine_0: starting process &quot;cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 12:08:02 [formal] engine_0: ##   0:00:00  Solver: yices
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 12:08:03 [formal] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 12:08:03 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
-SBY 12:08:03 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Checking assertions in step 4..
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  BMC failed!
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9046.7-9046.58 (_witness_.check_assert_CheckerWrapper_sv_9046_6685)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9042.7-9042.58 (_witness_.check_assert_CheckerWrapper_sv_9042_6682)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9038.7-9038.58 (_witness_.check_assert_CheckerWrapper_sv_9038_6679)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9034.7-9034.58 (_witness_.check_assert_CheckerWrapper_sv_9034_6676)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9030.7-9030.58 (_witness_.check_assert_CheckerWrapper_sv_9030_6673)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9026.7-9026.58 (_witness_.check_assert_CheckerWrapper_sv_9026_6670)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9022.7-9022.58 (_witness_.check_assert_CheckerWrapper_sv_9022_6667)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9018.7-9018.58 (_witness_.check_assert_CheckerWrapper_sv_9018_6664)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9014.7-9014.58 (_witness_.check_assert_CheckerWrapper_sv_9014_6661)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9010.7-9010.58 (_witness_.check_assert_CheckerWrapper_sv_9010_6658)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9006.7-9006.58 (_witness_.check_assert_CheckerWrapper_sv_9006_6655)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:9002.7-9002.58 (_witness_.check_assert_CheckerWrapper_sv_9002_6652)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8998.7-8998.58 (_witness_.check_assert_CheckerWrapper_sv_8998_6649)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8994.7-8994.58 (_witness_.check_assert_CheckerWrapper_sv_8994_6646)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8990.7-8990.58 (_witness_.check_assert_CheckerWrapper_sv_8990_6643)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8986.7-8986.58 (_witness_.check_assert_CheckerWrapper_sv_8986_6640)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8982.7-8982.58 (_witness_.check_assert_CheckerWrapper_sv_8982_6637)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8978.7-8978.58 (_witness_.check_assert_CheckerWrapper_sv_8978_6634)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8974.7-8974.58 (_witness_.check_assert_CheckerWrapper_sv_8974_6631)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8970.7-8970.58 (_witness_.check_assert_CheckerWrapper_sv_8970_6628)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8966.7-8966.58 (_witness_.check_assert_CheckerWrapper_sv_8966_6625)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8962.7-8962.58 (_witness_.check_assert_CheckerWrapper_sv_8962_6622)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8958.7-8958.56 (_witness_.check_assert_CheckerWrapper_sv_8958_6619)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8954.7-8954.56 (_witness_.check_assert_CheckerWrapper_sv_8954_6616)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8950.7-8950.56 (_witness_.check_assert_CheckerWrapper_sv_8950_6613)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8946.7-8946.56 (_witness_.check_assert_CheckerWrapper_sv_8946_6610)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8942.7-8942.56 (_witness_.check_assert_CheckerWrapper_sv_8942_6607)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8938.7-8938.56 (_witness_.check_assert_CheckerWrapper_sv_8938_6604)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8934.7-8934.56 (_witness_.check_assert_CheckerWrapper_sv_8934_6601)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8930.7-8930.56 (_witness_.check_assert_CheckerWrapper_sv_8930_6598)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8926.7-8926.56 (_witness_.check_assert_CheckerWrapper_sv_8926_6595)
-SBY 12:08:04 [formal] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace.vcd
-SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to Verilog testbench: engine_0/trace_tb.v
-SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to constraints file: engine_0/trace.smtc
-SBY 12:08:06 [formal] engine_0: ##   0:00:04  Writing trace to Yosys witness file: engine_0/trace.yw
-SBY 12:08:07 [formal] engine_0: ##   0:00:04  Status: failed
-SBY 12:08:07 [formal] engine_0: finished (returncode=1)
-SBY 12:08:07 [formal] engine_0: Status returned by engine: FAIL
-SBY 12:08:07 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:12 (12)
-SBY 12:08:07 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:13 (13)
-SBY 12:08:07 [formal] summary: engine_0 (smtbmc yices) returned FAIL
-SBY 12:08:07 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
-SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8926_6595 at CheckerWrapper.sv:8926.7-8926.56 in step 4
-SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8930_6598 at CheckerWrapper.sv:8930.7-8930.56 in step 4
-SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8934_6601 at CheckerWrapper.sv:8934.7-8934.56 in step 4
-SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8938_6604 at CheckerWrapper.sv:8938.7-8938.56 in step 4
-SBY 12:08:07 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8942_6607 at CheckerWrapper.sv:8942.7-8942.56 in step 4
-SBY 12:08:07 [formal] summary:   and 26 further assertions
-SBY 12:08:07 [formal] DONE (FAIL, rc=2)
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8950.7-8950.56" id="_witness_.check_assert_CheckerWrapper_sv_8950_6609">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8954.7-8954.56" id="_witness_.check_assert_CheckerWrapper_sv_8954_6612">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8958.7-8958.56" id="_witness_.check_assert_CheckerWrapper_sv_8958_6615">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8962.7-8962.58" id="_witness_.check_assert_CheckerWrapper_sv_8962_6618">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8966.7-8966.58" id="_witness_.check_assert_CheckerWrapper_sv_8966_6621">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8970.7-8970.58" id="_witness_.check_assert_CheckerWrapper_sv_8970_6624">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8974.7-8974.58" id="_witness_.check_assert_CheckerWrapper_sv_8974_6627">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8978.7-8978.58" id="_witness_.check_assert_CheckerWrapper_sv_8978_6630">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8982.7-8982.58" id="_witness_.check_assert_CheckerWrapper_sv_8982_6633">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8986.7-8986.58" id="_witness_.check_assert_CheckerWrapper_sv_8986_6636">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8990.7-8990.58" id="_witness_.check_assert_CheckerWrapper_sv_8990_6639">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8994.7-8994.58" id="_witness_.check_assert_CheckerWrapper_sv_8994_6642">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8998.7-8998.58" id="_witness_.check_assert_CheckerWrapper_sv_8998_6645">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9002.7-9002.58" id="_witness_.check_assert_CheckerWrapper_sv_9002_6648">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9006.7-9006.58" id="_witness_.check_assert_CheckerWrapper_sv_9006_6651">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9010.7-9010.58" id="_witness_.check_assert_CheckerWrapper_sv_9010_6654">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9014.7-9014.58" id="_witness_.check_assert_CheckerWrapper_sv_9014_6657">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9018.7-9018.58" id="_witness_.check_assert_CheckerWrapper_sv_9018_6660">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9022.7-9022.58" id="_witness_.check_assert_CheckerWrapper_sv_9022_6663">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9026.7-9026.58" id="_witness_.check_assert_CheckerWrapper_sv_9026_6666">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9030.7-9030.58" id="_witness_.check_assert_CheckerWrapper_sv_9030_6669">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9034.7-9034.58" id="_witness_.check_assert_CheckerWrapper_sv_9034_6672">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9038.7-9038.58" id="_witness_.check_assert_CheckerWrapper_sv_9038_6675">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9042.7-9042.58" id="_witness_.check_assert_CheckerWrapper_sv_9042_6678">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9046.7-9046.58" id="_witness_.check_assert_CheckerWrapper_sv_9046_6681">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9050.7-9050.21" time="0" type="ASSERT" location="CheckerWrapper.sv:9050.7-9050.21" id="_witness_.check_assert_CheckerWrapper_sv_9050_6684">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9054.7-9054.39" time="0" type="ASSERT" location="CheckerWrapper.sv:9054.7-9054.39" id="_witness_.check_assert_CheckerWrapper_sv_9054_6686">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9058.7-9058.56" time="0" type="ASSERT" location="CheckerWrapper.sv:9058.7-9058.56" id="_witness_.check_assert_CheckerWrapper_sv_9058_6689">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9062.7-9062.68" time="0" type="ASSERT" location="CheckerWrapper.sv:9062.7-9062.68" id="_witness_.check_assert_CheckerWrapper_sv_9062_6692">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in top_formal/checker_inst/checker_ at CheckerWrapper.sv:9066.7-9066.72" time="0" type="ASSERT" location="CheckerWrapper.sv:9066.7-9066.72" id="_witness_.check_assert_CheckerWrapper_sv_9066_6695">
+<skipped />
+</testcase>
+<system-out>SBY 18:29:38 [formal] Removing directory '/home/lixh/myproject/nerv_formal/src/formal'.
+SBY 18:29:38 [formal] Copy '/home/lixh/myproject/nerv_formal/src/define.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/define.sv'.
+SBY 18:29:38 [formal] Copy '/home/lixh/myproject/nerv_formal/src/top_formal.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/top_formal.sv'.
+SBY 18:29:38 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv_wrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv_wrapper.sv'.
+SBY 18:29:38 [formal] Copy '/home/lixh/myproject/nerv_formal/src/nerv.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/nerv.sv'.
+SBY 18:29:38 [formal] Copy '/home/lixh/myproject/nerv_formal/src/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/src/formal/src/CheckerWrapper.sv'.
+SBY 18:29:38 [formal] engine_0: smtbmc yices
+SBY 18:29:38 [formal] base: starting process &quot;cd formal/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_mcounteren' is assigned in a continuous assignment at nerv_wrapper.sv:201.12-201.41.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_0' is assigned in a continuous assignment at nerv_wrapper.sv:321.12-321.32.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_4' is assigned in a continuous assignment at nerv_wrapper.sv:325.12-325.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_5' is assigned in a continuous assignment at nerv_wrapper.sv:326.12-326.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_6' is assigned in a continuous assignment at nerv_wrapper.sv:327.12-327.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_7' is assigned in a continuous assignment at nerv_wrapper.sv:328.12-328.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_8' is assigned in a continuous assignment at nerv_wrapper.sv:329.12-329.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_9' is assigned in a continuous assignment at nerv_wrapper.sv:330.12-330.44.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_10' is assigned in a continuous assignment at nerv_wrapper.sv:331.12-331.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_11' is assigned in a continuous assignment at nerv_wrapper.sv:332.12-332.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_12' is assigned in a continuous assignment at nerv_wrapper.sv:333.12-333.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_13' is assigned in a continuous assignment at nerv_wrapper.sv:334.12-334.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_14' is assigned in a continuous assignment at nerv_wrapper.sv:335.12-335.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_15' is assigned in a continuous assignment at nerv_wrapper.sv:336.12-336.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_16' is assigned in a continuous assignment at nerv_wrapper.sv:337.12-337.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_17' is assigned in a continuous assignment at nerv_wrapper.sv:338.12-338.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_18' is assigned in a continuous assignment at nerv_wrapper.sv:339.12-339.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_19' is assigned in a continuous assignment at nerv_wrapper.sv:340.12-340.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_20' is assigned in a continuous assignment at nerv_wrapper.sv:341.12-341.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_21' is assigned in a continuous assignment at nerv_wrapper.sv:342.12-342.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_22' is assigned in a continuous assignment at nerv_wrapper.sv:343.12-343.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_23' is assigned in a continuous assignment at nerv_wrapper.sv:344.12-344.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_24' is assigned in a continuous assignment at nerv_wrapper.sv:345.12-345.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_25' is assigned in a continuous assignment at nerv_wrapper.sv:346.12-346.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_26' is assigned in a continuous assignment at nerv_wrapper.sv:347.12-347.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_27' is assigned in a continuous assignment at nerv_wrapper.sv:348.12-348.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_28' is assigned in a continuous assignment at nerv_wrapper.sv:349.12-349.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_29' is assigned in a continuous assignment at nerv_wrapper.sv:350.12-350.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_30' is assigned in a continuous assignment at nerv_wrapper.sv:351.12-351.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_reg_31' is assigned in a continuous assignment at nerv_wrapper.sv:352.12-352.46.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_misa' is assigned in a continuous assignment at nerv_wrapper.sv:356.12-356.48.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_medeleg' is assigned in a continuous assignment at nerv_wrapper.sv:357.12-357.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_mideleg' is assigned in a continuous assignment at nerv_wrapper.sv:358.12-358.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_mcause' is assigned in a continuous assignment at nerv_wrapper.sv:380.12-380.42.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_cycle' is assigned in a continuous assignment at nerv_wrapper.sv:383.12-383.60.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_scounteren' is assigned in a continuous assignment at nerv_wrapper.sv:384.12-384.65.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_scause' is assigned in a continuous assignment at nerv_wrapper.sv:385.12-385.61.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_stvec' is assigned in a continuous assignment at nerv_wrapper.sv:386.12-386.60.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_sepc' is assigned in a continuous assignment at nerv_wrapper.sv:387.12-387.59.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_stval' is assigned in a continuous assignment at nerv_wrapper.sv:388.12-388.60.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_sscratch' is assigned in a continuous assignment at nerv_wrapper.sv:389.12-389.63.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_satp' is assigned in a continuous assignment at nerv_wrapper.sv:390.12-390.59.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpcfg0' is assigned in a continuous assignment at nerv_wrapper.sv:391.12-391.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpcfg1' is assigned in a continuous assignment at nerv_wrapper.sv:392.12-392.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpcfg2' is assigned in a continuous assignment at nerv_wrapper.sv:393.12-393.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpcfg3' is assigned in a continuous assignment at nerv_wrapper.sv:394.12-394.62.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpaddr0' is assigned in a continuous assignment at nerv_wrapper.sv:395.12-395.63.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpaddr1' is assigned in a continuous assignment at nerv_wrapper.sv:396.12-396.63.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpaddr2' is assigned in a continuous assignment at nerv_wrapper.sv:397.12-397.63.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_pmpaddr3' is assigned in a continuous assignment at nerv_wrapper.sv:398.12-398.63.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_MXLEN' is assigned in a continuous assignment at nerv_wrapper.sv:399.12-399.41.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_IALIGN' is assigned in a continuous assignment at nerv_wrapper.sv:400.12-400.41.
+SBY 18:29:38 [formal] base: Warning: reg '\result_csr_ILEN' is assigned in a continuous assignment at nerv_wrapper.sv:401.12-401.41.
+SBY 18:29:38 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:417.19-419.56.
+SBY 18:29:38 [formal] base: Warning: wire '\exception_pc' is assigned in a block at nerv_wrapper.sv:420.22-420.42.
+SBY 18:29:38 [formal] base: Warning: Replacing memory \shadow_regfile with list of registers. See nerv_wrapper.sv:287
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:128: Warning: Identifier `\clk' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:270: Warning: Identifier `\uut.rvfi_csr_mstatus_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:271: Warning: Identifier `\uut.rvfi_csr_mstatush_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:291: Warning: Identifier `\uut.regfile' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:291: Warning: Range select out of bounds on signal `\uut.regfile': Setting result bit to undef.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:317: Warning: Identifier `\uut.rvfi_pc_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:357: Warning: Identifier `\uut.rvfi_csr_medeleg_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:358: Warning: Identifier `\uut.rvfi_csr_mideleg_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:370: Warning: Identifier `\uut.rvfi_trap' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:370: Warning: Identifier `\uut.rvfi_csr_mcause_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:370: Warning: Range select out of bounds on signal `\uut.rvfi_csr_mcause_rdata': Setting result bit to undef.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:371: Warning: Identifier `\uut.csr_mcause_wdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:374: Warning: Identifier `\uut.irq_num' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:375: Warning: Range select [4:0] out of bounds on signal `\uut.irq_num': Setting all 5 result bits to undef.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:383: Warning: Identifier `\uut.rvfi_csr_cycle_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:384: Warning: Identifier `\uut.rvfi_csr_scounteren_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:385: Warning: Identifier `\uut.rvfi_csr_scause_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:386: Warning: Identifier `\uut.rvfi_csr_stvec_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:387: Warning: Identifier `\uut.rvfi_csr_sepc_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:388: Warning: Identifier `\uut.rvfi_csr_stval_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:389: Warning: Identifier `\uut.rvfi_csr_sscratch_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:390: Warning: Identifier `\uut.rvfi_csr_satp_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:391: Warning: Identifier `\uut.rvfi_csr_pmpcfg0_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:392: Warning: Identifier `\uut.rvfi_csr_pmpcfg1_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:393: Warning: Identifier `\uut.rvfi_csr_pmpcfg2_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:394: Warning: Identifier `\uut.rvfi_csr_pmpcfg3_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:395: Warning: Identifier `\uut.rvfi_csr_pmpaddr0_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:396: Warning: Identifier `\uut.rvfi_csr_pmpaddr1_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:397: Warning: Identifier `\uut.rvfi_csr_pmpaddr2_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:398: Warning: Identifier `\uut.rvfi_csr_pmpaddr3_rdata' is implicitly declared.
+SBY 18:29:38 [formal] base: nerv_wrapper.sv:419: Warning: Identifier `\uut.rvfi_csr_mepc_rdata' is implicitly declared.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [31] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [30] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [29] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [28] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [27] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [26] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [25] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [24] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [23] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [22] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [21] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [20] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [19] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [18] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [17] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [16] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [15] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [14] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [13] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [12] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [11] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [10] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [9] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [8] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [7] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [6] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [5] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [4] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [3] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [2] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [1] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x3 [0] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [31] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [30] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [29] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [28] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [27] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [26] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [25] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [24] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [23] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [22] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [21] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [20] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [19] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [18] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [17] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [16] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [15] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [14] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [13] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [12] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [11] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [10] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [9] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [8] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [7] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [6] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [5] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [4] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [3] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [2] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [1] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x2 [0] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [31] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [30] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [29] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [28] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [27] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [26] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [25] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [24] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [23] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [22] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [21] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [20] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [19] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [18] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [17] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [16] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [15] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [14] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [13] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [12] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [11] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [10] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [9] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [8] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [7] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [6] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [5] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [4] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [3] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [2] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [1] is used but has no driver.
+SBY 18:29:42 [formal] base: Warning: Wire nerv.\dbg_reg_x1 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_pc_rdata is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire nerv_extended_wrapper.\clk is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 18:29:43 [formal] base: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 18:29:48 [formal] base: Warning: Wire nerv_extended_wrapper.\result_pc [0] is used but has no driver.
+SBY 18:29:48 [formal] base: finished (returncode=0)
+SBY 18:29:48 [formal] prep: starting process &quot;cd formal/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [31] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [30] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [29] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [28] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [27] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [26] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [25] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [24] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [23] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [22] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [21] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [20] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [19] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [18] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [17] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [16] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [15] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [14] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [13] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [12] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [11] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [10] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [9] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [8] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [7] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [6] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [5] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [4] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [3] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [2] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [1] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x3 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [31] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [30] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [29] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [28] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [27] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [26] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [25] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [24] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [23] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [22] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [21] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [20] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [19] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [18] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [17] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [16] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [15] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [14] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [13] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [12] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [11] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [10] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [9] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [8] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [7] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [6] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [5] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [4] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [3] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [2] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [1] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x2 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [31] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [30] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [29] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [28] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [27] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [26] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [25] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [24] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [23] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [22] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [21] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [20] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [19] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [18] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [17] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [16] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [15] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [14] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [13] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [12] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [11] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [10] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [9] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [8] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [7] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [6] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [5] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [4] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [3] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [2] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [1] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv.\dbg_reg_x1 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_pc [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stvec [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_stval [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sscratch [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_sepc [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scounteren [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_scause [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_satp [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg3 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg2 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg1 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpcfg0 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr3 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr2 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr1 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_pmpaddr0 [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_mideleg [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_medeleg [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\result_csr_cycle [0] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_trap is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire nerv_extended_wrapper.\uut.rvfi_csr_mepc_rdata is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [5] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [4] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [3] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [2] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [1] is used but has no driver.
+SBY 18:29:50 [formal] prep: Warning: Wire top_formal.\io_mem_write_memWidth [0] is used but has no driver.
+SBY 18:29:52 [formal] prep: finished (returncode=0)
+SBY 18:29:52 [formal] smt2: starting process &quot;cd formal/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:29:53 [formal] smt2: finished (returncode=0)
+SBY 18:29:53 [formal] engine_0: starting process &quot;cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:29:53 [formal] engine_0: ##   0:00:00  Solver: yices
+SBY 18:29:53 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:29:53 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:29:54 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:29:54 [formal] engine_0: ##   0:00:01  Checking assertions in step 1..
+SBY 18:29:54 [formal] engine_0: ##   0:00:01  Checking assumptions in step 2..
+SBY 18:29:54 [formal] engine_0: ##   0:00:01  Checking assertions in step 2..
+SBY 18:29:54 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
+SBY 18:29:55 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
+SBY 18:29:55 [formal] engine_0: ##   0:00:02  Checking assumptions in step 4..
+SBY 18:29:55 [formal] engine_0: ##   0:00:02  Checking assertions in step 4..
+SBY 18:29:55 [formal] engine_0: ##   0:00:02  BMC failed!
+SBY 18:29:55 [formal] engine_0: ##   0:00:02  Assert failed in top_formal.checker_inst.checker_: CheckerWrapper.sv:8926.7-8926.56 (_witness_.check_assert_CheckerWrapper_sv_8926_6591)
+SBY 18:29:55 [formal] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:29:58 [formal] engine_0: ##   0:00:05  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:29:59 [formal] engine_0: ##   0:00:05  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:29:59 [formal] engine_0: ##   0:00:05  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:29:59 [formal] engine_0: ##   0:00:06  Status: failed
+SBY 18:29:59 [formal] engine_0: finished (returncode=1)
+SBY 18:29:59 [formal] engine_0: Status returned by engine: FAIL
+SBY 18:29:59 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:21 (21)
+SBY 18:29:59 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:22 (22)
+SBY 18:29:59 [formal] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 18:29:59 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
+SBY 18:29:59 [formal] summary:   failed assertion top_formal.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8926_6591 at CheckerWrapper.sv:8926.7-8926.56 in step 4
+SBY 18:29:59 [formal] DONE (FAIL, rc=2)
 </system-out>
 <system-err>
 </system-err>

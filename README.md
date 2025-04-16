@@ -218,3 +218,21 @@ iCEBreaker SOC example
 ----------------------
 
 See the [iCEBreaker SOC README](examples/icebreaker/README.md)
+
+
+验证思路：修改需要测评的指令
+这里选择把加减法进行修改，但是因为寄存器没办法验证，我感觉还是会通过
+后面别无办法，还是要把寄存器加上去
+
+![alt text](image-4.png)
+
+感觉不妙，最担心的事情好像确实发生了
+感觉寄存器需要重新接回去了，不接寄存器没办法验证接口的正确性
+包括CSR也是的
+
+
+
+reg 全部置为0
+crs 全部掠过，剩下的通过了
+存档在github上
+

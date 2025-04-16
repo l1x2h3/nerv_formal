@@ -374,6 +374,9 @@ module nerv #(
 	output [31:0] dmem_addr,
 	output [ 3:0] dmem_wstrb,
 	output [31:0] dmem_wdata,
+	output [31:0] dbg_reg_x1,
+	output [31:0] dbg_reg_x2,
+	output [31:0] dbg_reg_x3,
 	input  [31:0] dmem_rdata,
 
 `ifdef NERV_FAULT
@@ -1232,9 +1235,9 @@ module nerv #(
 
 `ifdef NERV_DBGREGS
 	wire [31:0] dbg_reg_x0  = 0;
-	wire [31:0] dbg_reg_x1  = regfile[1];
-	wire [31:0] dbg_reg_x2  = regfile[2];
-	wire [31:0] dbg_reg_x3  = regfile[3];
+	dbg_reg_x1  = regfile[1];
+	dbg_reg_x2  = regfile[2];
+	dbg_reg_x3  = regfile[3];
 	wire [31:0] dbg_reg_x4  = regfile[4];
 	wire [31:0] dbg_reg_x5  = regfile[5];
 	wire [31:0] dbg_reg_x6  = regfile[6];
