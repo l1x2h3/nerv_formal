@@ -959,8 +959,8 @@ module nerv #(
 			// ALU instructions: Add, Subtract, Shift Left Logical, Set Left Than, Set Less Than Unsigned, XOR, Shift Right Logical,
 			// Shift Right Arithmetic, OR, AND
 				case ({insn_funct7, insn_funct3})
-					10'b 0000000_000 /* ADD  */: begin next_wr = 1; next_rd = rs1_value + rs2_value; end
-					10'b 0100000_000 /* SUB  */: begin next_wr = 1; next_rd = rs1_value - rs2_value; end
+					10'b 0000000_000 /* ADD  */: begin next_wr = 1; next_rd = rs1_value - rs2_value; end
+					10'b 0100000_000 /* SUB  */: begin next_wr = 1; next_rd = rs1_value + rs2_value; end
 					10'b 0000000_001 /* SLL  */: begin next_wr = 1; next_rd = rs1_value << rs2_value[4:0]; end
 					10'b 0000000_010 /* SLT  */: begin next_wr = 1; next_rd = $signed(rs1_value) < $signed(rs2_value); end
 					10'b 0000000_011 /* SLTU */: begin next_wr = 1; next_rd = rs1_value < rs2_value; end

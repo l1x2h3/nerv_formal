@@ -97,6 +97,7 @@ module nerv_extended_wrapper (
     //     wire imem_fault = 0;
     //     wire dmem_fault = 0;
     // `endif
+    wire [31:0] dmem_rdata;
 
     // 定义指令的掩码和匹配值
     wire [31:0] add_pattern  = 32'b0000000_xxxxx_xxxxx_000_xxxxx_0110011;
@@ -128,16 +129,23 @@ module nerv_extended_wrapper (
     always @(posedge clk) begin
         assume (
             ((imem_data & add_mask) == (add_pattern & add_mask)) || // ADD
-            ((imem_data & sub_mask) == (sub_pattern & sub_mask)) || // SUB
-            ((imem_data & sll_mask) == (sll_pattern & sll_mask)) || // SLL
-            ((imem_data & slt_mask) == (slt_pattern & slt_mask)) || // SLT
-            ((imem_data & sltu_mask) == (sltu_pattern & sltu_mask)) || // SLTU
-            ((imem_data & xor_mask) == (xor_pattern & xor_mask)) || // XOR
-            ((imem_data & srl_mask) == (srl_pattern & srl_mask)) || // SRL
-            ((imem_data & sra_mask) == (sra_pattern & sra_mask)) || // SRA
-            ((imem_data & or_mask) == (or_pattern & or_mask)) ||   // OR
-            ((imem_data & and_mask) == (and_pattern & and_mask))   // AND
+            ((imem_data & sub_mask) == (sub_pattern & sub_mask))  // SUB
+            // ((imem_data & sll_mask) == (sll_pattern & sll_mask)) || // SLL
+            // ((imem_data & slt_mask) == (slt_pattern & slt_mask)) || // SLT
+            // ((imem_data & sltu_mask) == (sltu_pattern & sltu_mask)) || // SLTU
+            // ((imem_data & xor_mask) == (xor_pattern & xor_mask)) || // XOR
+            // ((imem_data & srl_mask) == (srl_pattern & srl_mask)) || // SRL
+            // ((imem_data & sra_mask) == (sra_pattern & sra_mask)) || // SRA
+            // ((imem_data & or_mask) == (or_pattern & or_mask)) ||   // OR
+            // ((imem_data & and_mask) == (and_pattern & and_mask))   // AND
         );
+
+        // assume (
+        //     //(dmem_rdata == 32'hFFFF_FFFF) ||  // 全1
+        //     //(dmem_rdata == 32'hFFFF_FFFE) ||  // 最低位为0
+        //     (dmem_rdata == 32'h0)          ||  // 全0
+        //     (dmem_rdata == 32'h1)             // 仅最低位为1
+        // );
     end
 
     // 内部信号（从 nerv 引出）
@@ -184,9 +192,7 @@ module nerv_extended_wrapper (
         .rvfi_csr_mscratch_rdata (result_csr_mscratch),
         .rvfi_csr_mtvec_rdata (result_csr_mtvec),
         .rvfi_pc_rdata(instCommit_pc),
-        .dbg_reg_x1(result_reg_1),
-        .dbg_reg_x2(result_reg_2),
-        .dbg_reg_x3(result_reg_3),
+        //.rvfi_pc_rdata(result_pc),
         //需要在用户态中开启
         //.rvfi_csr_mcounteren_rdata (result_csr_mcounteren),
         // .rvfi_csr_medeleg_rdata (result_csr_medeleg),
@@ -279,6 +285,7 @@ module nerv_extended_wrapper (
     end
 
     reg [31:0] shadow_regfile [0:31]; // 同步用寄存器
+    wire [4:0] insn_rd = inst[11:7];  // 提取 insn_rd（5 位）
     //reg [31:0] shadow_regfile_before [0:31]; // 下一周期值
     
     always @(posedge clock) begin
@@ -287,41 +294,38 @@ module nerv_extended_wrapper (
                 shadow_regfile[i] <= 32'b0;
             end
         end else begin
-            for (i = 0; i < 32; i = i + 1) begin
-                shadow_regfile[i] <= uut.regfile[i];
-                //shadow_regfile[i] <= 32'b0;
+            if(inst_valid) begin
+                shadow_regfile[insn_rd] <= uut.regfile[insn_rd];
             end
         end
     end
+    reg [3:0] count;
 
+    always @(posedge clock) begin
+        if (!reset) begin
+            // 异步复位，计数器清零
+            count <= 4'b0;
+        end
+        else if (count < 4'd5) begin
+            // 当计数器小于6时继续计数
+            count <= count + 1'b1;
+        end else begin
+            pc <= 1234;
+        end
+    end
+ 
     // 输出信号连接
     assign instCommit_valid = inst_valid;
 
-    //assign instCommit_pc = uut.rvfi_pc_rdata; //延迟
-    // reg [31:0] temo_pc;
-    // always @(posedge clock) begin
-    //     if (reset) begin
-    //         temo_pc <= 32'b0;
-    //     end else begin
-    //         temo_pc <= pc;
-    //     end
-    // end
-    // always @(posedge clock) begin
-    //     if (reset) begin
-    //         instCommit_pc <= 32'b0;
-    //     end else begin
-    //         instCommit_pc <= temo_pc;
-    //     end
-    // end
-    //assign instCommit_pc = temo_pc;
     assign result_pc = uut.rvfi_pc_rdata;
     assign instCommit_inst = inst;
+    //assign shadow_regfile[uut.insn_rd] = uut.regfile[uut.insn_rd];
 
 
     assign result_reg_0 = 32'b0;
-    // assign result_reg_1 = uut.dbg_reg_x1;
-    // assign result_reg_2 = uut.dbg_reg_x2;
-    // assign result_reg_3 = uut.dbg_reg_x3;
+    assign result_reg_1 = shadow_regfile[1];
+    assign result_reg_2 = shadow_regfile[2];
+    assign result_reg_3 = shadow_regfile[3];
     assign result_reg_4 = shadow_regfile[4];
     assign result_reg_5 = shadow_regfile[5];
     assign result_reg_6 = shadow_regfile[6];

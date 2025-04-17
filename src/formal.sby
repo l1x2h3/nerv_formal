@@ -1,9 +1,9 @@
 [options]
 mode bmc
-depth 20
+depth 6
 
 [engines]
-smtbmc yices
+smtbmc yices 
 
 [script]
 read_verilog -D SYNTHESIS -D NERV_RVFI -D NERV_CSR -D YOSYS -D NERV_DBGREGS define.sv
