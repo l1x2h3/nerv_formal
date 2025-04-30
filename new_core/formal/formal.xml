@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2025-04-30T16:19:07" hostname="versys01" package="formal" id="0" name="default" tests="59" errors="0" failures="2" time="16" skipped="58">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8834.7-8834.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8834.7-8834.62" id="_witness_.check_assert_CheckerWrapper_sv_8834_6472">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8838.7-8838.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8838.7-8838.60" id="_witness_.check_assert_CheckerWrapper_sv_8838_6475">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8842.7-8842.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8842.7-8842.68" id="_witness_.check_assert_CheckerWrapper_sv_8842_6478">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8846.7-8846.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8846.7-8846.64" id="_witness_.check_assert_CheckerWrapper_sv_8846_6480">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8850.7-8850.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8850.7-8850.62" id="_witness_.check_assert_CheckerWrapper_sv_8850_6483">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8854.7-8854.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8854.7-8854.62" id="_witness_.check_assert_CheckerWrapper_sv_8854_6486">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8858.7-8858.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8858.7-8858.70" id="_witness_.check_assert_CheckerWrapper_sv_8858_6489">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8862.7-8862.53" time="0" type="ASSERT" location="CheckerWrapper.sv:8862.7-8862.53" id="_witness_.check_assert_CheckerWrapper_sv_8862_6492">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8866.7-8866.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8866.7-8866.62" id="_witness_.check_assert_CheckerWrapper_sv_8866_6495">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8870.7-8870.72" time="0" type="ASSERT" location="CheckerWrapper.sv:8870.7-8870.72" id="_witness_.check_assert_CheckerWrapper_sv_8870_6498">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8874.7-8874.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8874.7-8874.68" id="_witness_.check_assert_CheckerWrapper_sv_8874_6501">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8878.7-8878.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8878.7-8878.66" id="_witness_.check_assert_CheckerWrapper_sv_8878_6504">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8882.7-8882.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8882.7-8882.68" id="_witness_.check_assert_CheckerWrapper_sv_8882_6507">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8886.7-8886.68" time="0" type="ASSERT" location="CheckerWrapper.sv:8886.7-8886.68" id="_witness_.check_assert_CheckerWrapper_sv_8886_6510">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8890.7-8890.70" time="0" type="ASSERT" location="CheckerWrapper.sv:8890.7-8890.70" id="_witness_.check_assert_CheckerWrapper_sv_8890_6513">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8894.7-8894.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8894.7-8894.64" id="_witness_.check_assert_CheckerWrapper_sv_8894_6516">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8898.7-8898.74" time="0" type="ASSERT" location="CheckerWrapper.sv:8898.7-8898.74" id="_witness_.check_assert_CheckerWrapper_sv_8898_6519">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8902.7-8902.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8902.7-8902.60" id="_witness_.check_assert_CheckerWrapper_sv_8902_6522">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8906.7-8906.60" time="0" type="ASSERT" location="CheckerWrapper.sv:8906.7-8906.60" id="_witness_.check_assert_CheckerWrapper_sv_8906_6525">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8910.7-8910.62" time="0" type="ASSERT" location="CheckerWrapper.sv:8910.7-8910.62" id="_witness_.check_assert_CheckerWrapper_sv_8910_6528">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8914.7-8914.66" time="0" type="ASSERT" location="CheckerWrapper.sv:8914.7-8914.66" id="_witness_.check_assert_CheckerWrapper_sv_8914_6531">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8918.7-8918.64" time="0" type="ASSERT" location="CheckerWrapper.sv:8918.7-8918.64" id="_witness_.check_assert_CheckerWrapper_sv_8918_6534">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8922.7-8922.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8922.7-8922.56" id="_witness_.check_assert_CheckerWrapper_sv_8922_6537">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8926.7-8926.56" id="_witness_.check_assert_CheckerWrapper_sv_8926_6540" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8926.7-8926.56 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8930.7-8930.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8930.7-8930.56" id="_witness_.check_assert_CheckerWrapper_sv_8930_6543">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8934.7-8934.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8934.7-8934.56" id="_witness_.check_assert_CheckerWrapper_sv_8934_6546">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8938.7-8938.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8938.7-8938.56" id="_witness_.check_assert_CheckerWrapper_sv_8938_6549">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8942.7-8942.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8942.7-8942.56" id="_witness_.check_assert_CheckerWrapper_sv_8942_6552">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8946.7-8946.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8946.7-8946.56" id="_witness_.check_assert_CheckerWrapper_sv_8946_6555">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8950.7-8950.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8950.7-8950.56" id="_witness_.check_assert_CheckerWrapper_sv_8950_6558">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8954.7-8954.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8954.7-8954.56" id="_witness_.check_assert_CheckerWrapper_sv_8954_6561">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8958.7-8958.56" time="0" type="ASSERT" location="CheckerWrapper.sv:8958.7-8958.56" id="_witness_.check_assert_CheckerWrapper_sv_8958_6564">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8962.7-8962.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8962.7-8962.58" id="_witness_.check_assert_CheckerWrapper_sv_8962_6567">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8966.7-8966.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8966.7-8966.58" id="_witness_.check_assert_CheckerWrapper_sv_8966_6570">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8970.7-8970.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8970.7-8970.58" id="_witness_.check_assert_CheckerWrapper_sv_8970_6573">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8974.7-8974.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8974.7-8974.58" id="_witness_.check_assert_CheckerWrapper_sv_8974_6576">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8978.7-8978.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8978.7-8978.58" id="_witness_.check_assert_CheckerWrapper_sv_8978_6579">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8982.7-8982.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8982.7-8982.58" id="_witness_.check_assert_CheckerWrapper_sv_8982_6582">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8986.7-8986.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8986.7-8986.58" id="_witness_.check_assert_CheckerWrapper_sv_8986_6585">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8990.7-8990.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8990.7-8990.58" id="_witness_.check_assert_CheckerWrapper_sv_8990_6588">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8994.7-8994.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8994.7-8994.58" id="_witness_.check_assert_CheckerWrapper_sv_8994_6591">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:8998.7-8998.58" time="0" type="ASSERT" location="CheckerWrapper.sv:8998.7-8998.58" id="_witness_.check_assert_CheckerWrapper_sv_8998_6594">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9002.7-9002.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9002.7-9002.58" id="_witness_.check_assert_CheckerWrapper_sv_9002_6597">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9006.7-9006.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9006.7-9006.58" id="_witness_.check_assert_CheckerWrapper_sv_9006_6600">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9010.7-9010.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9010.7-9010.58" id="_witness_.check_assert_CheckerWrapper_sv_9010_6603">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9014.7-9014.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9014.7-9014.58" id="_witness_.check_assert_CheckerWrapper_sv_9014_6606">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9018.7-9018.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9018.7-9018.58" id="_witness_.check_assert_CheckerWrapper_sv_9018_6609">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9022.7-9022.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9022.7-9022.58" id="_witness_.check_assert_CheckerWrapper_sv_9022_6612">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9026.7-9026.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9026.7-9026.58" id="_witness_.check_assert_CheckerWrapper_sv_9026_6615">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9030.7-9030.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9030.7-9030.58" id="_witness_.check_assert_CheckerWrapper_sv_9030_6618">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9034.7-9034.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9034.7-9034.58" id="_witness_.check_assert_CheckerWrapper_sv_9034_6621">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9038.7-9038.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9038.7-9038.58" id="_witness_.check_assert_CheckerWrapper_sv_9038_6624">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9042.7-9042.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9042.7-9042.58" id="_witness_.check_assert_CheckerWrapper_sv_9042_6627">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9046.7-9046.58" time="0" type="ASSERT" location="CheckerWrapper.sv:9046.7-9046.58" id="_witness_.check_assert_CheckerWrapper_sv_9046_6630">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9050.7-9050.21" time="0" type="ASSERT" location="CheckerWrapper.sv:9050.7-9050.21" id="_witness_.check_assert_CheckerWrapper_sv_9050_6633">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9054.7-9054.39" time="0" type="ASSERT" location="CheckerWrapper.sv:9054.7-9054.39" id="_witness_.check_assert_CheckerWrapper_sv_9054_6635">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9058.7-9058.56" time="0" type="ASSERT" location="CheckerWrapper.sv:9058.7-9058.56" id="_witness_.check_assert_CheckerWrapper_sv_9058_6638">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9062.7-9062.68" time="0" type="ASSERT" location="CheckerWrapper.sv:9062.7-9062.68" id="_witness_.check_assert_CheckerWrapper_sv_9062_6641">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in wrapper_for_final/checker_inst/checker_ at CheckerWrapper.sv:9066.7-9066.72" time="0" type="ASSERT" location="CheckerWrapper.sv:9066.7-9066.72" id="_witness_.check_assert_CheckerWrapper_sv_9066_6644">
+<skipped />
+</testcase>
+<system-out>SBY 16:18:51 [formal] Removing directory '/home/lixh/myproject/nerv_formal/new_core/formal'.
+SBY 16:18:51 [formal] Copy '/home/lixh/myproject/nerv_formal/new_core/define.sv' to '/home/lixh/myproject/nerv_formal/new_core/formal/src/define.sv'.
+SBY 16:18:51 [formal] Copy '/home/lixh/myproject/nerv_formal/new_core/top_wrapper.sv' to '/home/lixh/myproject/nerv_formal/new_core/formal/src/top_wrapper.sv'.
+SBY 16:18:51 [formal] Copy '/home/lixh/myproject/nerv_formal/new_core/nerv.sv' to '/home/lixh/myproject/nerv_formal/new_core/formal/src/nerv.sv'.
+SBY 16:18:51 [formal] Copy '/home/lixh/myproject/nerv_formal/new_core/CheckerWrapper.sv' to '/home/lixh/myproject/nerv_formal/new_core/formal/src/CheckerWrapper.sv'.
+SBY 16:18:51 [formal] engine_0: smtbmc yices
+SBY 16:18:51 [formal] base: starting process &quot;cd formal/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 16:18:51 [formal] base: Warning: wire '\shadow_regfile' is assigned in a block at top_wrapper.sv:301.17-301.42.
+SBY 16:18:51 [formal] base: Warning: wire '\shadow_regfile' is assigned in a block at top_wrapper.sv:304.13-304.59.
+SBY 16:18:51 [formal] base: top_wrapper.sv:27: Warning: Identifier `\clk' is implicitly declared.
+SBY 16:18:51 [formal] base: top_wrapper.sv:250: Warning: Identifier `\uut.mem_rd_enable' is implicitly declared.
+SBY 16:18:51 [formal] base: top_wrapper.sv:255: Warning: Identifier `\uut.mem_wr_enable' is implicitly declared.
+SBY 16:18:51 [formal] base: top_wrapper.sv:304: Warning: Identifier `\uut.regfile' is implicitly declared.
+SBY 16:18:51 [formal] base: top_wrapper.sv:381: Warning: Identifier `\result_pc' is implicitly declared.
+SBY 16:18:52 [formal] base: Warning: Resizing cell port wrapper_for_final.checker_inst.io_result_pc from 1 bits to 32 bits.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [31] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [30] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [29] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [28] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [27] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [26] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [25] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [24] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [23] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [22] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [21] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [20] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [19] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [18] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [17] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [16] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [15] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [14] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [13] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [12] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [11] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [10] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [9] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [8] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [7] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [6] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [5] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [4] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [3] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [2] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [1] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\irq [0] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [19] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [15] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [11] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [10] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [9] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [8] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [7] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [31] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [30] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [29] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [28] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [27] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [26] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [25] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [24] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [23] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [22] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [21] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [20] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [19] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [18] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [17] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [16] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [15] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [14] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [13] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [12] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [11] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [10] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [9] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [8] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [7] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [6] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [5] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [4] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [3] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [2] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [1] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\dmem_rdata [0] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\result_pc is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\uut.regfile is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\uut.mem_wr_enable is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\uut.mem_rd_enable is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [24] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [23] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [22] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [21] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [20] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [18] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [17] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [16] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [31] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [30] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [29] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [28] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [27] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [26] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [25] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [14] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [13] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [12] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [6] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [5] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [4] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [3] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [2] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [1] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\imem_data [0] is used but has no driver.
+SBY 16:18:55 [formal] base: Warning: Wire wrapper_for_final.\clk is used but has no driver.
+SBY 16:18:58 [formal] base: finished (returncode=0)
+SBY 16:18:58 [formal] prep: starting process &quot;cd formal/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [31] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [30] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [29] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [28] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [27] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [26] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [25] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [24] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [23] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [22] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [21] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [20] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [19] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [18] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [17] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [16] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [15] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [14] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [13] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [12] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [11] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [10] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [9] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [8] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [7] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [6] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [5] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [4] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [3] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [2] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [1] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\irq [0] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [19] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [15] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [11] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [10] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [9] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [8] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [7] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [31] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [30] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [29] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [28] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [27] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [26] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [25] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [24] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [23] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [22] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [21] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [20] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [19] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [18] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [17] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [16] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [15] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [14] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [13] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [12] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [11] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [10] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [9] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [8] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [7] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [6] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [5] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [4] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [3] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [2] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [1] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\dmem_rdata [0] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\result_pc is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\uut.regfile is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\uut.mem_wr_enable is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\uut.mem_rd_enable is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [24] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [23] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [22] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [21] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [20] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [18] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [17] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [16] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [31] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [30] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [29] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [28] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [27] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [26] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [25] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [14] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [13] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [12] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [6] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [5] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [4] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [3] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [2] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [1] is used but has no driver.
+SBY 16:18:59 [formal] prep: Warning: Wire wrapper_for_final.\imem_data [0] is used but has no driver.
+SBY 16:19:01 [formal] prep: finished (returncode=0)
+SBY 16:19:01 [formal] smt2: starting process &quot;cd formal/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 16:19:01 [formal] smt2: finished (returncode=0)
+SBY 16:19:01 [formal] engine_0: starting process &quot;cd formal; yosys-smtbmc -s yices --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 16:19:01 [formal] engine_0: ##   0:00:00  Solver: yices
+SBY 16:19:02 [formal] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:19:02 [formal] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:19:02 [formal] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:19:02 [formal] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 16:19:02 [formal] engine_0: ##   0:00:01  Checking assumptions in step 2..
+SBY 16:19:03 [formal] engine_0: ##   0:00:01  Checking assertions in step 2..
+SBY 16:19:03 [formal] engine_0: ##   0:00:01  Checking assumptions in step 3..
+SBY 16:19:03 [formal] engine_0: ##   0:00:01  Checking assertions in step 3..
+SBY 16:19:03 [formal] engine_0: ##   0:00:01  Checking assumptions in step 4..
+SBY 16:19:03 [formal] engine_0: ##   0:00:02  Checking assertions in step 4..
+SBY 16:19:04 [formal] engine_0: ##   0:00:02  BMC failed!
+SBY 16:19:04 [formal] engine_0: ##   0:00:02  Assert failed in wrapper_for_final.checker_inst.checker_: CheckerWrapper.sv:8926.7-8926.56 (_witness_.check_assert_CheckerWrapper_sv_8926_6540)
+SBY 16:19:04 [formal] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace.vcd
+SBY 16:19:06 [formal] engine_0: ##   0:00:04  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 16:19:06 [formal] engine_0: ##   0:00:05  Writing trace to constraints file: engine_0/trace.smtc
+SBY 16:19:06 [formal] engine_0: ##   0:00:05  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 16:19:07 [formal] engine_0: ##   0:00:05  Status: failed
+SBY 16:19:07 [formal] engine_0: finished (returncode=1)
+SBY 16:19:07 [formal] engine_0: Status returned by engine: FAIL
+SBY 16:19:07 [formal] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:15 (15)
+SBY 16:19:07 [formal] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:16 (16)
+SBY 16:19:07 [formal] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 16:19:07 [formal] summary: counterexample trace: formal/engine_0/trace.vcd
+SBY 16:19:07 [formal] summary:   failed assertion wrapper_for_final.checker_inst.checker_._witness_.check_assert_CheckerWrapper_sv_8926_6540 at CheckerWrapper.sv:8926.7-8926.56 in step 4
+SBY 16:19:07 [formal] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,6 +1,6 @@
 module top_formal (
     input         clock,
-    input         reset
+    //input         reset
 );
 
     // 输出信号

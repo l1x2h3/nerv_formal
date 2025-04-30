@@ -1,0 +1,5 @@
+SBY 19:29:29 [imemcheck] Removing directory '/home/lixh/myproject/nerv_formal/imemcheck'.
+SBY 19:29:29 [imemcheck] Writing 'imemcheck/src/defines.sv'.
+SBY 19:29:29 [imemcheck] Copy '/home/lixh/myproject/nerv_formal/imemcheck.sv' to '/home/lixh/myproject/nerv_formal/imemcheck/src/imemcheck.sv'.
+SBY 19:29:29 [imemcheck] Copy '/home/lixh/myproject/nerv_formal/nerv.sv' to '/home/lixh/myproject/nerv_formal/imemcheck/src/nerv.sv'.
+SBY 19:29:29 [imemcheck] Copy '/home/lixh/checks/rvfi_macros.vh' to '/home/lixh/myproject/nerv_formal/imemcheck/src/rvfi_macros.vh'.

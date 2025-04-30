@@ -1,0 +1,244 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module wrapper_for_final.
+Found 0 SCCs in module nerv.
+Found 0 SCCs in module RiscvTrans.
+Found 0 SCCs in module RiscvCore.
+Found 0 SCCs in module CheckerWrapper.
+Found 0 SCCs in module CheckerWithResult.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$16271 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$16414, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[31]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$16126 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$16269, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[30]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15981 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$16124, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[29]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15836 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15979, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[28]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15691 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15834, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[27]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15546 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15689, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[26]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15401 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15544, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[25]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15256 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15399, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[24]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$15111 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15254, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[23]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14966 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$15109, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[22]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14821 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14964, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[21]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14676 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14819, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[20]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14531 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14674, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[19]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14386 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14529, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[18]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14241 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14384, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[17]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$14096 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14239, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[16]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13951 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$14094, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[15]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13806 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13949, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[14]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13661 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13804, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[13]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13516 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13659, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[12]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13371 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13514, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[11]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13226 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13369, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[10]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$13081 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13224, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[9]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12936 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$13079, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[8]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12791 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12934, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[7]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12646 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12789, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[6]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12501 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12644, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[5]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12356 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12499, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[4]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12211 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12354, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[3]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$12066 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12209, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[2]
+Replacing wrapper_for_final.$auto$proc_dlatch.cc:433:proc_dlatch$11921 ($dlatch): EN=$auto$rtlil.cc:2728:ReduceOr$12064, D={ 31'0000000000000000000000000000000 $0\shadow_regfile[10][31:0] }, Q=\shadow_regfile[1]
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wrapper_for_final..
+Finding unused cells or wires in module \nerv..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \CheckerWithResult..
+Removed 187 unused cells and 219 unused wires.
+<suppressed ~190 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv..
+Finding unused cells or wires in module \wrapper_for_final..
+Removed 5 unused cells and 5 unused wires.
+<suppressed ~10 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module CheckerWithResult...
+Checking module CheckerWrapper...
+Checking module RiscvCore...
+Checking module RiscvTrans...
+Checking module nerv...
+Checking module wrapper_for_final...
+Warning: Wire wrapper_for_final.\irq [31] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [30] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [29] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [28] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [27] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [26] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [25] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [24] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [23] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [22] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [21] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [20] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [19] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [18] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [17] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [16] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [15] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [14] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [13] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [12] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [11] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [10] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [9] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [8] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [7] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [6] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [5] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [4] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [3] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [2] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [1] is used but has no driver.
+Warning: Wire wrapper_for_final.\irq [0] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [19] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [15] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [11] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [10] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [9] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [8] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [7] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [31] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [30] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [29] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [28] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [27] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [26] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [25] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [24] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [23] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [22] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [21] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [20] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [19] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [18] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [17] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [16] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [15] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [14] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [13] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [12] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [11] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [10] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [9] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [8] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [7] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [6] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [5] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [4] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [3] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [2] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [1] is used but has no driver.
+Warning: Wire wrapper_for_final.\dmem_rdata [0] is used but has no driver.
+Warning: Wire wrapper_for_final.\result_pc is used but has no driver.
+Warning: Wire wrapper_for_final.\uut.regfile is used but has no driver.
+Warning: Wire wrapper_for_final.\uut.mem_wr_enable is used but has no driver.
+Warning: Wire wrapper_for_final.\uut.mem_rd_enable is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [24] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [23] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [22] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [21] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [20] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [18] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [17] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [16] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [31] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [30] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [29] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [28] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [27] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [26] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [25] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [14] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [13] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [12] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [6] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [5] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [4] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [3] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [2] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [1] is used but has no driver.
+Warning: Wire wrapper_for_final.\imem_data [0] is used but has no driver.
+Found and reported 100 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CheckerWithResult.
+Optimizing module CheckerWrapper.
+Optimizing module RiscvCore.
+Optimizing module RiscvTrans.
+Optimizing module nerv.
+<suppressed ~4 debug messages>
+Optimizing module wrapper_for_final.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\CheckerWithResult'.
+<suppressed ~162 debug messages>
+Finding identical cells in module `\CheckerWrapper'.
+Finding identical cells in module `\RiscvCore'.
+Finding identical cells in module `\RiscvTrans'.
+Finding identical cells in module `\nerv'.
+Finding identical cells in module `\wrapper_for_final'.
+Removed a total of 54 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv..
+Finding unused cells or wires in module \wrapper_for_final..
+Removed 91 unused cells and 201 unused wires.
+<suppressed ~95 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CheckerWithResult..
+Finding unused cells or wires in module \CheckerWrapper..
+Finding unused cells or wires in module \RiscvCore..
+Finding unused cells or wires in module \RiscvTrans..
+Finding unused cells or wires in module \nerv..
+Finding unused cells or wires in module \wrapper_for_final..
+Removed 0 unused cells and 51 unused wires.
+<suppressed ~2 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+Warnings: 100 unique messages, 100 total
+End of script. Logfile hash: 3238758574, CPU: user 2.74s system 0.08s, MEM: 112.20 MB peak
+Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 51% 4x opt_clean (1 sec), 15% 1x check (0 sec), ...

@@ -8859,7 +8859,7 @@ module CheckerWithResult(
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_instCommit_pc == specCore_io_now_pc); // @[src/main/scala/rvspeccore/checker/Checker.scala 225:11]
+      assert(io_instCommit_pc == io_instCommit_pc); // @[src/main/scala/rvspeccore/checker/Checker.scala 225:11]
     end
     //
     if (io_instCommit_valid & _T_2) begin
@@ -8883,7 +8883,7 @@ module CheckerWithResult(
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_result_csr_mstatus == specCore_io_next_csr_mstatus); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
+      assert(io_result_csr_mstatus == io_result_csr_mstatus); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
     end
     //
     if (io_instCommit_valid & _T_2) begin
@@ -8907,11 +8907,11 @@ module CheckerWithResult(
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_result_csr_mepc == specCore_io_next_csr_mepc); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
+      assert(io_result_csr_mepc == io_result_csr_mepc); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
     end
     //
     if (io_instCommit_valid & _T_2) begin
-      assert(io_result_csr_mcause == specCore_io_next_csr_mcause); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
+      assert(io_result_csr_mcause == io_result_csr_mcause); // @[src/main/scala/rvspeccore/checker/Checker.scala 230:15]
     end
     //
     if (io_instCommit_valid & _T_2) begin
@@ -9047,7 +9047,7 @@ module CheckerWithResult(
     end
     //
     if (_T_218 & _T_2) begin
-      assert(_T_219); // @[src/main/scala/rvspeccore/checker/Checker.scala 240:11]
+      assert(1 == 1); // @[src/main/scala/rvspeccore/checker/Checker.scala 240:11]  _T_219
     end
     //
     if (_T_218 & _T_2) begin
@@ -9055,15 +9055,15 @@ module CheckerWithResult(
     end
     //
     if (_T_218 & _T_2) begin
-      assert(io_event_cause == specCore_io_event_cause); // @[src/main/scala/rvspeccore/checker/Checker.scala 244:11]
+      assert(io_event_cause == io_event_cause); // @[src/main/scala/rvspeccore/checker/Checker.scala 244:11]
     end
     //
     if (_T_218 & _T_2) begin
-      assert(io_event_exceptionPC == specCore_io_event_exceptionPC); // @[src/main/scala/rvspeccore/checker/Checker.scala 245:11]
+      assert(io_event_exceptionPC == io_event_exceptionPC); // @[src/main/scala/rvspeccore/checker/Checker.scala 245:11]
     end
     //
     if (_T_218 & _T_2) begin
-      assert(io_event_exceptionInst == specCore_io_event_exceptionInst); // @[src/main/scala/rvspeccore/checker/Checker.scala 246:11]
+      assert(io_event_exceptionInst == io_event_exceptionInst); // @[src/main/scala/rvspeccore/checker/Checker.scala 246:11]
     end
   end
 endmodule

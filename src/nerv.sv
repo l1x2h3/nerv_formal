@@ -374,10 +374,43 @@ module nerv #(
 	output [31:0] dmem_addr,
 	output [ 3:0] dmem_wstrb,
 	output [31:0] dmem_wdata,
-	output [31:0] dbg_reg_x1,
-	output [31:0] dbg_reg_x2,
-	output [31:0] dbg_reg_x3,
+	output reg [31:0] npc,
 	input  [31:0] dmem_rdata,
+
+	output [31:0] dbg_reg_x0 ,
+	output [31:0] dbg_reg_x1 ,
+	output [31:0] dbg_reg_x2 ,
+	output [31:0] dbg_reg_x3 ,
+	output [31:0] dbg_reg_x4 ,
+	output [31:0] dbg_reg_x5 ,
+	output [31:0] dbg_reg_x6 ,
+	output [31:0] dbg_reg_x7 ,
+	output [31:0] dbg_reg_x8 ,
+	output [31:0] dbg_reg_x9 ,
+	output [31:0] dbg_reg_x10,
+	output [31:0] dbg_reg_x11,
+	output [31:0] dbg_reg_x12,
+	output [31:0] dbg_reg_x13,
+	output [31:0] dbg_reg_x14,
+	output [31:0] dbg_reg_x15,
+	output [31:0] dbg_reg_x16,
+	output [31:0] dbg_reg_x17,
+	output [31:0] dbg_reg_x18,
+	output [31:0] dbg_reg_x19,
+	output [31:0] dbg_reg_x20,
+	output [31:0] dbg_reg_x21,
+	output [31:0] dbg_reg_x22,
+	output [31:0] dbg_reg_x23,
+	output [31:0] dbg_reg_x24,
+	output [31:0] dbg_reg_x25,
+	output [31:0] dbg_reg_x26,
+	output [31:0] dbg_reg_x27,
+	output [31:0] dbg_reg_x28,
+	output [31:0] dbg_reg_x29,
+	output [31:0] dbg_reg_x30,
+	output [31:0] dbg_reg_x31,
+	output [31:0] test,
+	output reg [31:0] mem_rdata,
 
 `ifdef NERV_FAULT
 	input         imem_fault,
@@ -426,11 +459,12 @@ module nerv #(
 	assign dmem_addr  = mem_wr_enable ? mem_wr_addr : mem_rd_enable ? mem_rd_addr : 32'h x;
 	assign dmem_wstrb = mem_wr_enable ? mem_wr_strb : mem_rd_enable ? 4'h 0 : 4'h x;
 	assign dmem_wdata = mem_wr_enable ? mem_wr_data : 32'h x;
+	assign test = 32'h12341234;
 
 	// registers, instruction reg, program counter, next pc
 	reg [31:0] regfile [0:NUMREGS-1];
 	wire [31:0] insn;
-	reg [31:0] npc;
+	//reg [31:0] npc;
 	reg [31:0] pc;
 
 	reg [31:0] imem_addr_q;
@@ -454,6 +488,7 @@ module nerv #(
 	// rs1 and rs2 are source for the instruction
 	wire [31:0] rs1_value = !insn_rs1 ? 0 : regfile[insn_rs1];
 	wire [31:0] rs2_value = !insn_rs2 ? 0 : regfile[insn_rs2];
+
 
 	// split R-type instruction - see section 2.2 of RiscV spec
 	assign {insn_funct7, insn_rs2, insn_rs1, insn_funct3, insn_rd, insn_opcode} = insn;
@@ -959,8 +994,8 @@ module nerv #(
 			// ALU instructions: Add, Subtract, Shift Left Logical, Set Left Than, Set Less Than Unsigned, XOR, Shift Right Logical,
 			// Shift Right Arithmetic, OR, AND
 				case ({insn_funct7, insn_funct3})
-					10'b 0000000_000 /* ADD  */: begin next_wr = 1; next_rd = rs1_value - rs2_value; end
-					10'b 0100000_000 /* SUB  */: begin next_wr = 1; next_rd = rs1_value + rs2_value; end
+					10'b 0000000_000 /* ADD  */: begin next_wr = 1; next_rd = rs1_value + rs2_value + 31'd1 ; end
+					10'b 0100000_000 /* SUB  */: begin next_wr = 1; next_rd = rs1_value - rs2_value + 31'd1 ; end
 					10'b 0000000_001 /* SLL  */: begin next_wr = 1; next_rd = rs1_value << rs2_value[4:0]; end
 					10'b 0000000_010 /* SLT  */: begin next_wr = 1; next_rd = $signed(rs1_value) < $signed(rs2_value); end
 					10'b 0000000_011 /* SLTU */: begin next_wr = 1; next_rd = rs1_value < rs2_value; end
@@ -1087,7 +1122,7 @@ module nerv #(
 		end
 	end
 
-	reg [31:0] mem_rdata;
+	//reg [31:0] mem_rdata;
 `ifdef NERV_RVFI
 	reg next_rvfi_intr;
 	reg rvfi_trap_q;
@@ -1120,6 +1155,7 @@ module nerv #(
 
 		if (next_wr)
 			regfile[wr_rd] <= next_rd;
+	
 
 `ifdef NERV_RVFI
 		rvfi_valid <= next_rvfi_valid;
@@ -1233,38 +1269,38 @@ module nerv #(
 	end
 
 
-`ifdef NERV_DBGREGS
-	wire [31:0] dbg_reg_x0  = 0;
-	dbg_reg_x1  = regfile[1];
-	dbg_reg_x2  = regfile[2];
-	dbg_reg_x3  = regfile[3];
-	wire [31:0] dbg_reg_x4  = regfile[4];
-	wire [31:0] dbg_reg_x5  = regfile[5];
-	wire [31:0] dbg_reg_x6  = regfile[6];
-	wire [31:0] dbg_reg_x7  = regfile[7];
-	wire [31:0] dbg_reg_x8  = regfile[8];
-	wire [31:0] dbg_reg_x9  = regfile[9];
-	wire [31:0] dbg_reg_x10 = regfile[10];
-	wire [31:0] dbg_reg_x11 = regfile[11];
-	wire [31:0] dbg_reg_x12 = regfile[12];
-	wire [31:0] dbg_reg_x13 = regfile[13];
-	wire [31:0] dbg_reg_x14 = regfile[14];
-	wire [31:0] dbg_reg_x15 = regfile[15];
-	wire [31:0] dbg_reg_x16 = regfile[16];
-	wire [31:0] dbg_reg_x17 = regfile[17];
-	wire [31:0] dbg_reg_x18 = regfile[18];
-	wire [31:0] dbg_reg_x19 = regfile[19];
-	wire [31:0] dbg_reg_x20 = regfile[20];
-	wire [31:0] dbg_reg_x21 = regfile[21];
-	wire [31:0] dbg_reg_x22 = regfile[22];
-	wire [31:0] dbg_reg_x23 = regfile[23];
-	wire [31:0] dbg_reg_x24 = regfile[24];
-	wire [31:0] dbg_reg_x25 = regfile[25];
-	wire [31:0] dbg_reg_x26 = regfile[26];
-	wire [31:0] dbg_reg_x27 = regfile[27];
-	wire [31:0] dbg_reg_x28 = regfile[28];
-	wire [31:0] dbg_reg_x29 = regfile[29];
-	wire [31:0] dbg_reg_x30 = regfile[30];
-	wire [31:0] dbg_reg_x31 = regfile[31];
-`endif
+//`ifdef NERV_DBGREGS
+    assign dbg_reg_x0  = 32'h0;
+    assign dbg_reg_x1  = regfile[1];
+    assign dbg_reg_x2  = regfile[2];
+    assign dbg_reg_x3  = regfile[3];
+    assign dbg_reg_x4  = regfile[4];
+    assign dbg_reg_x5  = regfile[5];
+    assign dbg_reg_x6  = regfile[6];
+    assign dbg_reg_x7  = regfile[7];
+    assign dbg_reg_x8  = regfile[8];
+    assign dbg_reg_x9  = regfile[9];
+    assign dbg_reg_x10 = regfile[10];
+    assign dbg_reg_x11 = regfile[11];
+    assign dbg_reg_x12 = regfile[12];
+    assign dbg_reg_x13 = regfile[13];
+    assign dbg_reg_x14 = regfile[14];
+    assign dbg_reg_x15 = regfile[15];
+    assign dbg_reg_x16 = regfile[16];
+    assign dbg_reg_x17 = regfile[17];
+    assign dbg_reg_x18 = regfile[18];
+    assign dbg_reg_x19 = regfile[19];
+    assign dbg_reg_x20 = regfile[20];
+    assign dbg_reg_x21 = regfile[21];
+    assign dbg_reg_x22 = regfile[22];
+    assign dbg_reg_x23 = regfile[23];
+    assign dbg_reg_x24 = regfile[24];
+    assign dbg_reg_x25 = regfile[25];
+    assign dbg_reg_x26 = regfile[26];
+    assign dbg_reg_x27 = regfile[27];
+    assign dbg_reg_x28 = regfile[28];
+    assign dbg_reg_x29 = regfile[29];
+    assign dbg_reg_x30 = regfile[30];
+    assign dbg_reg_x31 = regfile[31];
+//`endif
 endmodule

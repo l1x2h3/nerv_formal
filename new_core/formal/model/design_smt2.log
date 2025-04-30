@@ -1,0 +1,262 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \wrapper_for_final
+Used module:     \nerv
+Used module:     \CheckerWrapper
+Used module:         \CheckerWithResult
+Used module:             \RiscvCore
+Used module:                 \RiscvTrans
+
+2.2. Analyzing design hierarchy..
+Top module:  \wrapper_for_final
+Used module:     \nerv
+Used module:     \CheckerWrapper
+Used module:         \CheckerWithResult
+Used module:             \RiscvCore
+Used module:                 \RiscvTrans
+Removed 0 unused modules.
+Module wrapper_for_final directly or indirectly contains formal properties -> setting "keep" attribute.
+Module CheckerWrapper directly or indirectly contains formal properties -> setting "keep" attribute.
+Module CheckerWithResult directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== wrapper_for_final ===
+
+   Number of wires:                304
+   Number of wire bits:           4558
+   Number of public wires:         163
+   Number of public wire bits:    4417
+   Number of ports:                  1
+   Number of port bits:              1
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                265
+     $and                           62
+     $anyinit                       31
+     $anyseq                        54
+     $assume                         3
+     $eq                            34
+     $ff                             1
+     $le                             1
+     $logic_and                      3
+     $logic_not                      1
+     $logic_or                       4
+     $mux                           32
+     $ne                             3
+     $not                            2
+     $reduce_or                     31
+     $shiftx                         1
+     CheckerWrapper                  1
+     nerv                            1
+
+=== nerv ===
+
+   Number of wires:               2294
+   Number of wire bits:          60094
+   Number of public wires:         973
+   Number of public wire bits:   34855
+   Number of ports:                465
+   Number of port bits:          14408
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2131
+     $add                           41
+     $and                            4
+     $anyinit                      474
+     $anyseq                        20
+     $assume                         1
+     $eq                           244
+     $ge                             2
+     $logic_and                    228
+     $logic_not                     13
+     $logic_or                       8
+     $lt                             4
+     $mem_v2                         1
+     $mux                          979
+     $ne                             2
+     $not                            2
+     $or                             3
+     $pmux                          44
+     $reduce_bool                    4
+     $reduce_or                     41
+     $shl                            7
+     $shr                            3
+     $sshr                           2
+     $sub                            2
+     $xor                            2
+
+=== RiscvTrans ===
+
+   Number of wires:               5028
+   Number of wire bits:         108587
+   Number of public wires:        4910
+   Number of public wire bits:  108469
+   Number of ports:                158
+   Number of port bits:           4614
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3249
+     $add                            7
+     $and                           36
+     $div                            2
+     $eq                           164
+     $ge                             2
+     $logic_not                      9
+     $lt                             6
+     $mod                            2
+     $mul                            3
+     $mux                         2975
+     $ne                             2
+     $not                            2
+     $or                            28
+     $shl                            2
+     $shr                            4
+     $sshr                           2
+     $sub                            1
+     $xor                            2
+
+=== RiscvCore ===
+
+   Number of wires:                613
+   Number of wire bits:          16927
+   Number of public wires:         542
+   Number of public wire bits:   14788
+   Number of ports:                158
+   Number of port bits:           4614
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                143
+     $anyinit                       70
+     $assume                         1
+     $mux                           70
+     $not                            1
+     RiscvTrans                      1
+
+=== CheckerWrapper ===
+
+   Number of wires:                177
+   Number of wire bits:           4953
+   Number of public wires:         176
+   Number of public wire bits:    4952
+   Number of ports:                 88
+   Number of port bits:           2476
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $assume                         1
+     $not                            1
+     CheckerWithResult               1
+
+=== CheckerWithResult ===
+
+   Number of wires:                442
+   Number of wire bits:           7286
+   Number of public wires:         310
+   Number of public wire bits:    7154
+   Number of ports:                 88
+   Number of port bits:           2476
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                198
+     $and                            4
+     $assert                        59
+     $assume                         1
+     $eq                            58
+     $ff                            64
+     $logic_not                      1
+     $mux                            5
+     $not                            2
+     $or                             3
+     RiscvCore                       1
+
+=== design hierarchy ===
+
+   wrapper_for_final                 1
+     CheckerWrapper                  1
+       CheckerWithResult             1
+         RiscvCore                   1
+           RiscvTrans                1
+     nerv                            1
+
+   Number of wires:               8858
+   Number of wire bits:         202405
+   Number of public wires:        7074
+   Number of public wire bits:  174635
+   Number of ports:                958
+   Number of port bits:          28589
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               5984
+     $add                           48
+     $and                          106
+     $anyinit                      575
+     $anyseq                        74
+     $assert                        59
+     $assume                         7
+     $div                            2
+     $eq                           500
+     $ff                            65
+     $ge                             4
+     $le                             1
+     $logic_and                    231
+     $logic_not                     24
+     $logic_or                      12
+     $lt                            10
+     $mem_v2                         1
+     $mod                            2
+     $mul                            3
+     $mux                         4061
+     $ne                             7
+     $not                           10
+     $or                            34
+     $pmux                          44
+     $reduce_bool                    4
+     $reduce_or                     72
+     $shiftx                         1
+     $shl                            9
+     $shr                            7
+     $sshr                           4
+     $sub                            3
+     $xor                            4
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module RiscvTrans.
+Creating SMT-LIBv2 representation of module nerv.
+Creating SMT-LIBv2 representation of module RiscvCore.
+Creating SMT-LIBv2 representation of module CheckerWithResult.
+Creating SMT-LIBv2 representation of module CheckerWrapper.
+Creating SMT-LIBv2 representation of module wrapper_for_final.
+
+End of script. Logfile hash: b71a8bf6ca, CPU: user 0.52s system 0.03s, MEM: 40.38 MB peak
+Yosys 0.46+124 (git sha1 d1695ad99, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 83% 2x write_smt2 (0 sec), 13% 2x read_ilang (0 sec), ...

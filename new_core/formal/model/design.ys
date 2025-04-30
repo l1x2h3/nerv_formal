@@ -1,0 +1,11 @@
+# running in formal/src/
+read_verilog  -D NERV_RVFI -D NERV_CSR -D YOSYS -D NERV_DBGREGS define.sv
+read_verilog -formal -DFORMAL top_wrapper.sv
+read_verilog nerv.sv
+read_verilog -formal CheckerWrapper.sv
+prep -nordff -top wrapper_for_final
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

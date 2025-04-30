@@ -236,3 +236,5 @@ reg 全部置为0
 crs 全部掠过，剩下的通过了
 存档在github上
 
+![alt text](image-5.png)
+这次可能对上了
